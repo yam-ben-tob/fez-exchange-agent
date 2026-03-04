@@ -1,6 +1,9 @@
 import os
 import pymupdf4llm
+import fitz
 from utils.config import supabase
+from pdf2image import convert_from_path
+import pytesseract
 
 BASE_DIR = "data\external_universities"
 
@@ -86,20 +89,68 @@ def format_university_name(raw_name: str) -> str:
 
     return name_mapping.get(raw_name, raw_name)
 
-def extract_markdown_from_pdf(pdf_path: str) -> str:
-    """Extracts markdown text from PDF using pymupdf4llm."""
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """
+    3-Tier Robust PDF Extraction:
+    1. Tries Markdown extraction (best for tables).
+    2. Falls back to raw text extraction (bypasses markdown crashes).
+    3. Falls back to OCR (for scanned images).
+    """
+    if not os.path.exists(pdf_path):
+        print(f"Error: File not found at {pdf_path}")
+        return ""
+
+    # TIER 1: Markdown Extraction
     try:
         md_text = pymupdf4llm.to_markdown(pdf_path)
-        if not md_text:
-            print(f"No markdown text found in {pdf_path}.")
-        return md_text
+        if md_text and md_text.strip():
+            return md_text
     except Exception as e:
-        print(f"Error reading {pdf_path}: {e}")
+        print(f"[{pdf_path}] Tier 1 (Markdown) failed: {e}")
+
+    # TIER 2: Standard Text Extraction (PyMuPDF)
+    print(f"[{pdf_path}] Attempting Tier 2 (Standard Raw Text)...")
+    try:
+        doc = fitz.open(pdf_path)
+        text_blocks = [page.get_text("text") for page in doc]
+        fallback_text = "\n".join(text_blocks)
+        
+        if fallback_text and fallback_text.strip():
+            return fallback_text
+    except Exception as e:
+        print(f"[{pdf_path}] Tier 2 (Standard Text) failed: {e}")
+
+    # TIER 3: OCR (For scanned images)
+    print(f"[{pdf_path}] Attempting Tier 3 (OCR for scanned images)...")
+    try:
+        # These imports are placed here so they only run if Tier 3 is needed
+        
+        images = convert_from_path(pdf_path)
+        ocr_text_blocks = []
+        for img in images:
+            # Extracts text directly from the image of the page
+            text = pytesseract.image_to_string(img)
+            ocr_text_blocks.append(text)
+            
+        ocr_text = "\n".join(ocr_text_blocks)
+        if ocr_text and ocr_text.strip():
+            return ocr_text
+        else:
+            print(f"[{pdf_path}] Tier 3 (OCR) also found no text. File might be blank.")
+            return ""
+            
+    except ImportError:
+        print(f"[{pdf_path}] OCR skipped. To enable Tier 3, you must run:")
+        print("    pip install pdf2image pytesseract")
+        print("    (You also need Tesseract-OCR and Poppler installed on your OS)")
+        return ""
+    except Exception as e:
+        print(f"[{pdf_path}] Tier 3 (OCR) failed: {e}")
         return ""
 
 def save_text(pdf_path):
     """Extract markdown from PDF and save to Supabase, extracting info from path."""
-    text = extract_markdown_from_pdf(pdf_path)
+    text = extract_text_from_pdf(pdf_path)
     rel_path = os.path.relpath(pdf_path, BASE_DIR)
     print(f"[DEBUG] rel_path: {rel_path}")
     parts = rel_path.split(os.sep)

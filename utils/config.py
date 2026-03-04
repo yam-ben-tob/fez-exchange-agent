@@ -16,13 +16,12 @@ except ImportError:
 
 # --- Pinecone Setup (Vector/RAG) ---
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT")
 PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
 
 # Chunking configuration
 BASE_DIR = "data/external_universities"
 CHUNK_SIZE = 2000  # characters per chunk
-CHUNK_OVERLAP = 300  # overlap between chunks
+CHUNK_OVERLAP = 400  # overlap between chunks
 TOP_K_RESULTS = 7  # For Pinecone queries
 
 LLMOD_BASE_URL = "https://api.llmod.ai"

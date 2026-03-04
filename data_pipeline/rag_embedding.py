@@ -3,6 +3,7 @@ from utils.config import supabase
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 from utils.config import BASE_DIR, CHUNK_SIZE, CHUNK_OVERLAP
 from pinecone_db.pinecone_client import upsert_embeddings
+import json
 
 def chunk_pdf_with_headers(row):
     """Chunk markdown text from a row in extracted_texts table using headers and recursive splitting."""
@@ -22,15 +23,11 @@ def chunk_pdf_with_headers(row):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP,
-        separators=[
-        "\n# ", "\n## ", "\n### ", # 1. Try Headers first
-        "\n\n",                     # 2. Try Paragraphs
-        "\n- ", "\n* ",             # 3. Try Bullet points (Keeps lists together!)
-        ". ",                       # 4. Try Sentences
-        "\n",                       # 5. Try Soft line breaks
-        " ",                        # 6. Try Words
-        ""                          # 7. Last resort
-        ],
+        separators=["\n\n", # 1. Paragraphs (Highest context)
+                     "\n",  # 2. New Lines (Critical for Table Rows & Lists)
+                     ". ",  # 3. Sentences (Only split a paragraph if it's giant)
+                     " ",   # 4. Words
+                     ""],   # 5. Characters
         add_start_index=True # Stores the character position where each chunk starts within the original text.
      )
     final_chunks = text_splitter.split_documents(header_splits)
@@ -43,6 +40,29 @@ def chunk_pdf_with_headers(row):
     #       "start_index": 1250
     #   }
     # )
+    return final_chunks
+
+def chunk_pdf_recursively(row):
+    """Chunk markdown text using ONLY RecursiveCharacterTextSplitter for larger, context-rich blocks."""
+    md_text = row.get("text", "")
+
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE, 
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=[
+            "\n# ", "\n## ", "\n### ", # 1. Section Headers (Keep the big topics together)
+            "\n\n",                     # 2. Paragraphs (Highest context)
+            "\n",                       # 3. New Lines (Critical for Table Rows & Lists)
+            ". ",                       # 4. Sentences (Only split a paragraph if it's giant)
+            " ",                        # 5. Words
+            ""                          # 6. Characters
+        ],
+        add_start_index=True 
+    )
+    
+    # We pass the raw text directly into the recursive splitter
+    final_chunks = text_splitter.create_documents([md_text])
+
     return final_chunks
 
 
@@ -64,14 +84,20 @@ def save_chunks():
             continue
         print(f"  -> {len(chunks)} chunks")
         for i, chunk in enumerate(chunks):
+            stripped_text = chunk.page_content.strip()
+            if len(stripped_text) < 30:
+                continue
             print(f"    Saving chunk {i+1}/{len(chunks)}")
+            # Convert headers dict to string for storage
+            headers_str = json.dumps(chunk.metadata) if chunk.metadata else ""
             chunk_record = {
                 "country": country,
                 "university": uni,
                 "file_name": file_name,
                 "chunk_index": i,
                 "text": chunk.page_content,
-                "headers": chunk.metadata
+                # "headers": headers_str
+                # Only for chunk_pdf_with_headers method; contains the header structure for context formatting later. 
             }
             all_chunks.append(chunk_record)
     if all_chunks:
@@ -90,19 +116,23 @@ def embed_chunks():
         print("No chunks to embed.")
         return
     chunk_texts = [row["text"] for row in rows]
+    print("Generating embeddings for chunks...")
     embeddings = batch_embed_texts(chunk_texts)
     vectors = []
     metadatas = []
     for i, (row, embedding) in enumerate(zip(rows, embeddings)):
+        if i % 100 == 0:
+            print(f"Processing chunk {i+1}/{len(rows)}: {row['university']} - {row['file_name']} (chunk {row.get('chunk_index', i)})")
         chunk_id = f"{row['country']}_{row['university']}_{row['file_name']}_{row.get('chunk_index', i)}"
         vectors.append((chunk_id, embedding))
         metadatas.append({
             "country": row["country"],
             "university": row["university"],
             "file_name": row["file_name"],
-            "headers": row["headers"],
-            "text": (row.get("text") or "")[:4000]  # Pinecone metadata limit; truncate if needed
+            # "headers": row["headers"],
+            "text": (row.get("text") or "")
         })
+    print(f"Upserting {len(vectors)} embeddings to Pinecone...")
     if vectors:
         upsert_embeddings(vectors, metadatas=metadatas)
         print(f"Upserted {len(vectors)} embeddings to Pinecone.")

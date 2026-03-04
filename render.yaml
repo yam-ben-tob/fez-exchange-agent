@@ -15,7 +15,5 @@ services:
         sync: false
       - key: PINECONE_INDEX_NAME
         sync: false
-      - key: PINECONE_ENVIRONMENT
-        sync: false
       - key: LLMOD_API_KEY
         sync: false

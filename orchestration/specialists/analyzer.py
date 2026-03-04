@@ -4,6 +4,57 @@ from pinecone_db.pinecone_client import query_embedding
 from utils.config import supabase
 from utils.llmod_client import llmod_chat
 
+def gather_context_for_llm(university):
+    """
+    Gathers context for a university by running several topic-specific queries and concatenating results.
+    """
+    count_resp = supabase.table("factsheets_chunks") \
+        .select("text", count="exact") \
+        .eq("university", university) \
+        .execute()
+    
+    rows = count_resp.data if count_resp.data else []
+    total_chunks = len(rows)
+
+    if 0 < total_chunks <= 8: # Threshold for "small" factsheet; adjust as needed based on actual chunk sizes and LLM context limits
+        print(f"[{university}] Small file ({total_chunks} chunks). Using full context.")
+        return "\n\n--- NEXT CHUNK ---\n\n".join([r["text"] for r in rows])
+
+    print(f"[{university}] Large file ({total_chunks} chunks). Running RAG (top_k=2)...")
+    search_queries = [
+        # Query 1: Academic 
+        "academic requirements, credit system, ECTS, course load, grading scale, teaching methodology, prerequisites",
+        
+        # Query 2: Housing 
+        "student accommodation, dormitory, housing guarantee, student residences, shared flat, rental costs, living expenses, food and personal expenses",
+        
+        # Query 3: Visa & Health 
+        "student visa application process, residence permit, post-arrival registration, mandatory health insurance, medical certificate, vaccination requirements",
+        
+        # Query 4: Integration 
+        "orientation program, welcome week, buddy program, international student integration, student support services, career center, language courses for exchange students, pre-semester language course"
+    ]
+
+    master_context_blocks = []
+    seen_chunks_ids = set()
+
+    for query in search_queries:
+        retrieved_chunks = query_embedding(query, top_k=2, filter={"university": {"$eq": university}})
+        
+        if isinstance(retrieved_chunks, list):
+            for item in retrieved_chunks:
+                chunk_id = item.get("id")
+                meta = item.get("metadata", {})
+                text = meta.get("text", "")
+                
+                # Check if we've seen this exact chunk ID before
+                if chunk_id and chunk_id not in seen_chunks_ids:
+                    seen_chunks_ids.add(chunk_id)
+                    master_context_blocks.append(text)
+                    
+    final_context = "\n\n--- NEXT CHUNK ---\n\n".join(master_context_blocks)
+    return final_context
+
 def analyze_universities(top_universities, universities_fit_text=None, return_steps=False):
     """
     Provides a comprehensive analysis for each university by combining:
@@ -19,54 +70,56 @@ def analyze_universities(top_universities, universities_fit_text=None, return_st
     Returns:
         list[dict] or tuple: List of analysis dicts; if return_steps, (list, steps).
     """
-    # catch all category chunks in the vector DB
-    rag_query_keywords = (
-        "evaluation cost, minimum ECTS, course requirements, "
-        "visa process, health insurance, student accommodation, city life"
-    )
     analysis_results = []
     steps = []
 
     system_prompt = """You are an expert data extraction AI for a university exchange program.
-    Your exact job is to read factsheet context and extract specific variables into a strict JSON format.
+    Your job is to parse factsheet context and extract specific variables into a strict JSON format for side-by-side comparison.
 
-    EXTRACTION RULES:
-    1. Strict Schema: You must output ONLY valid JSON matching the exact structure below. Do not add keys.
-    2. Missing Data: If a detail is missing from the text, output null (do not output "N/A" or "None").
-    3. Type Enforcement: Booleans must be true/false. Integers must be numbers only (e.g., output 300, not "300 euros").
-    4. Cost Estimation: Base your cost estimates on the provided text/tables. If exact figures are missing, you must still provide a brief 
-        estimated total cost based on the table, and also slightly include your own knowledge on the specific city and country the university is in.
-    5. Summaries: Keep the `_summary_notes` fields STRICTLY to 1-2 sentences. Highlight critical edge cases (e.g., "Visa requires 3 months", 
-        "Housing is lottery-only", or note the local currency).
+    ### EXTRACTION RULES:
+    1. **Strict Format**: Output ONLY valid JSON. Do not include markdown code blocks (unless specified) or conversational filler.
+    2. **Data Integrity**: Use `null` if a detail is missing or only a hyperlink is provided. Never invent data.
+    3. **Boolean Values**: Use `true`, `false`, or `null`. Only use `true` if the text explicitly confirms it (e.g., "guaranteed", "mandatory", "provided").
+    4. **Currency**: Extract the 3-letter ISO code (e.g., 'EUR', 'KRW'). If not stated, infer based on the university's country.
+    5. **Cost Strings**: Extract housing/living costs as concise strings. Do NOT include currency symbols in these fields. 
+    - If costs vary by campus or room type, list them clearly: "Paris: 400-800, Troyes: 330-450" or "Studio: 750, Shared: 400".
+    6. **Time Conversion**: Convert visa processing "months" into "weeks" (e.g., "3 months" becomes 12).
+    7. **Summary Length**: Keep all `_summary_notes` and `_details` fields to 1-2 concise sentences.
 
-    REQUIRED JSON SCHEMA:
+    ### REQUIRED JSON SCHEMA:
     {
         "academic": {
             "min_credits_required": "int or null",
             "max_credits_allowed": "int or null",
+            "instruction_languages": "string or null",
+            "grading_system_summary": "string or null",
             "academic_summary_notes": "string or null" 
         },
         "housing_and_logistics": {
-            "campus_housing_guaranteed": "boolean",
-            "university_sponsors_visa": "boolean",
-            "estimated_visa_processing_months": "int or null",
-            "mandatory_insurance_required": "boolean",
-            "estimated_housing_cost_per_month": "int or null",
-            "estimated_living_cost_per_month": "int or null",
+            "campus_housing_guaranteed": "boolean or null",
+            "housing_details": "string or null",
+            "university_sponsors_visa": "boolean or null",
+            "estimated_visa_processing_weeks": "int or null",
+            "mandatory_insurance_required": "boolean or null",
+            "medical_and_insurance_details": "string or null",
+            "currency": "string or null",
+            "estimated_housing_cost_per_month": "string or null",
+            "estimated_living_cost_per_month": "string or null",
             "logistics_summary_notes": "string or null"
         },
         "student_integration": {
-            "buddy_program_available": "boolean",
-            "orientation_program_provided": "boolean",
-            "orientation_is_mandatory": "boolean",
+            "buddy_program_available": "boolean or null",
+            "orientation_program_provided": "boolean or null",
+            "orientation_is_mandatory": "boolean or null",
+            "pre_semester_language_course_available": "boolean or null",
+            "language_course_details": "string or null",
             "integration_summary_notes": "string or null"
         }
     }"""
+     
 
     for idx, uni_name in enumerate(top_universities):
-        filter_param = {"university": uni_name}
-        retrieved_chunks = query_embedding(rag_query_keywords, filter=filter_param)        
-        context_text = "\n".join(retrieved_chunks) if isinstance(retrieved_chunks, list) else ""
+        context_text = gather_context_for_llm(uni_name)
 
         user_prompt = f"""Extract the exchange data for the following university based on the provided context.
 
@@ -86,11 +139,11 @@ def analyze_universities(top_universities, universities_fit_text=None, return_st
                 "prompt": {"target_university": uni_name, "user_prompt_preview": user_prompt[:300] + "..."},
                 "response": logistics_and_experience_dict
             })
-       
+
         # Query Supabase for requirements for this university (column is "name", not "university")
         supa_resp = supabase.table("universities_requirements").select("*").eq("name", uni_name).execute()
         eligibility_and_framework = supa_resp.data[0] if supa_resp and hasattr(supa_resp, 'data') and supa_resp.data else {}
-        
+
         # Unpack all fields from supabase row into uni_analysis
         uni_analysis = {
             "university_name": uni_name,
@@ -98,7 +151,7 @@ def analyze_universities(top_universities, universities_fit_text=None, return_st
             "logistics_and_experience": logistics_and_experience_dict,
             "general_fit_reasoning": universities_fit_text[idx] if universities_fit_text and idx < len(universities_fit_text) else None
         }
-        
+
         analysis_results.append(uni_analysis)
     if return_steps:
         return analysis_results, steps

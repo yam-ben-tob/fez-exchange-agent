@@ -1,4 +1,5 @@
 from data_pipeline.universities_requirments import get_structured_data
+from utils.config import supabase
 
 if __name__ == "__main__":
     # Specify the key fields for the row you want to test
@@ -17,3 +18,4 @@ if __name__ == "__main__":
         print(structured)
     else:
         print("No row found for the specified keys.")
+
