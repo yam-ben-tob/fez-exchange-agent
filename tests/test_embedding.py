@@ -39,16 +39,17 @@ def test_single_string_embedding_upsert():
     upsert_embeddings([(chunk_id, embedding)], metadatas=[metadata])
     print("Upsert complete.")
 
-def embed_and_upsert_chunks_for_factsheet(university, file_name):
+
+def embed_and_upsert_chunks_for_university(university):
     """
-    Fetches all chunks for a given university and file_name from factsheets_chunks,
+    Fetches all chunks for a given university from factsheets_chunks,
     embeds them, and upserts to Pinecone.
     """
     from utils.config import supabase
-    response = supabase.table("factsheets_chunks").select("*").eq("university", university).eq("file_name", file_name).execute()
+    response = supabase.table("factsheets_chunks").select("*").eq("university", university).execute()
     rows = response.data if response and hasattr(response, 'data') else []
     if not rows:
-        print(f"No chunks found for university={university}, file_name={file_name}")
+        print(f"No chunks found for university={university}")
         return []
     chunk_texts = [row["text"] for row in rows]
     print(f"Embedding {len(chunk_texts)} chunks...")
@@ -62,13 +63,36 @@ def embed_and_upsert_chunks_for_factsheet(university, file_name):
             "country": row["country"],
             "university": row["university"],
             "file_name": row["file_name"],
-            "headers": row.get("headers", {}),
             "text": row.get("text", "")
         })
     print(f"Upserting {len(vectors)} embeddings to Pinecone...")
     upsert_embeddings(vectors, metadatas=metadatas)
     print("Upsert complete.")
     return chunk_texts
+
+def sample_large_university(min_chunks=12):
+    """
+    Finds a random university with more than min_chunks in factsheets_chunks.
+    Returns (university, country, total_chunks).
+    """
+    from utils.config import supabase
+    from collections import defaultdict
+    import random
+    response = supabase.table("factsheets_chunks").select("country,university").execute()
+    rows = response.data if response and hasattr(response, 'data') else []
+    chunk_counts = defaultdict(int)
+    country_map = {}
+    for row in rows:
+        key = row["university"]
+        chunk_counts[key] += 1
+        country_map[key] = row["country"]
+    eligible = [(uni, country_map[uni], count) for uni, count in chunk_counts.items() if count > min_chunks]
+    if not eligible:
+        print(f"No university found with more than {min_chunks} chunks.")
+        return None
+    selected = random.choice(eligible)
+    print(f"Random university with >{min_chunks} chunks: {selected[0]} ({selected[1]}) - {selected[2]} chunks")
+    return selected
 
 def test_single_query_retrieval(university, test_query):
     """
@@ -84,7 +108,7 @@ def test_single_query_retrieval(university, test_query):
     
     results = query_embedding(
         query=test_query, 
-        top_k=2, 
+        top_k=5, 
         filter=pinecone_filter
     )
     
@@ -149,7 +173,14 @@ def test_factsheet_retrieval_for_llm(university, file_name):
 if __name__ == "__main__":
     # unittest.main()
     # test_single_string_embedding_upsert()
-    university = "test_university"
-    file_name = "test_file"
-    embed_and_upsert_chunks_for_factsheet(university, file_name)
-    test_query_on_factsheet("GPA requirement", top_k=3)
+
+    # result = sample_large_university()
+    # if result:
+    #     university, country, total_chunks = result
+    #     print(university, country, total_chunks)
+    
+    university = "University of Erlangen-Nuremberg"
+    # embed_and_upsert_chunks_for_university(university)
+
+    test_query = "academic requirements, credit system, ECTS, course load, grading scale, teaching methodology, prerequisites"
+    test_single_query_retrieval(university, test_query)

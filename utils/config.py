@@ -17,6 +17,11 @@ except ImportError:
 # --- Pinecone Setup (Vector/RAG) ---
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
+PINECONE_BATCH_SIZE = 100  
+
+# --- Embedding/LLM Configuration ---
+EMBEDDING_MAX_TOKENS_PER_BATCH = 250000
+EMBEDDING_MAX_CHUNKS_PER_BATCH = 2000
 
 # Chunking configuration
 BASE_DIR = "data/external_universities"

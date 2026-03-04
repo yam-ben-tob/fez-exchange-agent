@@ -107,6 +107,14 @@ def save_chunks():
         print("No chunks to save.")
     return all_chunks
 
+
+def to_slug(text):
+    import re
+    # Allows letters, numbers, spaces, AND dots. Removes everything else like ( )
+    text = text.replace("-", " ")
+    text = re.sub(r'[^a-zA-Z0-9\s\.]', '', text) 
+    return text.replace(" ", "_").lower()
+
 def embed_chunks():
     """Embed all chunks from factsheets_chunks table and upsert to Pinecone."""
     response = supabase.table("factsheets_chunks").select("*").execute()
@@ -123,7 +131,10 @@ def embed_chunks():
     for i, (row, embedding) in enumerate(zip(rows, embeddings)):
         if i % 100 == 0:
             print(f"Processing chunk {i+1}/{len(rows)}: {row['university']} - {row['file_name']} (chunk {row.get('chunk_index', i)})")
-        chunk_id = f"{row['country']}_{row['university']}_{row['file_name']}_{row.get('chunk_index', i)}"
+        clean_country = to_slug(row['country'])
+        clean_uni = to_slug(row['university'])
+        clean_file = to_slug(row['file_name'])
+        chunk_id = f"{clean_country}_{clean_uni}_{clean_file}_{row.get('chunk_index', i)}"
         vectors.append((chunk_id, embedding))
         metadatas.append({
             "country": row["country"],
@@ -141,7 +152,7 @@ def embed_chunks():
 
 
 if __name__ == "__main__":
-    print("Step 1: Chunking and saving to factsheets_chunks table...")
-    save_chunks()
-    # print("Step 2: Embedding and upserting to Pinecone...")
-    # embed_chunks()
+    # print("Step 1: Chunking and saving to factsheets_chunks table...")
+    # save_chunks()
+    print("Step 2: Embedding and upserting to Pinecone...")
+    embed_chunks()

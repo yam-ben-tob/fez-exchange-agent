@@ -2,7 +2,7 @@ import os
 import requests
 import tiktoken
 from dotenv import load_dotenv
-from .config import LLMOD_BASE_URL, LLMOD_CHAT_MODEL, LLMOD_EMBEDDING_MODEL
+from .config import LLMOD_BASE_URL, LLMOD_CHAT_MODEL, LLMOD_EMBEDDING_MODEL, EMBEDDING_MAX_TOKENS_PER_BATCH, EMBEDDING_MAX_CHUNKS_PER_BATCH
 
 load_dotenv()
 
@@ -53,8 +53,8 @@ def get_embedding(text: str) -> list[float]:
 
 def batch_embed_texts(
     texts: list[str], 
-    max_tokens_per_batch: int = 250000,   # Adjust based on your API's limit
-    max_chunks_per_batch: int = 2000     # Adjust based on your API's array limit
+    max_tokens_per_batch: int = EMBEDDING_MAX_TOKENS_PER_BATCH,   # Adjust based on your API's limit
+    max_chunks_per_batch: int = EMBEDDING_MAX_CHUNKS_PER_BATCH    # Adjust based on your API's array limit
 ) -> list[list[float]]:
     """
     Sends texts to the embedding model, ensuring no single batch exceeds
@@ -62,18 +62,18 @@ def batch_embed_texts(
     """
     url = f"{LLMOD_BASE_URL}/embeddings"
     headers = {"Authorization": f"Bearer {LLMOD_API_KEY}"}
-    
+
     # 1. Load the tokenizer 
     # (If LLMOD uses an OpenAI-compatible model, cl100k_base is the standard)
     try:
         encoding = tiktoken.encoding_for_model(LLMOD_EMBEDDING_MODEL)
     except KeyError:
         encoding = tiktoken.get_encoding("cl100k_base") 
-        
+
     all_embeddings = []
     current_batch = []
     current_batch_tokens = 0
-    
+
     for idx, text in enumerate(texts):
         # Count tokens for this specific chunk
         tokens = len(encoding.encode(text))
@@ -99,7 +99,7 @@ def batch_embed_texts(
             # Safe to add to the current bucket
             current_batch.append(text)
             current_batch_tokens += tokens
-            
+
     # 5. Don't forget to ship the final, partially-full bucket!
     if current_batch:
         print(f"Sending final batch of {len(current_batch)} texts to embedding API...")

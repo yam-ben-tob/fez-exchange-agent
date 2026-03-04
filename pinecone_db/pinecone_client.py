@@ -1,7 +1,7 @@
 import os
 from pinecone import Pinecone
 from utils.llmod_client import get_embedding
-from utils.config import PINECONE_API_KEY, PINECONE_INDEX_NAME, TOP_K_RESULTS, supabase
+from utils.config import PINECONE_API_KEY, PINECONE_INDEX_NAME, TOP_K_RESULTS, supabase, PINECONE_BATCH_SIZE
 
 def _get_index():
     if not PINECONE_API_KEY or not PINECONE_INDEX_NAME:
@@ -10,26 +10,36 @@ def _get_index():
     pc = Pinecone(api_key=PINECONE_API_KEY)
     return pc.Index(PINECONE_INDEX_NAME)
 
-def upsert_embeddings(vectors, metadatas=None, namespace=None):
+def upsert_embeddings(vectors, metadatas=None, namespace=None, batch_size=PINECONE_BATCH_SIZE):
     """
     Upsert a batch of embeddings into Pinecone.
     vectors: list of (id, embedding) tuples or dicts
     metadatas: list of metadata dicts (optional)
     namespace: Pinecone namespace (optional)
+    batch_size: Number of vectors to send per API call to avoid payload limits.
     """
-    # Pinecone upsert expects list of dicts: {"id": ..., "values": ..., "metadata": ...}
-    print(f"Upserting {len(vectors)} embeddings to Pinecone... (namespace: {namespace})")
+   
+    print(f"Preparing {len(vectors)} embeddings for Pinecone... (namespace: {namespace})")
     index = _get_index()
     items = []
+
+    # 1. Format all items
     for i, (id, embedding) in enumerate(vectors):
-        if i % 100 == 0:
-            print(f"  Preparing item {i+1}/{len(vectors)}: {id}")
+        if i % 100 == 0:  
+            print(f"  Formatting item {i+1}/{len(vectors)}: {id}")
         item = {"id": id, "values": embedding}
         if metadatas and i < len(metadatas):
             item["metadata"] = metadatas[i]
         items.append(item)
-    print(f"Sending {len(items)} items to Pinecone...")
-    index.upsert(vectors=items, namespace=namespace)
+
+    print(f"Sending {len(items)} items to Pinecone in batches of {batch_size}...")
+
+    # 2. Upsert in batches
+    for i in range(0, len(items), batch_size):
+        batch = items[i : i + batch_size]
+        print(f"  Upserting batch {i // batch_size + 1} ({len(batch)} items)...")
+        index.upsert(vectors=batch, namespace=namespace)
+
     print("Upsert complete.")
 
 # Pinecone DB holds chunks text as metadata for retrieval.
@@ -107,38 +117,3 @@ def query_embedding(query, top_k=TOP_K_RESULTS, filter=None):
         } 
         for m in response.get("matches", [])
     ]
-
-def format_retrieval_context(retrieved_metadata_list):
-    """
-    Converts list of Pinecone metadata dicts into a structured string.
-    Focuses on University, Country, and Section Headers.
-    """
-    if not retrieved_metadata_list:
-        return "No relevant context found."
-
-    context_blocks = []
-    
-    for meta in retrieved_metadata_list:
-        uni = meta.get("university", "Unknown University")
-        country = meta.get("country", "Unknown Country")
-        content = meta.get("text", "").strip()
-        
-        headers_dict = meta.get("headers", {})
-        h1 = headers_dict.get("Header 1", "")
-        h2 = headers_dict.get("Header 2", "")
-        h3 = headers_dict.get("Header 3", "")
-        
-        # Create the Breadcrumb path
-        breadcrumb = " > ".join(filter(None, [h1, h2, h3]))
-        
-        # Construct the Label (University | Country | Section)
-        label = f"### UNIVERSITY: {uni} ({country})"
-        if breadcrumb:
-            label += f" | SECTION: {breadcrumb}"
-        
-        # Build the final block
-        formatted_chunk = f"{label}\n{content}"
-        context_blocks.append(formatted_chunk)
-
-    # Clear separator for GPT-5 Mini to distinguish different facts
-    return "\n\n---\n\n".join(context_blocks)

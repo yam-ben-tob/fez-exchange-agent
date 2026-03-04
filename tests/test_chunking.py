@@ -1,4 +1,3 @@
-
 from data_pipeline.rag_embedding import chunk_pdf_with_headers, chunk_pdf_recursively
 from utils.config import BASE_DIR, supabase
 import random
@@ -136,3 +135,5 @@ if __name__ == "__main__":
     # print(f"\nFactsheets with >= 20 chunks: {len(above)}")
     # print(above)
     # chunk_extracted_text_by_uni_file("alexandru_ioan_cuza_university_of_iasi", "factsheet.pdf")
+
+   

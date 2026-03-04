@@ -84,7 +84,15 @@ def format_university_name(raw_name: str) -> str:
         "national_yang_ming_chiao_tung_university": "National Yang Ming Chiao Tung University",
         "universidad_ort_uruguay": "Universidad ORT Uruguay",
         "carnegie_mellon_university": "Carnegie Mellon University",
-        "cornell_university": "Cornell University"
+        "cornell_university": "Cornell University",
+        "aachen_university_rwth": "RWTH Aachen University",
+        "technical_university_of_berlin_tub": "Technical University of Berlin",
+        "epf_engineering_school": "EPF – Engineering School",
+        "technical_university_of_munich_tum": "Technical University of Munich",
+        "alexandru_ioan_cuza_university_of_iasi": "Alexandru Ioan Cuza University of Iasi",
+        "korea_advanced_institute_of_science_and_technology": "KAIST",
+        "politecnico_di_torino": "Politecnico di Torino",
+        "universidad_francisco_de_vitoria": "Universidad Francisco de Vitoria (Madrid)"
     }
 
     return name_mapping.get(raw_name, raw_name)
