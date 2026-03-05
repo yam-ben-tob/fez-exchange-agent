@@ -22,9 +22,9 @@ class StepLog(BaseModel):
 
 class ExecuteResponse(BaseModel):
     status: str
-    error: Optional[str]
-    response: Any
-    steps: List[StepLog]
+    error: Optional[str] = None
+    response: Any = None
+    steps: List[StepLog] = []
 
 # --- THE 4 REQUIRED ENDPOINTS ---
 
@@ -74,17 +74,27 @@ def execute_agent(request: ExecuteRequest):
     try:
         try:
             user_profile = json.loads(request.prompt)
+            chat_msg = ""
+        # 2. If it fails, it's a plain text chat message
         except json.JSONDecodeError:
-            user_profile = {"free_text": request.prompt, "preferences": {"free_language_preferences": request.prompt}}
-        result = agent.run(request.prompt, user_profile_dict=user_profile)
+            user_profile = {}         
+            chat_msg = request.prompt  
+            
+        result = agent.run(new_chat_message=chat_msg, user_profile_dict=user_profile)
+
         return {
             "status": "ok",
             "error": None,
-            "response": result.get("analysis", ""),
+            "response": json.dumps(result.get("analysis", [])),
             "steps": result.get("steps", [])
         }
     except Exception as e:
-        return {"status": "error", "error": str(e), "response": None, "steps": []}
+        return {
+            "status": "error", 
+            "error": str(e), 
+            "response": None, 
+            "steps": []
+        }
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))

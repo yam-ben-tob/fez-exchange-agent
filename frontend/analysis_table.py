@@ -1,118 +1,168 @@
 import streamlit as st
+import json
 import requests
 import os
 import pandas as pd
+from tests.user_profiles import get_student_profiles
+from orchestration.supervisor import Supervisor
 
+# --- SETTINGS ---
+USE_API = False  
 API_URL = os.getenv("API_URL", "http://localhost:8000/api")
 
 st.set_page_config(page_title="Exchange Agent Pro", layout="wide")
 st.title("🎓 University Selection Dashboard")
 
+# Initialize local agent in session state so it remembers memory between clicks
+if not USE_API:
+    if Supervisor is None:
+        st.error("Supervisor class could not be imported. Please check your local imports or switch USE_API to True.")
+    elif "agent" not in st.session_state:
+        st.session_state.agent = Supervisor()
+
 # --- Sidebar Input ---
 with st.sidebar:
     st.header("Search Settings")
-    default_prompt = '{"academic_profile": {"gpa": 3.5, "major": "Computer Science"}, "preferences": {"vibe": "traditional campus"}}'
-    user_json = st.text_area("User Profile (JSON):", value=default_prompt, height=200)
+    user_dict = get_student_profiles().get("default", {})
+    formatted_user_str = json.dumps(user_dict, indent=4)
+    raw_user_str = st.text_area(
+        "User Profile (JSON) or Chat Message:", 
+        value=formatted_user_str, 
+        height=400
+    )
     run_button = st.button("🚀 Run Analysis", use_container_width=True)
 
 # --- Main Logic ---
 if run_button:
-    with st.spinner("Consulting the experts..."):
+    with st.spinner("Analyzing universities..."):
         try:
-            res = requests.post(f"{API_URL}/execute", json={"prompt": user_json})
-            data = res.json()
-            
-            if data.get("status") == "ok":
-                # Using your new nested structure from analysis_results
-                universities = data.get("raw_analysis_results", []) 
+            # ==========================================
+            # 1. DATA FETCHING (Local vs Server)
+            # ==========================================
+            if USE_API:
+                # --- SERVER RUN ---
+                # The API returns "response" as a stringified JSON to satisfy the strict rubric
+                res = requests.post(f"{API_URL}/execute", json={"prompt": raw_user_str})
+                data = res.json()
                 
-                st.success(f"Analysis complete. Found {len(universities)} top matches.")
+            else:
+                # --- LOCAL RUN ---
+                # Replicate the exact routing logic from your FastAPI endpoint
+                try:
+                    user_profile = json.loads(raw_user_str)
+                    chat_msg = "" 
+                except json.JSONDecodeError:
+                    user_profile = {}
+                    chat_msg = raw_user_str
+                
+                try:
+                    # Run the agent directly. result["analysis"] is a Python list of dicts.
+                    result = st.session_state.agent.run(
+                        new_chat_message=chat_msg, 
+                        user_profile_dict=user_profile
+                    )
+                    
+                    # MOCK THE API EXACTLY: Convert the native Python list into a string
+                    # so the downstream UI code handles local and server data identically!
+                    data = {
+                        "status": "ok",
+                        "error": None,
+                        "response": json.dumps(result.get("analysis", [])), 
+                        "steps": result.get("steps", [])
+                    }
+                except Exception as local_e:
+                    # Mock an API error format if the agent crashes locally
+                    data = {
+                        "status": "error",
+                        "error": str(local_e),
+                        "response": "[]",
+                        "steps": []
+                    }
 
+            # ==========================================
+            # 2. UI RENDERING (Identical for both modes)
+            # ==========================================
+            
+            # Check the exact status field required by your rubric
+            if data.get("status") == "ok":
+                
+                # --- DESERIALIZE THE STRING BACK TO JSON ---
+                # Because both API and Local modes now output a string here, we parse it once.
+                raw_response_string = data.get("response", "[]")
+                try:
+                    # Convert string back into our list of 5 nested university dictionaries
+                    universities = json.loads(raw_response_string)
+                except json.JSONDecodeError:
+                    universities = [] 
+                    st.warning("Could not parse the university data from the response string.")
+                
+                agent_steps = data.get("steps", [])
+                
+                st.success(f"Analysis Complete! Found {len(universities)} matches.")
+                
+                # --- BUILD THE NICE TABLES ---
                 if universities:
                     uni_names = [u.get("university_name", "Unknown") for u in universities]
                     tabs = st.tabs(uni_names)
-
+                    
                     for i, tab in enumerate(tabs):
                         uni = universities[i]
-                        
-                        # Accessing our new Buckets
+                        # Accessing our Buckets
                         reqs = uni.get("requirements", {})
                         logistics = uni.get("logistics", {})
                         
                         with tab:
+                            st.info(uni.get("general_fit_reasoning", "No reasoning provided."))
+                            
                             col1, col2 = st.columns([2, 1])
-
                             with col1:
-                                st.markdown(f"### 🎯 Why {uni['university_name']} fits you")
-                                st.info(uni.get("general_fit_reasoning", "No specific reasoning generated."))
-                                
-                                # Eligibility Table (Pulled from 'requirements' bucket)
                                 st.markdown("#### ✅ Hard Requirements")
                                 elig_data = {
                                     "Min GPA": reqs.get("min_gpa"),
                                     "Erasmus?": "✅ Yes" if reqs.get("erasmus_available") else "❌ No",
-                                    "MSc Allowed?": "✅ Yes" if reqs.get("msc_allowed") else "❌ No",
-                                    "Min Semesters": reqs.get("min_semesters_completed"),
-                                    "English Req": f"{reqs.get('english_test_level', 'N/A')} ({', '.join(reqs.get('english_test_type', []))})"
+                                    "English Req": reqs.get("english_test_level", "N/A"),
+                                    "Min Semesters": reqs.get("min_semesters_completed")
                                 }
-                                st.table(pd.DataFrame([elig_data]))
-
+                                st.dataframe(pd.DataFrame([elig_data]), hide_index=True)
+                                
                             with col2:
-                                # Calendar (Pulled from 'requirements' bucket)
-                                st.markdown("#### 📅 Academic Calendar")
+                                st.markdown("#### 📅 Calendar")
                                 fall = reqs.get("fall_semester", {})
-                                spring = reqs.get("spring_semester", {})
-                                
-                                st.write("**Fall Semester**")
-                                st.caption(f"{fall.get('start_month')}/{fall.get('start_day')} to {fall.get('end_month')}/{fall.get('end_day')}")
-                                
-                                st.write("**Spring Semester**")
-                                st.caption(f"{spring.get('start_month')}/{spring.get('start_day')} to {spring.get('end_month')}/{spring.get('end_day')}")
-                                
-                                if reqs.get("restricted_majors"):
-                                    st.warning(f"**Restricted:** {', '.join(reqs.get('restricted_majors'))}")
-
+                                st.write(f"**Fall:** {fall.get('start_month')}/{fall.get('start_day')} - {fall.get('end_month')}/{fall.get('end_day')}")
+                            
                             st.divider()
-
-                            # --- Logistics Tables (Pulled from 'logistics' bucket) ---
                             st.markdown("### 🏘️ Logistics & Student Experience")
                             
                             l_col1, l_col2, l_col3 = st.columns(3)
-
                             with l_col1:
                                 st.subheader("📚 Academic")
-                                ac = logistics.get("academic", {})
-                                st.write(f"**Languages:** {ac.get('instruction_languages')}")
-                                st.write(f"**Credits:** {ac.get('min_credits_required')} - {ac.get('max_credits_allowed')}")
-                                with st.expander("Academic Notes"):
-                                    st.write(ac.get("academic_summary_notes"))
-
+                                st.write(f"**Credits:** {logistics.get('academic', {}).get('min_credits_required')} - {logistics.get('academic', {}).get('max_credits_allowed')}")
+                                with st.expander("Notes"):
+                                    st.write(logistics.get("academic", {}).get("academic_summary_notes", "N/A"))
                             with l_col2:
-                                st.subheader("🏠 Housing & Costs")
-                                hc = logistics.get("housing_and_logistics", {})
-                                st.write(f"**Housing Guaranteed:** {'✅' if hc.get('campus_housing_guaranteed') else '❌'}")
-                                st.write(f"**Living Cost:** {hc.get('estimated_living_cost_per_month')} {hc.get('currency')}")
-                                with st.expander("Visa & Insurance"):
-                                    st.write(f"Visa Weeks: {hc.get('estimated_visa_processing_weeks')}")
-                                    st.write(hc.get("medical_and_insurance_details"))
-
+                                st.subheader("🏠 Cost & Housing")
+                                st.write(f"**Living Cost:** {logistics.get('housing_and_logistics', {}).get('estimated_living_cost_per_month')} {logistics.get('housing_and_logistics', {}).get('currency')}")
+                                with st.expander("Details"):
+                                    st.write(logistics.get("housing_and_logistics", {}).get("housing_details", "N/A"))
                             with l_col3:
                                 st.subheader("🤝 Integration")
-                                intg = logistics.get("student_integration", {})
-                                st.write(f"**Buddy Program:** {'✅' if intg.get('buddy_program_available') else '❌'}")
-                                st.write(f"**Language Course:** {'✅' if intg.get('pre_semester_language_course_available') else '❌'}")
-                                with st.expander("Orientation Details"):
-                                    st.write(f"Mandatory: {intg.get('orientation_is_mandatory')}")
-                                    st.write(intg.get("integration_summary_notes"))
-
-                # --- Execution Trace ---
+                                st.write(f"**Buddy Program:** {'✅' if logistics.get('student_integration', {}).get('buddy_program_available') else '❌'}")
+                                with st.expander("Details"):
+                                    st.write(logistics.get("student_integration", {}).get("integration_summary_notes", "N/A"))
+                                
+                # --- BUILD THE REQUIRED TRACE ---
                 st.divider()
-                with st.expander("🔍 Internal AI Logic (Trace)"):
-                    for step in data.get("steps", []):
-                        st.write(f"**Module:** {step['module']}")
-                        st.json(step.get("response"))
-
-            else:
+                st.subheader("🛠 Execution Trace")
+                for step in agent_steps:
+                    with st.expander(f"Module: {step.get('module', 'Unknown')}"):
+                        st.write("**Prompt:**")
+                        st.json(step.get("prompt", {}))
+                        st.write("**Response:**")
+                        st.json(step.get("response", {}))
+                        
+            # Handle the exact error format expected by your API requirements
+            elif data.get("status") == "error":
                 st.error(f"Agent Error: {data.get('error')}")
+                
         except Exception as e:
             st.error(f"System Error: {e}")

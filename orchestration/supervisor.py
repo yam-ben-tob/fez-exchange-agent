@@ -1,9 +1,11 @@
 """
 Supervisor agent for orchestrating calls to other agents in the orchestration layer.
 """
-from typing import TypedDict, Any, List
+from typing import TypedDict, Any, List, Dict
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
+from pathlib import Path
+import json
 
 from orchestration.specialists.ranker import score_universities_with_llm, process_llm_scores
 from orchestration.specialists.analyzer import analyze_universities
@@ -17,10 +19,10 @@ class AgentState(TypedDict, total=False):
     user_requests: List[str]            # History of user requests/messages
     top_k: int                          # Number of top universities to select
     top_universities: list              # Final ranked university names
-    analysis: str                       # Final recommendation/analysis string
+    analysis: List[dict]                # Final recommendation/analysis string
     request_count: int                  # Number of requests in session
     universities_fit_text: List[str]    # Reasoning for university fit
-    steps: List[dict]                   # Execution trace of agent steps
+    steps: List[Dict[str,Any]]                   # Execution trace of agent steps
 
 # 2. Define the Nodes
 def filter_node(state: AgentState):
@@ -48,7 +50,7 @@ def rank_node(state: AgentState):
     top_universities = process_llm_scores(llm_json_response, top_k=state["top_k"])
     step = {
         "module": "Ranker",
-        "prompt": rank_prompt,
+        "prompt": {"llm_prompt": rank_prompt},
         "response": {"scored_universities": llm_json_response.get("scored_universities", []), "top_universities": top_universities}
     }
     return {
@@ -63,9 +65,9 @@ def analyze_node(state: AgentState):
         state.get("universities_fit_text", None),
         return_steps=True
     )
-    formatted = _format_analysis_as_string(analysis_results)
+    # formatted = _format_analysis_as_string(analysis_results)
     return {
-        "analysis": formatted,
+        "analysis": analysis_results,
         "steps": (state.get("steps") or []) + analyze_steps
     }
 
@@ -140,6 +142,26 @@ class Supervisor:
         # Compile the graph into an executable app
         memory = MemorySaver()        
         self.app = workflow.compile(checkpointer=memory)
+    
+    def _save_snapshot(self, state_values: dict, count: int, thread_id: str):
+        """Saves state to root/outputs/ using Thread ID and Request Index"""
+        try:
+            # 1. Path Setup (Root/outputs/)
+            root_dir = Path(__file__).resolve().parent.parent
+            output_dir = root_dir / "outputs"
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            # 2. Unique Filename: Includes both Thread ID and Turn Count
+            # Example: snapshot_user_123_turn_1.json
+            file_name = f"snapshot_{thread_id}_turn_{count}.json"
+            file_path = output_dir / file_name
+
+            clean_state = {k: v for k, v in state_values.items() if k != "rag_factsheet_func"}
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(clean_state, f, ensure_ascii=False, indent=2, default=str)
+                
+        except Exception as e:
+            print(f"⚠️ Warning: Snapshot failed for {thread_id}: {e}")
 
     def run(self, new_chat_message: str = "", user_profile_dict: dict = None, thread_id="user_123"):        
         config = {"configurable": {"thread_id": thread_id}}
@@ -164,7 +186,7 @@ class Supervisor:
                 "extracted_data_dict": {},
                 "rag_factsheet_func": None,
                 "top_universities": [],
-                "analysis": "",
+                "analysis": [],
                 "universities_fit_text": [],
                 "steps": []
             }
@@ -175,4 +197,7 @@ class Supervisor:
             }
 
         result = self.app.invoke(payload, config=config)
-        return {"analysis": result.get("analysis", ""), "steps": result.get("steps", [])}
+        final_state = self.app.get_state(config).values
+        self._save_snapshot(final_state, new_count, thread_id)
+
+        return {"analysis": result.get("analysis", []), "steps": result.get("steps", [])}
