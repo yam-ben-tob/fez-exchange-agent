@@ -1,40 +1,73 @@
 
 # Fez Exchange Agent
 
-## Project Description
-Fez Exchange Agent is a toolkit for extracting, processing, and analyzing university requirements and documents using generative AI and data science techniques. It supports PDF parsing, text chunking, and requirements extraction for academic exchange programs.
+A multi-agent AI system that recommends university exchange programs tailored to a student's academic profile, language skills, budget, and preferences.
 
-## Features
-- PDF extraction and processing
-- Requirements extraction from university documents
-- RAG (Retrieval-Augmented Generation) embedding pipeline
-- Utilities for database and configuration management
-- Test scripts for validation
+## Architecture
+
+LangGraph waterfall pipeline with 4 specialist agents:
+
+```
+START → filter → rank → analyze → course_finder → END
+```
+
+| Node | Role |
+|------|------|
+| **Filter** | Queries Supabase for universities matching hard eligibility criteria (GPA, language, dates, Erasmus, restricted majors) |
+| **Ranker** | LLM scores filtered universities across 7 categories and returns the top-k |
+| **Analyzer** | Pinecone RAG + Supabase → per-university logistics (credits, housing, visa, buddy program) |
+| **CourseFinder** | ReAct agent that finds courses matching the student's major and languages using DuckDuckGo web search + Pinecone factsheets |
+
+## Stack
+
+- **LLM / Embeddings**: LLMOD API (OpenAI-compatible) via `utils/llmod_client.py`
+- **Vector DB**: Pinecone — factsheet chunks with `university`, `country`, `text` metadata
+- **Relational DB**: Supabase — eligibility requirements, raw PDF chunks
+- **Web Search**: DuckDuckGo (`ddgs`) — real-time course catalog lookup in CourseFinder
+- **Orchestration**: LangGraph `StateGraph` with `MemorySaver` for multi-turn conversations
+- **API**: FastAPI (`api/main.py`)
+- **Frontend**: Streamlit (`frontend/analysis_table.py`)
+- **Deployment**: Render (`render.yaml`)
 
 ## Quick Setup
 
-1. Create a virtual environment:
-    python -m venv venv
+```bash
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-2. Activate the virtual environment:
-    - Windows:
-      venv\Scripts\activate
-    - macOS/Linux:
-      source venv/bin/activate
+Create a `.env` file at the project root:
+```
+SUPABASE_URL=
+SUPABASE_SERVICE_ROLE_KEY=
+PINECONE_API_KEY=
+PINECONE_INDEX_NAME=
+LLMOD_API_KEY=
+```
 
-3. Install requirements:
-    pip install -r requirements.txt
+## Running
 
-4. Run tests:
-    python -m tests.test_text_splitter
-    python -m tests.test_req_extraction
+```bash
+# API server
+uvicorn api.main:app --host 0.0.0.0 --port 8000
 
-## Folder Structure
-- data/: University documents and samples
-- data_pipeline/: Extraction and embedding scripts
-- orchestration/: Specialist modules
-- utils/: Utilities for PDF, DB, and config
-- tests/: Test scripts
+# Streamlit UI
+streamlit run frontend/analysis_table.py
+```
 
----
-For more details, see the code and requirements.txt.
+## Tests
+
+```bash
+pytest                                  # all tests
+pytest tests/test_course_finder.py -s  # course finder (unit + e2e)
+pytest tests/test_supervisor.py -s     # full pipeline e2e
+pytest -k "not e2e"                    # unit tests only
+```
+
+## Data Pipeline (run once)
+
+```bash
+python -m data_pipeline.universities_requirments  # populate Supabase
+python -m data_pipeline.rag_embedding             # chunk PDFs → Supabase → Pinecone
+```

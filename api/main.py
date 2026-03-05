@@ -25,6 +25,7 @@ class ExecuteResponse(BaseModel):
     error: Optional[str] = None
     response: Any = None
     steps: List[StepLog] = []
+    courses: List[Any] = []
 
 # --- THE 4 REQUIRED ENDPOINTS ---
 
@@ -86,14 +87,16 @@ def execute_agent(request: ExecuteRequest):
             "status": "ok",
             "error": None,
             "response": json.dumps(result.get("analysis", [])),
-            "steps": result.get("steps", [])
+            "steps": result.get("steps", []),
+            "courses": result.get("courses", [])
         }
     except Exception as e:
         return {
-            "status": "error", 
-            "error": str(e), 
-            "response": None, 
-            "steps": []
+            "status": "error",
+            "error": str(e),
+            "response": None,
+            "steps": [],
+            "courses": []
         }
 
 if __name__ == "__main__":

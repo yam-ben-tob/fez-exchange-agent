@@ -97,6 +97,10 @@ if run_button:
                     st.warning("Could not parse the university data from the response string.")
                 
                 agent_steps = data.get("steps", [])
+                courses_by_university = {
+                    c.get("university_name", ""): c.get("matched_courses", [])
+                    for c in data.get("courses", [])
+                }
                 
                 st.success(f"Analysis Complete! Found {len(universities)} matches.")
                 
@@ -149,6 +153,21 @@ if run_button:
                                 st.write(f"**Buddy Program:** {'✅' if logistics.get('student_integration', {}).get('buddy_program_available') else '❌'}")
                                 with st.expander("Details"):
                                     st.write(logistics.get("student_integration", {}).get("integration_summary_notes", "N/A"))
+
+                            # --- MATCHED COURSES ---
+                            matched_courses = courses_by_university.get(uni.get("university_name", ""), [])
+                            if matched_courses:
+                                st.divider()
+                                st.markdown("### 📚 Matched Courses")
+                                courses_data = [
+                                    {
+                                        "Course": c.get("course_name", ""),
+                                        "Language": c.get("language", ""),
+                                        "Relevance": c.get("relevance", "")
+                                    }
+                                    for c in matched_courses
+                                ]
+                                st.dataframe(pd.DataFrame(courses_data), hide_index=True, use_container_width=True)
                                 
                 # --- BUILD THE REQUIRED TRACE ---
                 st.divider()

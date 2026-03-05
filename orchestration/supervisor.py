@@ -23,6 +23,7 @@ class AgentState(TypedDict, total=False):
     request_count: int                  # Number of requests in session
     universities_fit_text: List[str]    # Reasoning for university fit
     steps: List[Dict[str,Any]]                   # Execution trace of agent steps
+    courses: List[dict]                          # Matched courses per university (from CourseFinder)
 
 # 2. Define the Nodes
 def filter_node(state: AgentState):
@@ -58,6 +59,23 @@ def rank_node(state: AgentState):
         "top_universities": top_universities,
         "steps": (state.get("steps") or []) + [step]
     }
+
+def course_finder_node(state: AgentState):
+    from orchestration.specialists.course_finder import find_courses_react
+    courses = find_courses_react(
+        state.get("top_universities", []),
+        state.get("user_iformation", {})
+    )
+    step = {
+        "module": "CourseFinder",
+        "prompt": {
+            "universities": state.get("top_universities", []),
+            "major": state.get("user_iformation", {}).get("academic_profile", {}).get("major"),
+            "languages": state.get("user_iformation", {}).get("language_profile", {}).get("non_english_languages", [])
+        },
+        "response": {"courses_found": len(courses), "courses": courses}
+    }
+    return {"courses": courses, "steps": (state.get("steps") or []) + [step]}
 
 def analyze_node(state: AgentState):
     analysis_results, analyze_steps = analyze_universities(
@@ -122,6 +140,7 @@ class Supervisor:
         workflow.add_node("filter", filter_node)
         workflow.add_node("rank", rank_node)
         workflow.add_node("analyze", analyze_node)
+        workflow.add_node("course_finder", course_finder_node)
         
         # Set the dynamic entry point using the router
         workflow.add_conditional_edges(
@@ -137,7 +156,8 @@ class Supervisor:
         # Set the cascade (waterfall) flow
         workflow.add_edge("filter", "rank")
         workflow.add_edge("rank", "analyze")
-        workflow.add_edge("analyze", END)
+        workflow.add_edge("analyze", "course_finder")
+        workflow.add_edge("course_finder", END)
         
         # Compile the graph into an executable app
         memory = MemorySaver()        
@@ -188,7 +208,8 @@ class Supervisor:
                 "top_universities": [],
                 "analysis": [],
                 "universities_fit_text": [],
-                "steps": []
+                "steps": [],
+                "courses": []
             }
         else:
             payload = {
@@ -200,4 +221,8 @@ class Supervisor:
         final_state = self.app.get_state(config).values
         self._save_snapshot(final_state, new_count, thread_id)
 
-        return {"analysis": result.get("analysis", []), "steps": result.get("steps", [])}
+        return {
+            "analysis": result.get("analysis", []),
+            "courses": result.get("courses", []),
+            "steps": result.get("steps", [])
+        }
