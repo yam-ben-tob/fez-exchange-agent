@@ -67,7 +67,7 @@ def score_universities_with_llm(valid_universities_list, user_preferences, top_k
     - `jewish_israeli_community_fit`: Evaluate EXCLUSIVELY based on current antisemitism levels on and around campus, the accessibility of the local Jewish community (e.g., Chabad, synagogues, kosher food), and the presence of Israeli students or locals. 
         STRICTLY IGNORE general city crime rates, pickpocketing, or broad safety metrics.
     - `other_preferences_fit`: Any specific user requests that do not fit into the above categories (e.g., specific sports, dietary needs, unique hobbies).
-    3. Provide a short `reasoning` explicitly referencing the evaluated traits.
+    3. Provide a short `reasoning` explicitly referencing the evaluated traits. dont mention semeter cost estimation.
 
     Return ONLY a JSON object with this exact structure:
     {{

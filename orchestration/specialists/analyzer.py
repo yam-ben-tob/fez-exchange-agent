@@ -16,11 +16,11 @@ def gather_context_for_llm(university):
     rows = count_resp.data if count_resp.data else []
     total_chunks = len(rows)
 
-    if 0 < total_chunks <= 8: # Threshold for "small" factsheet; adjust as needed based on actual chunk sizes and LLM context limits
+    if 0 < total_chunks <= 12: # Threshold for "small" factsheet; adjust as needed based on actual chunk sizes and LLM context limits
         print(f"[{university}] Small file ({total_chunks} chunks). Using full context.")
         return "\n\n--- NEXT CHUNK ---\n\n".join([r["text"] for r in rows])
 
-    print(f"[{university}] Large file ({total_chunks} chunks). Running RAG (top_k=2)...")
+    print(f"[{university}] Large file ({total_chunks} chunks). Running RAG (top_k=3)...")
     search_queries = [
         # Query 1: Academic 
         "academic requirements, credit system, ECTS, course load, grading scale, teaching methodology, prerequisites",
@@ -39,7 +39,7 @@ def gather_context_for_llm(university):
     seen_chunks_ids = set()
 
     for query in search_queries:
-        retrieved_chunks = query_embedding(query, top_k=2, filter={"university": {"$eq": university}})
+        retrieved_chunks = query_embedding(query, top_k=3, filter={"university": {"$eq": university}})
         
         if isinstance(retrieved_chunks, list):
             for item in retrieved_chunks:
@@ -74,49 +74,45 @@ def analyze_universities(top_universities, universities_fit_text=None, return_st
     steps = []
 
     system_prompt = """You are an expert data extraction AI for a university exchange program.
-    Your job is to parse factsheet context and extract specific variables into a strict JSON format for side-by-side comparison.
+    Your job is to parse factsheet context and extract specific variables into a strict JSON format.
 
     ### EXTRACTION RULES:
-    1. **Strict Format**: Output ONLY valid JSON. Do not include markdown code blocks (unless specified) or conversational filler.
-    2. **Data Integrity**: Use `null` if a detail is missing or only a hyperlink is provided. Never invent data.
-    3. **Boolean Values**: Use `true`, `false`, or `null`. Only use `true` if the text explicitly confirms it (e.g., "guaranteed", "mandatory", "provided").
-    4. **Currency**: Extract the 3-letter ISO code (e.g., 'EUR', 'KRW'). If not stated, infer based on the university's country.
-    5. **Cost Strings**: Extract housing/living costs as concise strings. Do NOT include currency symbols in these fields. 
-    - If costs vary by campus or room type, list them clearly: "Paris: 400-800, Troyes: 330-450" or "Studio: 750, Shared: 400".
-    6. **Time Conversion**: Convert visa processing "months" into "weeks" (e.g., "3 months" becomes 12).
-    7. **Summary Length**: Keep all `_summary_notes` and `_details` fields to 1-2 concise sentences.
+    1. **Strict Format**: Output ONLY valid JSON. Do not include markdown code blocks or conversational filler.
+    2. **Relaxed Validation**: If a numeric value is described as "standard" or "recommended," use that number. If a boolean is "strongly recommended" or "highly likely," mark as true.
+    3. **Currency**: 3-letter ISO code (e.g., 'EUR', 'KRW').
+    4. **Integrity**: Use null only if the topic is entirely unmentioned.
 
     ### REQUIRED JSON SCHEMA:
     {
         "academic": {
-            "min_credits_required": "int or null",
-            "max_credits_allowed": "int or null",
-            "instruction_languages": "string or null",
-            "grading_system_summary": "string or null",
-            "academic_summary_notes": "string or null" 
+            "min_credits_required": "int or null | Use explicit min; if absent, use standard workload (e.g., 30).",
+            "max_credits_allowed": "int or null | Maximum workload if stated.",
+            "instruction_languages": "string or null | List all teaching languages student need to know.",
+            "grading_system_summary": "string or null | Brief explanation of the scale.",
+            "academic_summary_notes": "string or null | 1-2 sentences on course selection and requirements."
         },
         "housing_and_logistics": {
-            "campus_housing_guaranteed": "boolean or null",
-            "housing_details": "string or null",
-            "university_sponsors_visa": "boolean or null",
-            "estimated_visa_processing_weeks": "int or null",
-            "mandatory_insurance_required": "boolean or null",
-            "medical_and_insurance_details": "string or null",
-            "currency": "string or null",
-            "estimated_housing_cost_per_month": "string or null",
-            "estimated_living_cost_per_month": "string or null",
-            "logistics_summary_notes": "string or null"
+            "campus_housing_available": "boolean or null | true if dorms, residences, or student halls are mentioned offered, or links provided.",
+            "campus_housing_guaranteed": "boolean or null | true ONLY if the text explicitly mentions 'guaranteed' or 'strongly promised'.",
+            "housing_details": "string or null | Deadlines, platforms, and availability context.",
+            "university_sponsors_visa": "boolean or null | true if the university assists or sponsors.",
+            "estimated_visa_processing_weeks": "int or null | Total weeks (convert months if needed).",
+            "mandatory_insurance_required": "boolean or null | true if mandatory or required for enrollment.",
+            "medical_and_insurance_details": "string or null | Details on accepted coverage and costs.",
+            "currency": "string or null | ISO code of prices mentioned.",
+            "estimated_housing_cost_per_month": "string or null | State cost and period. If costs vary by campus or room type, list them clearly.",
+            "estimated_living_cost_per_month": "string or null | Include semester fees or general costs. If costs vary by campus or room type, list them clearly.",
+            "logistics_summary_notes": "string or null | 1-2 sentences on visa process and conditions, insurance requirements."
         },
         "student_integration": {
-            "buddy_program_available": "boolean or null",
-            "orientation_program_provided": "boolean or null",
-            "orientation_is_mandatory": "boolean or null",
-            "pre_semester_language_course_available": "boolean or null",
-            "language_course_details": "string or null",
-            "integration_summary_notes": "string or null"
+            "buddy_program_available": "boolean or null | true if mentors, buddies, or tandems exist.",
+            "orientation_program_provided": "boolean or null | true if welcome events are offered.",
+            "orientation_is_mandatory": "boolean or null | true if presence is required.",
+            "pre_semester_language_course_available": "boolean or null | true if offered before lectures.",
+            "language_course_details": "string or null | Costs and availability of language course pre or during semester.",
+            "integration_summary_notes": "string or null | 1-2 sentences on welcome week and integration."
         }
-    }"""
-     
+    }""" 
 
     for idx, uni_name in enumerate(top_universities):
         context_text = gather_context_for_llm(uni_name)

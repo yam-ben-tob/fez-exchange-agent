@@ -134,6 +134,33 @@ def apply_non_english_language_filter(rows, language, traced_steps):
     return rows
 
 def filter_universities(user_input):
+    """Filter universities based on user input criteria.
+        Args:
+        user_input (dict): JSON input from the student. Expected structure:
+            {
+                "academic_profile": {
+                    "gpa": float,
+                    "major": str,
+                    "study_level": str,
+                    "semesters_completed": int
+                },
+                "language_profile": {
+                    "non_english_languages": list[str],
+                    "english_test_type": str or None,
+                    "english_test_level": str or None
+                },
+                "availability": {
+                    "start_month": int or None,
+                    "start_day": int or None,
+                    "end_month": int or None,
+                    "end_day": int or None
+                },
+                "preferences": {
+                    "must_be_erasmus": bool,
+                    "free_language_preferences": str  
+                }
+            }
+    """
     academic = user_input.get("academic_profile", {})
     language = user_input.get("language_profile", {})
     availability = user_input.get("availability", {})
