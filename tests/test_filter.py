@@ -28,7 +28,16 @@ def get_student_profiles():
             },
             "preferences": {
                 "must_be_erasmus": True,
-                "free_language_preferences": "social scene, party vibe"
+                "free_language_preferences": """
+                    I want a traditional, unified campus where it's easy to make friends, 
+                    rather than commuting in a massive, overwhelming city.
+
+                    I'd love a place with cool museums, historical sites, good nightlife, 
+                    and winters that aren't completely freezing.
+
+                    Financially, I need an affordable city where rent and groceries won't 
+                    drain my savings. My absolute max budget is $9,000 for the semester.
+                """.strip()
             }
         },
         "high_gpa": {

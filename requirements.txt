@@ -1,28 +1,27 @@
-pytest
-pymupdf4llm
-# Web & API
+# Web Frameworks
 fastapi
 uvicorn
-requests
-python-dotenv
 streamlit
 
-# AI & Processing
-openai
-pypdf
+# Database & Vector DB
+pinecone
+supabase
+
+# Data Science & PDF Processing
+fitz
+pdf2image
+pytesseract
+pymupdf4llm
+
+# LLMs & Embeddings
+langgraph
+langchain-text-splitters
 tiktoken
 
-# Databases
-supabase
-pinecone-client
-
-# Text Splitting
-langchain-text-splitters
-
-#additional
-pydantic
-langgraph
-langchain
-supabase
-pinecone-client
+# API & Utilities
+requests
 python-dotenv
+pydantic
+
+# Testing
+pytest

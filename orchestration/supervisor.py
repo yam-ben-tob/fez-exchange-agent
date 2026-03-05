@@ -12,15 +12,15 @@ from utils import config
 
 # 1. Define the State Schema
 class AgentState(TypedDict, total=False):
-    valid_universities_list: list
-    user_iformation: dict
-    user_requests: List[str]
-    top_k: int
-    top_universities: list
-    analysis: str
-    request_count: int
-    universities_fit_text: List[str]
-    steps: List[dict]
+    valid_universities_list: list       # List of universities after filtering
+    user_iformation: dict               # Student profile input data
+    user_requests: List[str]            # History of user requests/messages
+    top_k: int                          # Number of top universities to select
+    top_universities: list              # Final ranked university names
+    analysis: str                       # Final recommendation/analysis string
+    request_count: int                  # Number of requests in session
+    universities_fit_text: List[str]    # Reasoning for university fit
+    steps: List[dict]                   # Execution trace of agent steps
 
 # 2. Define the Nodes
 def filter_node(state: AgentState):
@@ -141,21 +141,23 @@ class Supervisor:
         memory = MemorySaver()        
         self.app = workflow.compile(checkpointer=memory)
 
-    def run(self, new_chat_message: str, user_profile_dict: dict = None, thread_id="user_123"):        
+    def run(self, new_chat_message: str = "", user_profile_dict: dict = None, thread_id="user_123"):        
         config = {"configurable": {"thread_id": thread_id}}
         current_memory = self.app.get_state(config).values        
         current_count = current_memory.get("request_count", 0)
         current_requests = current_memory.get("user_requests", [])
         
-        new_count = current_count + 1        
-        updated_requests = current_requests + [new_chat_message] 
+        new_count = current_count + 1  
+        updated_requests = list(current_requests)
+        if new_chat_message.strip():
+            updated_requests.append(new_chat_message.strip())      
         
         if new_count == 1:
             if not user_profile_dict:
                 raise ValueError("user_profile_dict is required for the first request!")
             payload = {
-                "user_iformation": user_profile_dict, # Set the JSON profile once
-                "user_requests": updated_requests,
+                "user_iformation": user_profile_dict,   # Set the JSON profile once
+                "user_requests": updated_requests,      # Will be [] if no message was passed
                 "request_count": new_count,
                 "valid_universities_list": [], 
                 "top_k": 5,

@@ -147,12 +147,76 @@ def analyze_universities(top_universities, universities_fit_text=None, return_st
         # Unpack all fields from supabase row into uni_analysis
         uni_analysis = {
             "university_name": uni_name,
-            **eligibility_and_framework,
-            "logistics_and_experience": logistics_and_experience_dict,
-            "general_fit_reasoning": universities_fit_text[idx] if universities_fit_text and idx < len(universities_fit_text) else None
+            "general_fit_reasoning": universities_fit_text[idx] if universities_fit_text and idx < len(universities_fit_text) else None,
+            "requirements": eligibility_and_framework,
+            "logistics": logistics_and_experience_dict,
         }
 
         analysis_results.append(uni_analysis)
     if return_steps:
         return analysis_results, steps
     return analysis_results
+
+# Analysis Results Strcture: List[Dict] where each dict has the following format:
+# {
+#     "university_name": "string",
+#     "general_fit_reasoning": "string or null",
+
+#     // --- BUCKET 1: Hard Requirements (eligibility_and_framework) ---
+#     "requirements": {
+#         "min_gpa": "float or null",
+#         "non_english_languages": ["list of strings"],
+#         "english_test_type": ["list of strings"],
+#         "english_test_level": "string or null",
+#         "english_only_possible": "boolean",
+#         "test_required": "boolean",
+#         "waiver_available": "boolean",
+#         "restricted_majors": ["list of standard major names"],
+#         "msc_allowed": "boolean",
+#         "min_semesters_completed": "int or null",
+#         "fall_semester": {
+#             "start_month": "int or null",
+#             "start_day": "int or null",
+#             "end_month": "int or null",
+#             "end_day": "int or null"
+#         },
+#         "spring_semester": {
+#             "start_month": "int or null",
+#             "start_day": "int or null",
+#             "end_month": "int or null",
+#             "end_day": "int or null"
+#         },
+#         "erasmus_available": "boolean"
+#     },
+
+#     // --- BUCKET 2: Soft Experience (logistics_and_experience_dict) ---
+#     "logistics": {
+#         "academic": {
+#             "min_credits_required": "int or null",
+#             "max_credits_allowed": "int or null",
+#             "instruction_languages": "string or null",
+#             "grading_system_summary": "string or null",
+#             "academic_summary_notes": "string or null" 
+#         },
+#         "housing_and_logistics": {
+#             "campus_housing_guaranteed": "boolean or null",
+#             "housing_details": "string or null",
+#             "university_sponsors_visa": "boolean or null",
+#             "estimated_visa_processing_weeks": "int or null",
+#             "mandatory_insurance_required": "boolean or null",
+#             "medical_and_insurance_details": "string or null",
+#             "currency": "string or null",
+#             "estimated_housing_cost_per_month": "string or null",
+#             "estimated_living_cost_per_month": "string or null",
+#             "logistics_summary_notes": "string or null"
+#         },
+#         "student_integration": {
+#             "buddy_program_available": "boolean or null",
+#             "orientation_program_provided": "boolean or null",
+#             "orientation_is_mandatory": "boolean or null",
+#             "pre_semester_language_course_available": "boolean or null",
+#             "language_course_details": "string or null",
+#             "integration_summary_notes": "string or null"
+#         }
+#     }
+# }
