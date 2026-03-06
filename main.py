@@ -23,7 +23,7 @@ class StepLog(BaseModel):
 class ExecuteResponse(BaseModel):
     status: str
     error: Optional[str] = None
-    response: Any = None
+    response: Optional[str] = None
     steps: List[StepLog] = []
 
 # --- THE 4 REQUIRED ENDPOINTS ---
@@ -34,8 +34,9 @@ def get_team_info():
         "group_batch_order_number": "01_01", # Update this later
         "team_name": "Fez Exchange Agent",
         "students": [
-            { "name": "Yam Ben Tob", "email": "yam.b@campus.technion.ac.il" },
-            { "name": "Asaf Greenstein", "email": "asaf.g@campus.technion.ac.il" }
+            { "name": "Yam Ben Tov", "email": "yam.b@campus.technion.ac.il" },
+            { "name": "Asaf Greenstein", "email": "asaf.g@campus.technion.ac.il" },
+            { "name": "Anna Sakoun", "email": "anna.sakoun@campus.technion.ac.il"}
         ]
     }
 
@@ -64,7 +65,7 @@ def get_agent_info():
 def get_architecture():
     base = os.path.dirname(os.path.abspath(__file__))
     for name in ("architecture.png", "architecture_placeholder.png"):
-        file_path = os.path.join(base, "..", name)
+        file_path = os.path.join(base, name)
         if os.path.exists(file_path):
             return FileResponse(file_path, media_type="image/png")
     raise HTTPException(status_code=404, detail="Image not found")
