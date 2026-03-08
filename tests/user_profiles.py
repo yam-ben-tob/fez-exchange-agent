@@ -127,5 +127,35 @@ def get_student_profiles():
                 "must_be_erasmus": False,   
                 "free_language_preferences": "" 
             }
+        },
+        "asia_tech_specialist": {
+            "academic_profile": {
+                "gpa": 3.75,
+                "major": "Computer Engineering", # High-demand major
+                "study_level": "bsc",
+                "semesters_completed": 4
+            },
+            "language_profile": {
+                "non_english_languages": ["Mandarin"], # Optional, helps boost ranking for Taiwan
+                "english_test_type": ["IELTS"],
+                "english_test_level": "C1"
+            },
+            "availability": {
+                "start_month": 9,
+                "start_day": 1,
+                "end_month": 1,
+                "end_day": 20
+            },
+            "preferences": {
+                "must_be_erasmus": False, # IMPORTANT: Non-EU exchange is usually not Erasmus
+                "free_language_preferences": """
+                    I am specifically looking for an exchange in East Asia (Taiwan, Hong Kong, or Singapore). 
+                    I want a top-tier technical university with a massive campus and high-tech labs.
+                    
+                    Environment: Ultra-modern, safe, and efficient cities. 
+                    Focus: Semiconductor industry or Hardware/Software integration. 
+                    Budget: $11,000 for the semester.
+                """.strip()
+            }
         }
     }

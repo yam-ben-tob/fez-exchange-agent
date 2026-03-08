@@ -1,0 +1,1712 @@
+{
+  "valid_universities_list": [
+    {
+      "name": "MCI Management Center Innsbruck",
+      "country": "austria"
+    },
+    {
+      "name": "Inteli Institute of Technology and Leadership",
+      "country": "brazil"
+    },
+    {
+      "name": "Universidad de Palermo",
+      "country": "argentina"
+    },
+    {
+      "name": "Polytechnique Montréal",
+      "country": "canada"
+    },
+    {
+      "name": "University of British Columbia",
+      "country": "canada"
+    },
+    {
+      "name": "Pontificia Universidad Catolica de Chile (PUC)",
+      "country": "chile"
+    },
+    {
+      "name": "Nankai University",
+      "country": "china"
+    },
+    {
+      "name": "Nanjing University",
+      "country": "china"
+    },
+    {
+      "name": "Shandong University",
+      "country": "china"
+    },
+    {
+      "name": "Tsinghua University",
+      "country": "china"
+    },
+    {
+      "name": "Shanghai Jiao Tong University (SJTU)",
+      "country": "china"
+    },
+    {
+      "name": "ECAM Strasbourg",
+      "country": "france"
+    },
+    {
+      "name": "University of Science and Technology of China",
+      "country": "china"
+    },
+    {
+      "name": "University of Cyprus",
+      "country": "cyprus"
+    },
+    {
+      "name": "Technical University of Denmark (DTU)",
+      "country": "denmark"
+    },
+    {
+      "name": "Ecole Centrale Marseille",
+      "country": "france"
+    },
+    {
+      "name": "CentraleSupélec",
+      "country": "france"
+    },
+    {
+      "name": "ENSCM National School of Chemistry Montpellier",
+      "country": "france"
+    },
+    {
+      "name": "EPF – Engineering School",
+      "country": "france"
+    },
+    {
+      "name": "HEC School of Management",
+      "country": "france"
+    },
+    {
+      "name": "Anhalt University of Applied Sciences",
+      "country": "germany"
+    },
+    {
+      "name": "PSL Dauphine",
+      "country": "france"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "country": "usa"
+    },
+    {
+      "name": "Leibniz Universität Hannover",
+      "country": "germany"
+    },
+    {
+      "name": "University of Connecticut",
+      "country": "usa"
+    },
+    {
+      "name": "RWTH Aachen University",
+      "country": "germany"
+    },
+    {
+      "name": "University of Applied Sciences Bielefeld",
+      "country": "germany"
+    },
+    {
+      "name": "Cornell University",
+      "country": "usa"
+    },
+    {
+      "name": "University of Erlangen-Nuremberg",
+      "country": "germany"
+    },
+    {
+      "name": "Technical University of Munich",
+      "country": "germany"
+    },
+    {
+      "name": "Friedrich Schiller University Jena",
+      "country": "germany"
+    },
+    {
+      "name": "City University of Hong Kong",
+      "country": "hong kong"
+    },
+    {
+      "name": "Politecnico di Milano",
+      "country": "italy"
+    },
+    {
+      "name": "Hong Kong University of Science and Technology",
+      "country": "hong kong"
+    },
+    {
+      "name": "UDLAP",
+      "country": "mexico"
+    },
+    {
+      "name": "Kyushu University",
+      "country": "japan"
+    },
+    {
+      "name": "National Cheng Kung University",
+      "country": "taiwan"
+    },
+    {
+      "name": "National Tsing Hua University",
+      "country": "taiwan"
+    },
+    {
+      "name": "National Taiwan University",
+      "country": "taiwan"
+    },
+    {
+      "name": "National Yang Ming Chiao Tung University",
+      "country": "taiwan"
+    },
+    {
+      "name": "Alexandru Ioan Cuza University of Iasi",
+      "country": "romania"
+    },
+    {
+      "name": "EPF – Engineering School",
+      "country": "switzerland"
+    },
+    {
+      "name": "Handong Global University",
+      "country": "south korea"
+    },
+    {
+      "name": "Ajou University",
+      "country": "south korea"
+    },
+    {
+      "name": "POSTECH University",
+      "country": "south korea"
+    },
+    {
+      "name": "Sungkyunkwan University",
+      "country": "south korea"
+    },
+    {
+      "name": "Universidad ORT Uruguay",
+      "country": "uruguay"
+    },
+    {
+      "name": "University of Oregon",
+      "country": "usa"
+    },
+    {
+      "name": "VinUniversity",
+      "country": "vietnam"
+    },
+    {
+      "name": "Politecnico di Torino",
+      "country": "italy"
+    },
+    {
+      "name": "Technical University of Berlin",
+      "country": "germany"
+    },
+    {
+      "name": "Guangdong Technion - Israel Institute of Technology",
+      "country": "china"
+    }
+  ],
+  "user_iformation": {
+    "academic_profile": {
+      "gpa": 3.75,
+      "major": "Computer Engineering",
+      "study_level": "bsc",
+      "semesters_completed": 4
+    },
+    "language_profile": {
+      "non_english_languages": [
+        "Mandarin"
+      ],
+      "english_test_type": [
+        "IELTS"
+      ],
+      "english_test_level": "C1"
+    },
+    "availability": {
+      "start_month": 9,
+      "start_day": 1,
+      "end_month": 1,
+      "end_day": 20
+    },
+    "preferences": {
+      "must_be_erasmus": false,
+      "free_language_preferences": "I am specifically looking for an exchange in East Asia (Taiwan, Hong Kong, or Singapore). \n                    I want a top-tier technical university with a massive campus and high-tech labs.\n                    \n                    Environment: Ultra-modern, safe, and efficient cities. \n                    Focus: Semiconductor industry or Hardware/Software integration. \n                    Budget: $11,000 for the semester."
+    }
+  },
+  "user_requests": [],
+  "top_k": 5,
+  "top_universities": [
+    "National Taiwan University",
+    "Hong Kong University of Science and Technology",
+    "National Yang Ming Chiao Tung University",
+    "Tsinghua University",
+    "National Tsing Hua University"
+  ],
+  "analysis": [
+    {
+      "university_name": "National Taiwan University",
+      "general_fit_reasoning": "Low academic match for top-tier tech (business/management focus); small/semi-closed campus in a mid-sized Alpine city (pleasant outdoors but not ultra-modern megacity); modest social scene; Western Europe costs reasonable versus budget; no strong semiconductor/hardware research footprint.",
+      "requirements": {
+        "name": "National Taiwan University",
+        "country": "taiwan",
+        "min_gpa": 3,
+        "non_english_languages": [
+          "Chinese"
+        ],
+        "english_test_type": [
+          "TOEFL iBT",
+          "IELTS"
+        ],
+        "english_test_level": "B2",
+        "english_only_possible": false,
+        "test_required": true,
+        "waiver_available": true,
+        "restricted_majors": [
+          "Dentistry",
+          "Political Science",
+          "Economics",
+          "Design",
+          "International Studies"
+        ],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 4,
+          "max_credits_allowed": 25,
+          "instruction_languages": "English, Chinese (Mandarin)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must enroll in at least 2 courses (4 credits) per semester; undergraduates can take up to 25 credits and graduates up to 20 credits. Some departments and many specific courses (e.g., practicum, certain professional programs, International College, D-School, etc.) are restricted, and students should plan preliminarily and adjust when the official course list is released."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Students can apply for on-campus housing during the exchange application period but accommodation is not guaranteed due to limited dormitory rooms; see https://isss.ntu.edu.tw/ >> Campus Life >> Accommodation for on- and off-campus information.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Students must purchase insurance before traveling and provide proof valid for the entire exchange period: accident insurance minimum TWD 1,000,000 and medical insurance minimum TWD 1,000,000.",
+          "currency": "TWD",
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students are responsible for applying for the proper visa via a Taiwan diplomatic mission; insurance covering accident and medical risks (minimum TWD 1,000,000 each) must be purchased prior to travel and cover the full exchange period. On-campus housing is available but limited and not guaranteed."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "All exchange students must attend mandatory orientation activities. Each exchange student will be assigned a student volunteer for help and advice, and support for students with disabilities is available if notified during nomination."
+        }
+      }
+    },
+    {
+      "university_name": "Hong Kong University of Science and Technology",
+      "general_fit_reasoning": "Limited ARWU research footprint; campus/social life typical of Latin American institutions (urban/trendy), low cost relative to budget; city environment is vibrant but not aligned with the user's East Asia/semiconductor focus.",
+      "requirements": {
+        "name": "Hong Kong University of Science and Technology",
+        "country": "hong kong",
+        "min_gpa": 2.7,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [
+          "Business"
+        ],
+        "msc_allowed": false,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": 12,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": 5,
+          "start_day": null,
+          "start_month": 1
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 12,
+          "max_credits_allowed": 18,
+          "instruction_languages": "English; some Humanities and Social Science courses may require Chinese (noted in course descriptions as [C], [Ca] or [Pu])",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Most courses carry 3 credits (3 instructional hours/week over 13 weeks). Recommended credit load is 15 credits per term; exchange students are excluded from self‑financed programs and certain PG business courses, and PG course enrollment is generally limited to specified engineering departments."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students are arranged to live in university housing as space permits, typically in shared rooms. Details: http://shrl.ust.hk.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students have access to on‑campus medical clinic (outpatient) and student dental clinic (charges at https://hseo.hkust.edu.hk/clinic). All exchange students are required to take out HKUST Compulsory Travel Insurance unless prior arrangement is made between HKUST and the home institution.",
+          "currency": "HKD",
+          "estimated_housing_cost_per_month": "HK$45,000 per term (includes student housing, visa and insurance; subject to increase 5-10%)",
+          "estimated_living_cost_per_month": "HK$45,000 per term (approx. US$5,800) for one term including student housing, visa and insurance; subject to increase 5-10%.",
+          "logistics_summary_notes": "Overseas exchange students must obtain a student visa unless they have right of abode; HKUST sends a visa application form and processes the application on the student's behalf. Compulsory travel insurance is required for exchange students."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Exchange students have access to all on‑campus educational, sports and recreational facilities and student health services; specific buddy or mandatory orientation programs are not mentioned in the provided factsheet."
+        }
+      }
+    },
+    {
+      "university_name": "National Yang Ming Chiao Tung University",
+      "general_fit_reasoning": "Not a top ARWU technical institution; extremely strong urban/social scene (Buenos Aires trendy campus); affordable; culturally rich but not matched to semiconductor/hardware industry or East Asia preference.",
+      "requirements": {
+        "name": "National Yang Ming Chiao Tung University",
+        "country": "taiwan",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "English; Mandarin Chinese",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate inbound exchange students must take at least 9 credits per semester (graduate students: at least 2 courses). Students may choose courses across colleges and campuses, but instructors can refuse enrollment due to prerequisites or limited capacity; some programs (e.g., College of Management) restrict eligibility to final-year undergraduates and graduate students. Course lists are finalized about two months before semester start."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "The Division of Overseas Student Affairs provides accommodation services and host-family arrangements; no explicit deadlines, guarantees, or booking platform details are provided in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "The Division of Overseas Student Affairs assists with insurance arrangements, but no specifics on accepted coverage or costs are provided.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "NYCU's Division of Overseas Student Affairs assists incoming students with visa, registration, accommodation, and insurance arrangements; no processing timelines or mandatory insurance details are specified in the factsheet."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Free Chinese courses are offered (Chinese Cultural Salon; courses range from introductory to advanced across 4 levels; elective situational conversation courses) via the Chinese Language Division, Language Teaching and Research Center.",
+          "integration_summary_notes": "The Division of Overseas Student Affairs runs integration supports such as host-family arrangements and an international student society; free Chinese language and cultural courses are provided to help integration, though no explicit mandatory orientation or detailed buddy program description is given."
+        }
+      }
+    },
+    {
+      "university_name": "Tsinghua University",
+      "general_fit_reasoning": "Solid engineering school with decent ARWU-related presence; good urban campus integrated into Montreal nightlife; costs in Canada are moderate-high for the semester; some hardware research but outside East Asia and not in the targeted semiconductor cluster.",
+      "requirements": {
+        "name": "Tsinghua University",
+        "country": "china",
+        "min_gpa": null,
+        "non_english_languages": [
+          "Chinese (Mandarin)"
+        ],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": false,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [
+          "Arts and Design"
+        ],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": 29,
+          "end_month": 12,
+          "start_day": 9,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": 8,
+          "end_month": 6,
+          "start_day": 17,
+          "start_month": 2
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": 20,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": "Undergraduates: DISTINCTION / PASS / FAILURE (credits awarded for DISTINCTION and PASS). Graduates: PASS / FAILURE (credits awarded for PASS).",
+          "academic_summary_notes": "Exchange students may take undergraduate and graduate courses in Chinese or English; some programs (Special Programs in English, Academy of Arts and Design, physical training courses and some other programs) are restricted. Cross-faculty modules are allowed but no more than 8 credits outside the student's major. Graduate students may conduct research/thesis with prior approval from a tutor. Students taking courses in English must be fluent in English."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "On-campus accommodation prioritized at Zijing Foreign Student Apartment; newest on-campus dorm info and application instructions provided in the Welcome Package. Deposit is charged (refundable upon check-out). On-campus accommodation availability may be limited over semester breaks (on-campus housing mainly available for students with one-academic-year stays and successful reservation). Private accommodation nearby is available via agencies.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "All exchange students are required to buy local student insurance (covers local accidents and urgent medications). The local insurance normally costs 400 RMB per semester.",
+          "currency": "CNY",
+          "estimated_housing_cost_per_month": "On-campus (Zijing Foreign Student Apartment, historical/typical rates): double room ~40 RMB/day (~1,200 RMB/month), single room ~80 RMB/day (~2,400 RMB/month) (quotation referenced from 2013). Private accommodation: ~1,000–2,000 RMB/month for a single room up to several thousand RMB for a full apartment. Deposit required (refundable).",
+          "estimated_living_cost_per_month": "Food/meals on campus: 50–70 RMB/day (~1,500–2,100 RMB/month). Personal expenses (laundry, sundries, local transport): 1,500–2,000 RMB/month. Academic expenses (books): 600–800 RMB/month. Note: insurance ~400 RMB/semester.",
+          "logistics_summary_notes": "Students require X1 (stays >6 months) or X2 (stays <6 months) visa; the Academic Affairs Office includes the JW202 form in the Welcome Package to assist visa applications. No airport pick-up; recommended arrival is about one week before semester start; exchange students are not allowed to work and must purchase local insurance."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "A Buddy Program matches exchange students with a local buddy for support. Orientation is held the week before semester start and students can use most university facilities (some clubs may have constraints)."
+        }
+      }
+    },
+    {
+      "university_name": "National Tsing Hua University",
+      "general_fit_reasoning": "Strong ARWU standing and engineering labs; campus is large with excellent natural surroundings (Vancouver), but criticized as commuter-heavy socially; Canadian costs are moderate to high; good hardware/CS research but not in Taiwan/HK/Singapore region.",
+      "requirements": {
+        "name": "National Tsing Hua University",
+        "country": "taiwan",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": 20,
+          "end_month": 12,
+          "start_day": 2,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": 6,
+          "end_month": 6,
+          "start_day": 17,
+          "start_month": 2
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "Chinese (Mandarin), English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students must take at least 9 credits per semester; graduate exchange students must take at least one master-level course per semester. Students are expected to take at least one course from their home department and may take courses across different departments."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dormitory fees per semester: Undergraduates NT$6,300–16,660; Graduates NT$10,170–27,500 (Division of Student Housing).",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Information provided on Alien Resident Certificate (ARC) and National Health Insurance for exchange students staying exceeding 180 days (link provided); no explicit cost details given.",
+          "currency": "TWD, USD",
+          "estimated_housing_cost_per_month": "Dormitory fees per semester: Undergraduates NT$6,300–16,660 per semester; Graduates NT$10,170–27,500 per semester.",
+          "estimated_living_cost_per_month": "Estimated living expenses: USD 3,600 per semester (including dorm, visa, textbooks, food, transportation, etc.).",
+          "logistics_summary_notes": "Visa and ARC guidance links are provided for visitor and resident student visas; students staying over 180 days are directed to the National Health Insurance. Dormitory fees are listed by student level but housing is not described as guaranteed."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "English courses and additional Mandarin courses are available for exchange students (English course info released seasonally; Mandarin courses can be taken during exchange). No specific cost information provided.",
+          "integration_summary_notes": "No explicit mention of a buddy program or mandatory orientation in the provided material; the Division of Overseas Students Service and Office of Global Affairs are listed as contacts for incoming students."
+        }
+      }
+    }
+  ],
+  "request_count": 1,
+  "universities_fit_text": [
+    "Low academic match for top-tier tech (business/management focus); small/semi-closed campus in a mid-sized Alpine city (pleasant outdoors but not ultra-modern megacity); modest social scene; Western Europe costs reasonable versus budget; no strong semiconductor/hardware research footprint.",
+    "Limited ARWU research footprint; campus/social life typical of Latin American institutions (urban/trendy), low cost relative to budget; city environment is vibrant but not aligned with the user's East Asia/semiconductor focus.",
+    "Not a top ARWU technical institution; extremely strong urban/social scene (Buenos Aires trendy campus); affordable; culturally rich but not matched to semiconductor/hardware industry or East Asia preference.",
+    "Solid engineering school with decent ARWU-related presence; good urban campus integrated into Montreal nightlife; costs in Canada are moderate-high for the semester; some hardware research but outside East Asia and not in the targeted semiconductor cluster.",
+    "Strong ARWU standing and engineering labs; campus is large with excellent natural surroundings (Vancouver), but criticized as commuter-heavy socially; Canadian costs are moderate to high; good hardware/CS research but not in Taiwan/HK/Singapore region.",
+    "Moderate research profile but not top-tier ARWU tech; Santiago offers modern urban life and decent campus social life; affordable regionally; minimal direct semiconductor industry alignment for the user's focus.",
+    "Recognized Chinese research university (mid ARWU tier), large campus with active student life but a competitive academic culture; Tianjin offers cultural amenities; semester costs aligned with China’s low-cost structure; some electronics research but less central than Hsinchu/Beijing/Shanghai leaders.",
+    "Solid ARWU presence and STEM research; sizable campus and decent city amenities; Chinese-cost advantages; research in computing and electronics present though not as concentrated in semiconductor industry hubs as Hsinchu or Shenzhen.",
+    "Lower ARWU tier among Chinese heavyweights; large campus with steady student life; low-cost semester environment; some engineering strengths but not a primary semiconductor hub.",
+    "World-leading ARWU top-tier technical powerhouse with massive labs and research output; Beijing offers ultra-modern city resources though campus culture is high-pressure; excellent hardware/semiconductor research alignment and industry links.",
+    "Strong ARWU-ranked engineering and applied science programs with substantial labs; Shanghai is an ultra-modern global city with rich industry ties; Chinese cost advantages; good fit for hardware-integration research though social life can be pressured by academics.",
+    "Small technical school with limited ARWU visibility; pleasant mid-sized European city and student life; costs favorable relative to some Western peers; limited direct semiconductor industry alignment compared with East Asia options.",
+    "Very strong ARWU research university focused on STEM with top labs; campus culture is research-intense and less social; located in Hefei (less megacity vibe but improving); excellent technical alignment for hardware/semiconductor research.",
+    "Limited ARWU presence and small tech research footprint; pleasant Mediterranean lifestyle and moderate cost; not matched to East Asia location requirement or semiconductor industry focus.",
+    "Strong Northern European tech university with good labs and industry links; legendary active campus social life; high living costs but excellent infrastructure; however outside East Asia and less direct access to Taiwan/HK semiconductor clusters.",
+    "Moderate engineering reputation in France with decent campus life and Mediterranean locale; affordable by Western standards but not aligned with the requested East Asia/semiconductor focus.",
+    "High French engineering prestige with strong labs; elite student culture (closed social networks) and Paris-area industry links; good academic rigor but geographically mismatched to student's East Asia desire.",
+    "Specialized chemistry school with limited ARWU tech standing for semiconductors; pleasant southern French campus life; not a match for hardware/semiconductor industry focus or East Asia location preference.",
+    "Medium-tier French engineering school with decent labs; good student life but not at the research intensity or semiconductor concentration the user wants; outside East Asia.",
+    "Top business school but not a technical ARWU powerhouse; elite social scene and galas but lacks the high-tech semiconductor/hardware labs requested and is outside East Asia.",
+    "Applied sciences focus with limited ARWU research footprint; quieter regional campus life and reasonable costs; not aligned with the user's high-tier tech and East Asia preference.",
+    "Strong social/business reputation within Paris but not a top technical ARWU institution; good urban cultural life; mismatched to semiconductor/hardware needs and East Asia location.",
+    "Elite ARWU-ranked technical and hardware/CS research strength with world-class labs; campus culture is nerdy and high-stress rather than the desired relaxed East Asian city environment; U.S. exchange costs are likely above the stated budget.",
+    "Mid-tier technical university in Germany with decent engineering programs; moderate campus/social life and reasonable Western Europe costs; not aligned with East Asia semiconductor cluster.",
+    "Solid state-school with strong social/Greek life but not a top ARWU technical match; U.S. costs are high and the campus culture does not match the user's East Asia preference or semiconductor industry proximity.",
+    "Strong ARWU engineering institution with heavy STEM research and labs; culture is exam-heavy and less social; good industrial ties but geographically not in East Asia's semiconductor ecosystem.",
+    "Applied sciences school with limited research scale by ARWU; modest student life and reasonable costs; not aligned with the user's East Asia/semiconductor priorities.",
+    "Top-tier ARWU research university with excellent engineering and hardware labs; intense academics with strong Greek life; U.S. semester costs likely exceed the stated budget and location is outside East Asia.",
+    "Respectable German research university with engineering capacity; stable campus life and Western Europe cost profile; lacking direct proximity to East Asia semiconductor clusters.",
+    "High ARWU-ranked technical powerhouse with cutting-edge labs and industry partnerships; Munich is modern and safe though Western European costs apply; strong hardware/engineering research but not in East Asia.",
+    "Historic German university with moderate research output; pleasant small-city campus life; not a match for the student's East Asia/semiconductor and ultra-modern city preferences.",
+    "Solid ARWU presence, modern waterfront campus and very strong city infrastructure; Hong Kong is ultra-modern and efficient though costs are higher than mainland China; good regional industry links for applied engineering and proximity to Shenzhen.",
+    "Strong European technical school with huge international/Erasmus social life and excellent city amenities; culturally vibrant but geographically outside the East Asia/semiconductor hubs the student requested.",
+    "Very strong ARWU-ranked technical university with a modern, compact high-tech campus and excellent engineering labs; Hong Kong offers ultra-modern city life and strong proximity to regional tech ecosystems, making it a very close match to the student's preferences.",
+    "Private Mexican university with limited ARWU visibility; good campus social life and affordable costs but not aligned with East Asia or semiconductor/hardware integration industry needs.",
+    "Respectable ARWU-ranked Japanese technical university with good labs; Fukuoka offers modern city life and good local industry linkages; costs sit in the East Asia range and research strengths include engineering relevant to hardware.",
+    "Strong Taiwanese tech university with solid engineering labs and good ties to local industry (Tainan/Taiwan supply chain); campus life is sizable and costs are very affordable for an exchange; good fit for hardware/semiconductor interests.",
+    "Excellent ARWU-ranked Taiwan tech university located in Hsinchu science park area with massive labs and direct links to the semiconductor industry; large campus and strong engineering programs make it one of the best matches for the student's technical and location preferences.",
+    "Top Taiwanese ARWU presence with a very large campus in Taipei, excellent labs and research output; modern safe city environment and strong electronics/computer engineering programs, making NTU an excellent match for semiconductor and hardware/software integration focus.",
+    "After merger, top-tier Taiwanese technical strength with excellent semiconductor and photonics research centered in Hsinchu; large, modern labs and campus culture oriented to engineering make it a near-ideal match for the user's hardware-focused exchange in Taiwan.",
+    "Regional Eastern European university with limited ARWU tech standing; low-cost, student-oriented city life but not matched to East Asia location or semiconductor industry needs.",
+    "Swiss engineering school with moderate research visibility; high-cost country reduces budget alignment; good labs but geographically and industrially not focused on East Asian semiconductor clusters.",
+    "Smaller Korean university with limited ARWU presence; campus culture is more conservative and costs fit East Asia range, but it lacks the big semiconductor research footprint compared to POSTECH/SKKU.",
+    "Mid-tier Korean technical university with decent engineering programs and reasonable East Asia costs; closer to Korean industry clusters but not as strong a global ARWU technical leader as the student's preferred East Asian targets.",
+    "High-quality Korean technical university with focused research labs and strong ties to semiconductor/hardware industry (Samsung et al.); campus is research-intense with less party culture; strong technical alignment though student preferred countries list emphasized Taiwan/HK/Singapore.",
+    "Strong ARWU presence in Korea with good engineering and industry partnerships; urban campuses near Seoul give access to tech ecosystems; good fit for hardware/software integration but outside the stated Taiwan/HK/Singapore preference.",
+    "Local university with limited global ARWU visibility; good campus social life and affordable costs but not aligned with East Asia or semiconductor industry focus.",
+    "Classic American state-school with very active social/sports life; not a top ARWU technical institution on the user's scale and U.S. costs are likely above the stated budget, plus it is geographically outside East Asia.",
+    "Young private university with ambitions but limited ARWU standing and smaller research footprint; modern campus in Vietnam with affordable costs but not a major semiconductor/hardware hub or within the requested Taiwan/HK/Singapore focus.",
+    "Respectable technical university with good engineering programs and student life; Western Europe cost profile and cultural fit are fine but not aligned to East Asia semiconductor industry clusters.",
+    "Strong German technical university with rigorous academics but excellent city nightlife and international student presence; costs reasonable for Western Europe, but not located in East Asia or directly adjacent to large semiconductor ecosystems.",
+    "Newer Sino-Israeli technical campus in Guangdong with modern facilities and proximity to Shenzhen/Guangzhou industrial clusters; ARWU footprint still developing, campus is modern and industry-proximate which supports hardware/tech interests despite lower historical ranking."
+  ],
+  "steps": [
+    {
+      "module": "Filter",
+      "prompt": {
+        "action": "Query Supabase",
+        "criteria": {
+          "academic_profile": {
+            "gpa": 3.75,
+            "major": "Computer Engineering",
+            "study_level": "bsc",
+            "semesters_completed": 4
+          },
+          "language_profile": {
+            "non_english_languages": [
+              "Mandarin"
+            ],
+            "english_test_type": [
+              "IELTS"
+            ],
+            "english_test_level": "C1"
+          },
+          "availability": {
+            "start_month": 9,
+            "start_day": 1,
+            "end_month": 1,
+            "end_day": 20
+          },
+          "preferences": {
+            "must_be_erasmus": false,
+            "free_language_preferences": "I am specifically looking for an exchange in East Asia (Taiwan, Hong Kong, or Singapore). \n                    I want a top-tier technical university with a massive campus and high-tech labs.\n                    \n                    Environment: Ultra-modern, safe, and efficient cities. \n                    Focus: Semiconductor industry or Hardware/Software integration. \n                    Budget: $11,000 for the semester."
+          }
+        }
+      },
+      "response": {
+        "found_universities": 52,
+        "traced_steps": [
+          "Filtered by min_gpa <= 3.75 (or no GPA requirement)",
+          "Filtered by min_semesters <= 4 (or no semester requirement)",
+          "Filtered by availability: 9/1 to 1/20",
+          "Filtered by English test: ['ielts'] CEFR >= C1",
+          "Excluded restricted major: Computer Engineering",
+          "Filtered by language match: ['Mandarin']",
+          "Queried universities_requirements table"
+        ]
+      }
+    },
+    {
+      "module": "Ranker",
+      "prompt": {
+        "llm_prompt": {
+          "system_prompt": "You are an elite study-abroad placement API. Rank a list of eligible universities based on a student's preferences. Rely on your internal knowledge of global universities, cultures, and geography. Ret...",
+          "user_prompt": "\n    Eligible Universities:\n    [\n  {\n    \"university_name\": \"MCI Management Center Innsbruck\",\n    \"country\": \"austria\"\n  },\n  {\n    \"university_name\": \"Inteli Institute of Technology and Leadership\",\n    \"country\": \"brazil\"\n  },\n  {\n    \"university_name\": \"Universidad de Palermo\",\n    \"country\": \"argentina\"\n  },\n  {\n    \"university_name\": \"Polytechnique Montréal\",\n    \"country\": \"canada\"\n  },\n  {\n    \"university_name\": \"University of British Columbia\",\n    \"country\": \"canada\"\n  },\n  {\n    \"university_name\": \"Pontificia Universidad Catolica de Chile (PUC)\",\n    \"country\": \"chile\"\n  },\n  {\n    \"university_name\": \"Nankai University\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"Nanjing University\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"Shandong University\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"Tsinghua University\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"Shanghai Jiao Tong University (SJTU)\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"ECAM Strasbourg\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"University of Science and Technology of China\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"University of Cyprus\",\n    \"country\": \"cyprus\"\n  },\n  {\n    \"university_name\": \"Technical University of Denmark (DTU)\",\n    \"country\": \"denmark\"\n  },\n  {\n    \"university_name\": \"Ecole Centrale Marseille\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"CentraleSupélec\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"ENSCM National School of Chemistry Montpellier\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"EPF – Engineering School\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"HEC School of Management\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"Anhalt University of Applied Sciences\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"PSL Dauphine\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"Carnegie Mellon University\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"Leibniz Universität Hannover\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"University of Connecticut\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"RWTH Aachen University\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"University of Applied Sciences Bielefeld\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Cornell University\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"University of Erlangen-Nuremberg\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Technical University of Munich\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Friedrich Schiller University Jena\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"City University of Hong Kong\",\n    \"country\": \"hong kong\"\n  },\n  {\n    \"university_name\": \"Politecnico di Milano\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Hong Kong University of Science and Technology\",\n    \"country\": \"hong kong\"\n  },\n  {\n    \"university_name\": \"UDLAP\",\n    \"country\": \"mexico\"\n  },\n  {\n    \"university_name\": \"Kyushu University\",\n    \"country\": \"japan\"\n  },\n  {\n    \"university_name\": \"National Cheng Kung University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"National Tsing Hua University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"National Taiwan University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"National Yang Ming Chiao Tung University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"Alexandru Ioan Cuza University of Iasi\",\n    \"country\": \"romania\"\n  },\n  {\n    \"university_name\": \"EPF – Engineering School\",\n    \"country\": \"switzerland\"\n  },\n  {\n    \"university_name\": \"Handong Global University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"Ajou University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"POSTECH University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"Sungkyunkwan University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"Universidad ORT Uruguay\",\n    \"country\": \"uruguay\"\n  },\n  {\n    \"university_name\": \"University of Oregon\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"VinUniversity\",\n    \"country\": \"vietnam\"\n  },\n  {\n    \"university_name\": \"Politecnico di Torino\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Technical University of Berlin\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Guangdong Technion - Israel Institute of Technology\",\n    \"country\": \"china\"\n  }\n]\n\n    Social Media Sentiment Table:\n    \n| University | Primary Social Vibe & Internet Sentiment | Overall Social Level |\n| :--- | :--- | :--- |\n| ITESM Monterrey | Massive Greek/Club life, wealthy international bubble, huge events. | High |\n| University of Oregon | Classic American state school, massive sports/tailgating, frat culture. | High |\n| Politecnico di Milano | Massive Erasmus hub, huge international club nights, high ESN traffic. | High |\n| Universidad de Palermo | Trendy, design-focused, huge international LatAm footprint, urban. | High |\n| McGill University | Work hard / party hard, deeply integrated into Montreal nightlife. | High |\n| Concordia University | Relaxed, urban, very social downtown campus, artsy vibe. | High |\n| CTU (Prague) | Erasmus goldmine, cheap nightlife, highly social international crowd. | High |\n| DTU | Legendary Friday campus bars, very active Scandinavian student life. | High |\n| HEC / Ecole Polytechnique | Elite enclosed campus bubbles, massive private galas and BDE parties. | High (Closed) |\n| UConn | Big sports culture, rural campus but highly active internal party scene. | High |\n| NTU / SKKU | Massive traditional campus festivals, huge club cultures, highly connected. | High |\n| Cornell University | Intense academics mixed with massive Greek life; \"Work hard, play hard.\" | Medium/High |\n| TUM / TU Berlin | Rigorous tech schools, but saved by world-class city nightlife and Erasmus. | Medium/High |\n| UBC / U of Toronto | Huge traffic, but criticized as \"commuter schools.\" Social life requires effort. | Medium |\n| RWTH Aachen / KIT | Male-dominated engineering, brutal exams, good local pubs but heavy stress. | Medium |\n| Carnegie Mellon (CMU) | Quirky/nerdy culture, high Reddit traffic about \"stress culture\", low partying. | Low/Medium |\n| Tsinghua / Peking | Elite, hyper-competitive (\"involution\"). Huge clubs, but intense pressure. | Low/Medium |\n| KAIST / POSTECH / USTC | Hardcore STEM pressure cookers. Very little party traffic, heavy lab focus. | Low |\n| EPFL | Famous for high failure rates; social life takes a deep backseat to studying. | Low |\n| Academia Sinica | Pure research institute, mostly post-grads, almost zero traditional campus life. | Lowest |\n\n    \n    Reference Data for `financial_fit` (Global Semester Pure Cost - $0 Tuition):\n    \n| Region | Characterization | Est. Semester Total (USD) |\n| :--- | :--- | :--- |\n| USA / Australia | High mandatory fees, forced meal plans, expensive insurance/visas. | $11,000 – $15,500 |\n| Canada / UK | High rent, but lower insurance/fees than USA. | $8,500 – $11,500 |\n| Northern Europe | High rent/groceries, but $0 admin fees and free/subsidized health. | $7,500 – $10,000 |\n| Western / Southern Europe | Subsidized transport, lower daily costs for social life. | $5,000 – $8,000 |\n| Mexico / Latin America | Campus-style amenities with very cheap local housing/food. | $3,500 – $6,000 |\n| East Asia (Japan / Korea) | Subsidized on-campus dorms, cheap \"quick-eat\" culture. | $4,500 – $7,500 |\n| China / Taiwan | Ultra-low dorm costs, massive local student subsidies. | $2,500 – $4,500 |\n| Eastern Europe | Modern EU infrastructure at the lowest Western prices. | $2,200 – $4,000 |\n\n\n    Student Preferences: \"I am specifically looking for an exchange in East Asia (Taiwan, Hong Kong, or Singapore). \n                    I want a top-tier technical university with a massive campus and high-tech labs.\n                    \n                    Environment: Ultra-modern, safe, and efficient cities. \n                    Focus: Semiconductor industry or Hardware/Software integration. \n                    Budget: $11,000 for the semester.\"\n\n    Rules:\n    1. Evaluate and score EVERY university in the provided list based on how well it matches the user's input. \n    2. Grade each university (0-100) across these categories ONLY if the user's input relates to them. If a category is irrelevant to the prompt, output `null`\n    - `academic_fit`: Score based strictly on the university's standing in the Shanghai Ranking (ARWU). \n        Reward high research output, STEM focus, and global prestige. Penalize universities that lack a global research footprint.\n    - `lifestyle_fit`: Score the combined physical routine and social atmosphere. Evaluate the physical routine based on Campus Typology (enclosed residential bubble vs. \n        decentralized commuter school), City Scale (immersive college town vs. sprawling megacity), and Academic Pacing (hyper-competitive \"pressure-cooker\" vs. balanced workload). \n        Evaluate the social atmosphere based on the party vibe, ease of making friends, and international/Erasmus presence. Use your internal knowledge alongside the provided social media sentiment table as general assistance.\n    - `location_fit`: Nature/hikes, nightlife, art, culture, weather.\n    - `financial_fit`: Total cost of exchange (rent, food, travel). Base the score on the \"Reference Data\" table provided. \n        Use your internal knowledge to adjust the score/estimate slightly if the specific city or country is an outlier \n        (e.g., Zurich is more expensive than the \"Western Europe\" average). In the reasoning, provide a brief estimated total cost (e.g., ~$12k) for the semester.\n    - `jewish_israeli_community_fit`: Evaluate EXCLUSIVELY based on current antisemitism levels on and around campus, the accessibility of the local Jewish community (e.g., Chabad, synagogues, kosher food), and the presence of Israeli students or locals. \n        STRICTLY IGNORE general city crime rates, pickpocketing, or broad safety metrics.\n    - `other_preferences_fit`: Any specific user requests that do not fit into the above categories (e.g., specific sports, dietary needs, unique hobbies).\n    3. Provide a short `reasoning` explicitly referencing the evaluated traits. dont mention semeter cost estimation.\n\n    Return ONLY a JSON object with this exact structure:\n    {\n        \"scored_universities\": [\n            {\n                \"university_name\": \"string\",\n                \"country\": \"string\",\n                \"scores\": {\n                    \"academic_fit\": int or null,\n                    \"lifestyle_fit\": int or null,\n                    \"social_fit\": int or null,\n                    \"location_fit\": int or null,\n                    \"financial_fit\": int or null,\n                    \"jewish_israeli_community_fit\": int or null,\n                    \"other_preferences_fit\": int or null\n                },\n                \"reasoning\": \"string\"\n            }\n        ]\n    }\n    ",
+          "top_k": 5
+        }
+      },
+      "response": {
+        "scored_universities": [
+          {
+            "university_name": "National Taiwan University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 85,
+              "social_fit": 75,
+              "location_fit": 85,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 90
+            },
+            "reasoning": "Top Taiwanese ARWU presence with a very large campus in Taipei, excellent labs and research output; modern safe city environment and strong electronics/computer engineering programs, making NTU an excellent match for semiconductor and hardware/software integration focus.",
+            "total_score": 85,
+            "rank": 1
+          },
+          {
+            "university_name": "Hong Kong University of Science and Technology",
+            "country": "hong kong",
+            "scores": {
+              "academic_fit": 88,
+              "lifestyle_fit": 85,
+              "social_fit": 70,
+              "location_fit": 95,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 85
+            },
+            "reasoning": "Very strong ARWU-ranked technical university with a modern, compact high-tech campus and excellent engineering labs; Hong Kong offers ultra-modern city life and strong proximity to regional tech ecosystems, making it a very close match to the student's preferences.",
+            "total_score": 83,
+            "rank": 2
+          },
+          {
+            "university_name": "National Yang Ming Chiao Tung University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 78,
+              "lifestyle_fit": 80,
+              "social_fit": 72,
+              "location_fit": 80,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 95
+            },
+            "reasoning": "After merger, top-tier Taiwanese technical strength with excellent semiconductor and photonics research centered in Hsinchu; large, modern labs and campus culture oriented to engineering make it a near-ideal match for the user's hardware-focused exchange in Taiwan.",
+            "total_score": 83,
+            "rank": 3
+          },
+          {
+            "university_name": "Tsinghua University",
+            "country": "china",
+            "scores": {
+              "academic_fit": 98,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 85,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 93
+            },
+            "reasoning": "World-leading ARWU top-tier technical powerhouse with massive labs and research output; Beijing offers ultra-modern city resources though campus culture is high-pressure; excellent hardware/semiconductor research alignment and industry links.",
+            "total_score": 82,
+            "rank": 4
+          },
+          {
+            "university_name": "National Tsing Hua University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 75,
+              "lifestyle_fit": 80,
+              "social_fit": 70,
+              "location_fit": 80,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 95
+            },
+            "reasoning": "Excellent ARWU-ranked Taiwan tech university located in Hsinchu science park area with massive labs and direct links to the semiconductor industry; large campus and strong engineering programs make it one of the best matches for the student's technical and location preferences.",
+            "total_score": 82,
+            "rank": 5
+          },
+          {
+            "university_name": "Shanghai Jiao Tong University (SJTU)",
+            "country": "china",
+            "scores": {
+              "academic_fit": 85,
+              "lifestyle_fit": 65,
+              "social_fit": 60,
+              "location_fit": 90,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 85
+            },
+            "reasoning": "Strong ARWU-ranked engineering and applied science programs with substantial labs; Shanghai is an ultra-modern global city with rich industry ties; Chinese cost advantages; good fit for hardware-integration research though social life can be pressured by academics.",
+            "total_score": 79,
+            "rank": 6
+          },
+          {
+            "university_name": "National Cheng Kung University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 65,
+              "lifestyle_fit": 75,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 85
+            },
+            "reasoning": "Strong Taiwanese tech university with solid engineering labs and good ties to local industry (Tainan/Taiwan supply chain); campus life is sizable and costs are very affordable for an exchange; good fit for hardware/semiconductor interests.",
+            "total_score": 78,
+            "rank": 7
+          },
+          {
+            "university_name": "Politecnico di Milano",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 70,
+              "lifestyle_fit": 90,
+              "social_fit": 90,
+              "location_fit": 85,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 45
+            },
+            "reasoning": "Strong European technical school with huge international/Erasmus social life and excellent city amenities; culturally vibrant but geographically outside the East Asia/semiconductor hubs the student requested.",
+            "total_score": 76,
+            "rank": 8
+          },
+          {
+            "university_name": "Sungkyunkwan University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 75,
+              "lifestyle_fit": 65,
+              "social_fit": 65,
+              "location_fit": 80,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 75
+            },
+            "reasoning": "Strong ARWU presence in Korea with good engineering and industry partnerships; urban campuses near Seoul give access to tech ecosystems; good fit for hardware/software integration but outside the stated Taiwan/HK/Singapore preference.",
+            "total_score": 75,
+            "rank": 9
+          },
+          {
+            "university_name": "Technical University of Munich",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 90,
+              "lifestyle_fit": 65,
+              "social_fit": 60,
+              "location_fit": 85,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 75
+            },
+            "reasoning": "High ARWU-ranked technical powerhouse with cutting-edge labs and industry partnerships; Munich is modern and safe though Western European costs apply; strong hardware/engineering research but not in East Asia.",
+            "total_score": 74,
+            "rank": 10
+          },
+          {
+            "university_name": "POSTECH University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 60,
+              "social_fit": 50,
+              "location_fit": 75,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 90
+            },
+            "reasoning": "High-quality Korean technical university with focused research labs and strong ties to semiconductor/hardware industry (Samsung et al.); campus is research-intense with less party culture; strong technical alignment though student preferred countries list emphasized Taiwan/HK/Singapore.",
+            "total_score": 74,
+            "rank": 11
+          },
+          {
+            "university_name": "University of Science and Technology of China",
+            "country": "china",
+            "scores": {
+              "academic_fit": 90,
+              "lifestyle_fit": 55,
+              "social_fit": 50,
+              "location_fit": 65,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 85
+            },
+            "reasoning": "Very strong ARWU research university focused on STEM with top labs; campus culture is research-intense and less social; located in Hefei (less megacity vibe but improving); excellent technical alignment for hardware/semiconductor research.",
+            "total_score": 73,
+            "rank": 12
+          },
+          {
+            "university_name": "Nanjing University",
+            "country": "china",
+            "scores": {
+              "academic_fit": 70,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 75,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 70
+            },
+            "reasoning": "Solid ARWU presence and STEM research; sizable campus and decent city amenities; Chinese-cost advantages; research in computing and electronics present though not as concentrated in semiconductor industry hubs as Hsinchu or Shenzhen.",
+            "total_score": 72,
+            "rank": 13
+          },
+          {
+            "university_name": "Technical University of Denmark (DTU)",
+            "country": "denmark",
+            "scores": {
+              "academic_fit": 75,
+              "lifestyle_fit": 80,
+              "social_fit": 75,
+              "location_fit": 80,
+              "financial_fit": 60,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 60
+            },
+            "reasoning": "Strong Northern European tech university with good labs and industry links; legendary active campus social life; high living costs but excellent infrastructure; however outside East Asia and less direct access to Taiwan/HK semiconductor clusters.",
+            "total_score": 72,
+            "rank": 14
+          },
+          {
+            "university_name": "City University of Hong Kong",
+            "country": "hong kong",
+            "scores": {
+              "academic_fit": 65,
+              "lifestyle_fit": 75,
+              "social_fit": 65,
+              "location_fit": 90,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 70
+            },
+            "reasoning": "Solid ARWU presence, modern waterfront campus and very strong city infrastructure; Hong Kong is ultra-modern and efficient though costs are higher than mainland China; good regional industry links for applied engineering and proximity to Shenzhen.",
+            "total_score": 72,
+            "rank": 15
+          },
+          {
+            "university_name": "Technical University of Berlin",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 70,
+              "lifestyle_fit": 75,
+              "social_fit": 80,
+              "location_fit": 85,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Strong German technical university with rigorous academics but excellent city nightlife and international student presence; costs reasonable for Western Europe, but not located in East Asia or directly adjacent to large semiconductor ecosystems.",
+            "total_score": 72,
+            "rank": 16
+          },
+          {
+            "university_name": "Guangdong Technion - Israel Institute of Technology",
+            "country": "china",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 70,
+              "social_fit": 60,
+              "location_fit": 90,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 65
+            },
+            "reasoning": "Newer Sino-Israeli technical campus in Guangdong with modern facilities and proximity to Shenzhen/Guangzhou industrial clusters; ARWU footprint still developing, campus is modern and industry-proximate which supports hardware/tech interests despite lower historical ranking.",
+            "total_score": 69,
+            "rank": 17
+          },
+          {
+            "university_name": "Nankai University",
+            "country": "china",
+            "scores": {
+              "academic_fit": 60,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 65
+            },
+            "reasoning": "Recognized Chinese research university (mid ARWU tier), large campus with active student life but a competitive academic culture; Tianjin offers cultural amenities; semester costs aligned with China’s low-cost structure; some electronics research but less central than Hsinchu/Beijing/Shanghai leaders.",
+            "total_score": 68,
+            "rank": 18
+          },
+          {
+            "university_name": "CentraleSupélec",
+            "country": "france",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 60,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 50
+            },
+            "reasoning": "High French engineering prestige with strong labs; elite student culture (closed social networks) and Paris-area industry links; good academic rigor but geographically mismatched to student's East Asia desire.",
+            "total_score": 68,
+            "rank": 19
+          },
+          {
+            "university_name": "Kyushu University",
+            "country": "japan",
+            "scores": {
+              "academic_fit": 60,
+              "lifestyle_fit": 65,
+              "social_fit": 60,
+              "location_fit": 75,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 65
+            },
+            "reasoning": "Respectable ARWU-ranked Japanese technical university with good labs; Fukuoka offers modern city life and good local industry linkages; costs sit in the East Asia range and research strengths include engineering relevant to hardware.",
+            "total_score": 68,
+            "rank": 20
+          },
+          {
+            "university_name": "Shandong University",
+            "country": "china",
+            "scores": {
+              "academic_fit": 55,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Lower ARWU tier among Chinese heavyweights; large campus with steady student life; low-cost semester environment; some engineering strengths but not a primary semiconductor hub.",
+            "total_score": 66,
+            "rank": 21
+          },
+          {
+            "university_name": "RWTH Aachen University",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 50,
+              "social_fit": 55,
+              "location_fit": 65,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 70
+            },
+            "reasoning": "Strong ARWU engineering institution with heavy STEM research and labs; culture is exam-heavy and less social; good industrial ties but geographically not in East Asia's semiconductor ecosystem.",
+            "total_score": 66,
+            "rank": 22
+          },
+          {
+            "university_name": "Cornell University",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 98,
+              "lifestyle_fit": 65,
+              "social_fit": 70,
+              "location_fit": 65,
+              "financial_fit": 20,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 75
+            },
+            "reasoning": "Top-tier ARWU research university with excellent engineering and hardware labs; intense academics with strong Greek life; U.S. semester costs likely exceed the stated budget and location is outside East Asia.",
+            "total_score": 66,
+            "rank": 23
+          },
+          {
+            "university_name": "Politecnico di Torino",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 60,
+              "lifestyle_fit": 70,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 45
+            },
+            "reasoning": "Respectable technical university with good engineering programs and student life; Western Europe cost profile and cultural fit are fine but not aligned to East Asia semiconductor industry clusters.",
+            "total_score": 66,
+            "rank": 24
+          },
+          {
+            "university_name": "Polytechnique Montréal",
+            "country": "canada",
+            "scores": {
+              "academic_fit": 65,
+              "lifestyle_fit": 70,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 50,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Solid engineering school with decent ARWU-related presence; good urban campus integrated into Montreal nightlife; costs in Canada are moderate-high for the semester; some hardware research but outside East Asia and not in the targeted semiconductor cluster.",
+            "total_score": 64,
+            "rank": 25
+          },
+          {
+            "university_name": "Ajou University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 50,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Mid-tier Korean technical university with decent engineering programs and reasonable East Asia costs; closer to Korean industry clusters but not as strong a global ARWU technical leader as the student's preferred East Asian targets.",
+            "total_score": 64,
+            "rank": 26
+          },
+          {
+            "university_name": "University of British Columbia",
+            "country": "canada",
+            "scores": {
+              "academic_fit": 85,
+              "lifestyle_fit": 55,
+              "social_fit": 50,
+              "location_fit": 85,
+              "financial_fit": 45,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 60
+            },
+            "reasoning": "Strong ARWU standing and engineering labs; campus is large with excellent natural surroundings (Vancouver), but criticized as commuter-heavy socially; Canadian costs are moderate to high; good hardware/CS research but not in Taiwan/HK/Singapore region.",
+            "total_score": 63,
+            "rank": 27
+          },
+          {
+            "university_name": "Ecole Centrale Marseille",
+            "country": "france",
+            "scores": {
+              "academic_fit": 50,
+              "lifestyle_fit": 65,
+              "social_fit": 65,
+              "location_fit": 75,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 35
+            },
+            "reasoning": "Moderate engineering reputation in France with decent campus life and Mediterranean locale; affordable by Western standards but not aligned with the requested East Asia/semiconductor focus.",
+            "total_score": 62,
+            "rank": 28
+          },
+          {
+            "university_name": "Universidad de Palermo",
+            "country": "argentina",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 80,
+              "social_fit": 85,
+              "location_fit": 80,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 10
+            },
+            "reasoning": "Not a top ARWU technical institution; extremely strong urban/social scene (Buenos Aires trendy campus); affordable; culturally rich but not matched to semiconductor/hardware industry or East Asia preference.",
+            "total_score": 61,
+            "rank": 29
+          },
+          {
+            "university_name": "University of Erlangen-Nuremberg",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 60,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 65,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 45
+            },
+            "reasoning": "Respectable German research university with engineering capacity; stable campus life and Western Europe cost profile; lacking direct proximity to East Asia semiconductor clusters.",
+            "total_score": 61,
+            "rank": 30
+          },
+          {
+            "university_name": "EPF – Engineering School",
+            "country": "france",
+            "scores": {
+              "academic_fit": 55,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 35
+            },
+            "reasoning": "Medium-tier French engineering school with decent labs; good student life but not at the research intensity or semiconductor concentration the user wants; outside East Asia.",
+            "total_score": 60,
+            "rank": 31
+          },
+          {
+            "university_name": "Pontificia Universidad Catolica de Chile (PUC)",
+            "country": "chile",
+            "scores": {
+              "academic_fit": 45,
+              "lifestyle_fit": 65,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 25
+            },
+            "reasoning": "Moderate research profile but not top-tier ARWU tech; Santiago offers modern urban life and decent campus social life; affordable regionally; minimal direct semiconductor industry alignment for the user's focus.",
+            "total_score": 58,
+            "rank": 32
+          },
+          {
+            "university_name": "Carnegie Mellon University",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 95,
+              "lifestyle_fit": 50,
+              "social_fit": 45,
+              "location_fit": 65,
+              "financial_fit": 25,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 70
+            },
+            "reasoning": "Elite ARWU-ranked technical and hardware/CS research strength with world-class labs; campus culture is nerdy and high-stress rather than the desired relaxed East Asian city environment; U.S. exchange costs are likely above the stated budget.",
+            "total_score": 58,
+            "rank": 33
+          },
+          {
+            "university_name": "EPF – Engineering School",
+            "country": "switzerland",
+            "scores": {
+              "academic_fit": 55,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 75,
+              "financial_fit": 60,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 40
+            },
+            "reasoning": "Swiss engineering school with moderate research visibility; high-cost country reduces budget alignment; good labs but geographically and industrially not focused on East Asian semiconductor clusters.",
+            "total_score": 58,
+            "rank": 34
+          },
+          {
+            "university_name": "VinUniversity",
+            "country": "vietnam",
+            "scores": {
+              "academic_fit": 35,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 30
+            },
+            "reasoning": "Young private university with ambitions but limited ARWU standing and smaller research footprint; modern campus in Vietnam with affordable costs but not a major semiconductor/hardware hub or within the requested Taiwan/HK/Singapore focus.",
+            "total_score": 58,
+            "rank": 35
+          },
+          {
+            "university_name": "ECAM Strasbourg",
+            "country": "france",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 30
+            },
+            "reasoning": "Small technical school with limited ARWU visibility; pleasant mid-sized European city and student life; costs favorable relative to some Western peers; limited direct semiconductor industry alignment compared with East Asia options.",
+            "total_score": 57,
+            "rank": 36
+          },
+          {
+            "university_name": "HEC School of Management",
+            "country": "france",
+            "scores": {
+              "academic_fit": 50,
+              "lifestyle_fit": 60,
+              "social_fit": 70,
+              "location_fit": 80,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 10
+            },
+            "reasoning": "Top business school but not a technical ARWU powerhouse; elite social scene and galas but lacks the high-tech semiconductor/hardware labs requested and is outside East Asia.",
+            "total_score": 57,
+            "rank": 37
+          },
+          {
+            "university_name": "PSL Dauphine",
+            "country": "france",
+            "scores": {
+              "academic_fit": 45,
+              "lifestyle_fit": 60,
+              "social_fit": 65,
+              "location_fit": 80,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 15
+            },
+            "reasoning": "Strong social/business reputation within Paris but not a top technical ARWU institution; good urban cultural life; mismatched to semiconductor/hardware needs and East Asia location.",
+            "total_score": 57,
+            "rank": 38
+          },
+          {
+            "university_name": "University of Oregon",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 85,
+              "social_fit": 90,
+              "location_fit": 70,
+              "financial_fit": 35,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 20
+            },
+            "reasoning": "Classic American state-school with very active social/sports life; not a top ARWU technical institution on the user's scale and U.S. costs are likely above the stated budget, plus it is geographically outside East Asia.",
+            "total_score": 57,
+            "rank": 39
+          },
+          {
+            "university_name": "Leibniz Universität Hannover",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 55,
+              "lifestyle_fit": 55,
+              "social_fit": 55,
+              "location_fit": 60,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 35
+            },
+            "reasoning": "Mid-tier technical university in Germany with decent engineering programs; moderate campus/social life and reasonable Western Europe costs; not aligned with East Asia semiconductor cluster.",
+            "total_score": 56,
+            "rank": 40
+          },
+          {
+            "university_name": "ENSCM National School of Chemistry Montpellier",
+            "country": "france",
+            "scores": {
+              "academic_fit": 35,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 75,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 20
+            },
+            "reasoning": "Specialized chemistry school with limited ARWU tech standing for semiconductors; pleasant southern French campus life; not a match for hardware/semiconductor industry focus or East Asia location preference.",
+            "total_score": 55,
+            "rank": 41
+          },
+          {
+            "university_name": "UDLAP",
+            "country": "mexico",
+            "scores": {
+              "academic_fit": 30,
+              "lifestyle_fit": 60,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 15
+            },
+            "reasoning": "Private Mexican university with limited ARWU visibility; good campus social life and affordable costs but not aligned with East Asia or semiconductor/hardware integration industry needs.",
+            "total_score": 54,
+            "rank": 42
+          },
+          {
+            "university_name": "Handong Global University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 50,
+              "social_fit": 50,
+              "location_fit": 60,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 35
+            },
+            "reasoning": "Smaller Korean university with limited ARWU presence; campus culture is more conservative and costs fit East Asia range, but it lacks the big semiconductor research footprint compared to POSTECH/SKKU.",
+            "total_score": 54,
+            "rank": 43
+          },
+          {
+            "university_name": "University of Connecticut",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 45,
+              "lifestyle_fit": 70,
+              "social_fit": 80,
+              "location_fit": 60,
+              "financial_fit": 30,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 30
+            },
+            "reasoning": "Solid state-school with strong social/Greek life but not a top ARWU technical match; U.S. costs are high and the campus culture does not match the user's East Asia preference or semiconductor industry proximity.",
+            "total_score": 52,
+            "rank": 44
+          },
+          {
+            "university_name": "Friedrich Schiller University Jena",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 55,
+              "social_fit": 55,
+              "location_fit": 60,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 25
+            },
+            "reasoning": "Historic German university with moderate research output; pleasant small-city campus life; not a match for the student's East Asia/semiconductor and ultra-modern city preferences.",
+            "total_score": 52,
+            "rank": 45
+          },
+          {
+            "university_name": "Alexandru Ioan Cuza University of Iasi",
+            "country": "romania",
+            "scores": {
+              "academic_fit": 30,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 65,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 15
+            },
+            "reasoning": "Regional Eastern European university with limited ARWU tech standing; low-cost, student-oriented city life but not matched to East Asia location or semiconductor industry needs.",
+            "total_score": 52,
+            "rank": 46
+          },
+          {
+            "university_name": "Universidad ORT Uruguay",
+            "country": "uruguay",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 60,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 10
+            },
+            "reasoning": "Local university with limited global ARWU visibility; good campus social life and affordable costs but not aligned with East Asia or semiconductor industry focus.",
+            "total_score": 52,
+            "rank": 47
+          },
+          {
+            "university_name": "University of Cyprus",
+            "country": "cyprus",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 10
+            },
+            "reasoning": "Limited ARWU presence and small tech research footprint; pleasant Mediterranean lifestyle and moderate cost; not matched to East Asia location requirement or semiconductor industry focus.",
+            "total_score": 51,
+            "rank": 48
+          },
+          {
+            "university_name": "University of Applied Sciences Bielefeld",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 30,
+              "lifestyle_fit": 50,
+              "social_fit": 50,
+              "location_fit": 55,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 20
+            },
+            "reasoning": "Applied sciences school with limited research scale by ARWU; modest student life and reasonable costs; not aligned with the user's East Asia/semiconductor priorities.",
+            "total_score": 47,
+            "rank": 49
+          },
+          {
+            "university_name": "Anhalt University of Applied Sciences",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 50,
+              "social_fit": 50,
+              "location_fit": 55,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 20
+            },
+            "reasoning": "Applied sciences focus with limited ARWU research footprint; quieter regional campus life and reasonable costs; not aligned with the user's high-tier tech and East Asia preference.",
+            "total_score": 46,
+            "rank": 50
+          },
+          {
+            "university_name": "Inteli Institute of Technology and Leadership",
+            "country": "brazil",
+            "scores": {
+              "academic_fit": 20,
+              "lifestyle_fit": 45,
+              "social_fit": 50,
+              "location_fit": 55,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 15
+            },
+            "reasoning": "Limited ARWU research footprint; campus/social life typical of Latin American institutions (urban/trendy), low cost relative to budget; city environment is vibrant but not aligned with the user's East Asia/semiconductor focus.",
+            "total_score": 45,
+            "rank": 51
+          },
+          {
+            "university_name": "MCI Management Center Innsbruck",
+            "country": "austria",
+            "scores": {
+              "academic_fit": 35,
+              "lifestyle_fit": 40,
+              "social_fit": 40,
+              "location_fit": 45,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": 20
+            },
+            "reasoning": "Low academic match for top-tier tech (business/management focus); small/semi-closed campus in a mid-sized Alpine city (pleasant outdoors but not ultra-modern megacity); modest social scene; Western Europe costs reasonable versus budget; no strong semiconductor/hardware research footprint.",
+            "total_score": 42,
+            "rank": 52
+          }
+        ],
+        "top_universities": [
+          "National Taiwan University",
+          "Hong Kong University of Science and Technology",
+          "National Yang Ming Chiao Tung University",
+          "Tsinghua University",
+          "National Tsing Hua University"
+        ]
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "National Taiwan University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: National Taiwan University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        ## **CONTACT DETAILS**\n\n+886 (0)2 3366 2007, ext\n\n###### **INCOMING**\n\n\n**Exchange Student Program**\n\n**A..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 4,
+          "max_credits_allowed": 25,
+          "instruction_languages": "English, Chinese (Mandarin)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must enroll in at least 2 courses (4 credits) per semester; undergraduates can take up to 25 credits and graduates up to 20 credits. Some departments and many specific courses (e.g., practicum, certain professional programs, International College, D-School, etc.) are restricted, and students should plan preliminarily and adjust when the official course list is released."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Students can apply for on-campus housing during the exchange application period but accommodation is not guaranteed due to limited dormitory rooms; see https://isss.ntu.edu.tw/ >> Campus Life >> Accommodation for on- and off-campus information.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Students must purchase insurance before traveling and provide proof valid for the entire exchange period: accident insurance minimum TWD 1,000,000 and medical insurance minimum TWD 1,000,000.",
+          "currency": "TWD",
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students are responsible for applying for the proper visa via a Taiwan diplomatic mission; insurance covering accident and medical risks (minimum TWD 1,000,000 each) must be purchased prior to travel and cover the full exchange period. On-campus housing is available but limited and not guaranteed."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "All exchange students must attend mandatory orientation activities. Each exchange student will be assigned a student volunteer for help and advice, and support for students with disabilities is available if notified during nomination."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Hong Kong University of Science and Technology",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Hong Kong University of Science and Technology\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Undergraduate|Exchange 2026-27 Information Sheet|\n|---|---|\n|**University Name**<br>..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 12,
+          "max_credits_allowed": 18,
+          "instruction_languages": "English; some Humanities and Social Science courses may require Chinese (noted in course descriptions as [C], [Ca] or [Pu])",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Most courses carry 3 credits (3 instructional hours/week over 13 weeks). Recommended credit load is 15 credits per term; exchange students are excluded from self‑financed programs and certain PG business courses, and PG course enrollment is generally limited to specified engineering departments."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students are arranged to live in university housing as space permits, typically in shared rooms. Details: http://shrl.ust.hk.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students have access to on‑campus medical clinic (outpatient) and student dental clinic (charges at https://hseo.hkust.edu.hk/clinic). All exchange students are required to take out HKUST Compulsory Travel Insurance unless prior arrangement is made between HKUST and the home institution.",
+          "currency": "HKD",
+          "estimated_housing_cost_per_month": "HK$45,000 per term (includes student housing, visa and insurance; subject to increase 5-10%)",
+          "estimated_living_cost_per_month": "HK$45,000 per term (approx. US$5,800) for one term including student housing, visa and insurance; subject to increase 5-10%.",
+          "logistics_summary_notes": "Overseas exchange students must obtain a student visa unless they have right of abode; HKUST sends a visa application form and processes the application on the student's behalf. Compulsory travel insurance is required for exchange students."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Exchange students have access to all on‑campus educational, sports and recreational facilities and student health services; specific buddy or mandatory orientation programs are not mentioned in the provided factsheet."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "National Yang Ming Chiao Tung University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: National Yang Ming Chiao Tung University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **Exchange Program Guideline**\n\n\nOffice of International Affairs\n\n\n# **Office of Internatio..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "English; Mandarin Chinese",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate inbound exchange students must take at least 9 credits per semester (graduate students: at least 2 courses). Students may choose courses across colleges and campuses, but instructors can refuse enrollment due to prerequisites or limited capacity; some programs (e.g., College of Management) restrict eligibility to final-year undergraduates and graduate students. Course lists are finalized about two months before semester start."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "The Division of Overseas Student Affairs provides accommodation services and host-family arrangements; no explicit deadlines, guarantees, or booking platform details are provided in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "The Division of Overseas Student Affairs assists with insurance arrangements, but no specifics on accepted coverage or costs are provided.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "NYCU's Division of Overseas Student Affairs assists incoming students with visa, registration, accommodation, and insurance arrangements; no processing timelines or mandatory insurance details are specified in the factsheet."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Free Chinese courses are offered (Chinese Cultural Salon; courses range from introductory to advanced across 4 levels; elective situational conversation courses) via the Chinese Language Division, Language Teaching and Research Center.",
+          "integration_summary_notes": "The Division of Overseas Student Affairs runs integration supports such as host-family arrangements and an international student society; free Chinese language and cultural courses are provided to help integration, though no explicit mandatory orientation or detailed buddy program description is given."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Tsinghua University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Tsinghua University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |What kind of course can I choose as<br>an exchange student in Tsinghua<br>University?|Exchange student can choo..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": 20,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": "Undergraduates: DISTINCTION / PASS / FAILURE (credits awarded for DISTINCTION and PASS). Graduates: PASS / FAILURE (credits awarded for PASS).",
+          "academic_summary_notes": "Exchange students may take undergraduate and graduate courses in Chinese or English; some programs (Special Programs in English, Academy of Arts and Design, physical training courses and some other programs) are restricted. Cross-faculty modules are allowed but no more than 8 credits outside the student's major. Graduate students may conduct research/thesis with prior approval from a tutor. Students taking courses in English must be fluent in English."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "On-campus accommodation prioritized at Zijing Foreign Student Apartment; newest on-campus dorm info and application instructions provided in the Welcome Package. Deposit is charged (refundable upon check-out). On-campus accommodation availability may be limited over semester breaks (on-campus housing mainly available for students with one-academic-year stays and successful reservation). Private accommodation nearby is available via agencies.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "All exchange students are required to buy local student insurance (covers local accidents and urgent medications). The local insurance normally costs 400 RMB per semester.",
+          "currency": "CNY",
+          "estimated_housing_cost_per_month": "On-campus (Zijing Foreign Student Apartment, historical/typical rates): double room ~40 RMB/day (~1,200 RMB/month), single room ~80 RMB/day (~2,400 RMB/month) (quotation referenced from 2013). Private accommodation: ~1,000–2,000 RMB/month for a single room up to several thousand RMB for a full apartment. Deposit required (refundable).",
+          "estimated_living_cost_per_month": "Food/meals on campus: 50–70 RMB/day (~1,500–2,100 RMB/month). Personal expenses (laundry, sundries, local transport): 1,500–2,000 RMB/month. Academic expenses (books): 600–800 RMB/month. Note: insurance ~400 RMB/semester.",
+          "logistics_summary_notes": "Students require X1 (stays >6 months) or X2 (stays <6 months) visa; the Academic Affairs Office includes the JW202 form in the Welcome Package to assist visa applications. No airport pick-up; recommended arrival is about one week before semester start; exchange students are not allowed to work and must purchase local insurance."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "A Buddy Program matches exchange students with a local buddy for support. Orientation is held the week before semester start and students can use most university facilities (some clubs may have constraints)."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "National Tsing Hua University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: National Tsing Hua University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        14:42,4.2.2026 Incoming\n\n\n**[Home](https://oga.site.nthu.edu.tw/index.php)** / **[Exchange Program](ht..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "Chinese (Mandarin), English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students must take at least 9 credits per semester; graduate exchange students must take at least one master-level course per semester. Students are expected to take at least one course from their home department and may take courses across different departments."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dormitory fees per semester: Undergraduates NT$6,300–16,660; Graduates NT$10,170–27,500 (Division of Student Housing).",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Information provided on Alien Resident Certificate (ARC) and National Health Insurance for exchange students staying exceeding 180 days (link provided); no explicit cost details given.",
+          "currency": "TWD, USD",
+          "estimated_housing_cost_per_month": "Dormitory fees per semester: Undergraduates NT$6,300–16,660 per semester; Graduates NT$10,170–27,500 per semester.",
+          "estimated_living_cost_per_month": "Estimated living expenses: USD 3,600 per semester (including dorm, visa, textbooks, food, transportation, etc.).",
+          "logistics_summary_notes": "Visa and ARC guidance links are provided for visitor and resident student visas; students staying over 180 days are directed to the National Health Insurance. Dormitory fees are listed by student level but housing is not described as guaranteed."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "English courses and additional Mandarin courses are available for exchange students (English course info released seasonally; Mandarin courses can be taken during exchange). No specific cost information provided.",
+          "integration_summary_notes": "No explicit mention of a buddy program or mandatory orientation in the provided material; the Division of Overseas Students Service and Office of Global Affairs are listed as contacts for incoming students."
+        }
+      }
+    }
+  ]
+}

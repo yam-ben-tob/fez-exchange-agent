@@ -1,0 +1,1792 @@
+{
+  "valid_universities_list": [
+    {
+      "name": "ECAM Strasbourg",
+      "country": "france"
+    },
+    {
+      "name": "University of Cyprus",
+      "country": "cyprus"
+    },
+    {
+      "name": "Technical University of Denmark (DTU)",
+      "country": "denmark"
+    },
+    {
+      "name": "Ecole Centrale Marseille",
+      "country": "france"
+    },
+    {
+      "name": "CentraleSupélec",
+      "country": "france"
+    },
+    {
+      "name": "Anhalt University of Applied Sciences",
+      "country": "germany"
+    },
+    {
+      "name": "Leibniz Universität Hannover",
+      "country": "germany"
+    },
+    {
+      "name": "University of Erlangen-Nuremberg",
+      "country": "germany"
+    },
+    {
+      "name": "Technical University of Munich",
+      "country": "germany"
+    },
+    {
+      "name": "Friedrich Schiller University Jena",
+      "country": "germany"
+    },
+    {
+      "name": "Politecnico di Milano",
+      "country": "italy"
+    },
+    {
+      "name": "Alexandru Ioan Cuza University of Iasi",
+      "country": "romania"
+    },
+    {
+      "name": "Universidad ORT Uruguay",
+      "country": "uruguay"
+    },
+    {
+      "name": "Politecnico di Torino",
+      "country": "italy"
+    },
+    {
+      "name": "Technical University of Berlin",
+      "country": "germany"
+    }
+  ],
+  "user_iformation": {
+    "academic_profile": {
+      "gpa": 3.2,
+      "major": "Computer Science",
+      "study_level": "bsc",
+      "semesters_completed": 4
+    },
+    "language_profile": {
+      "non_english_languages": [
+        "Spanish"
+      ],
+      "english_test_type": [
+        "TOEFL",
+        "IELTS"
+      ],
+      "english_test_level": "B2"
+    },
+    "availability": {
+      "start_month": 8,
+      "start_day": 15,
+      "end_month": 12,
+      "end_day": 31
+    },
+    "preferences": {
+      "must_be_erasmus": true,
+      "free_language_preferences": "I want a traditional, unified campus where it's easy to make friends...\n\nI'd love a place with cool museums... My absolute max budget is $9,000 for the semester."
+    }
+  },
+  "user_requests": [],
+  "top_k": 5,
+  "top_universities": [
+    "Technical University of Denmark (DTU)",
+    "CentraleSupélec",
+    "University of Erlangen-Nuremberg",
+    "Technical University of Munich",
+    "Politecnico di Milano"
+  ],
+  "analysis": [
+    {
+      "university_name": "Technical University of Denmark (DTU)",
+      "general_fit_reasoning": "Moderate academic footprint (small engineering school). Strong lifestyle: compact student body in Strasbourg makes it easy to meet people and a unified feel. Social life is decent but not an Erasmus megahub. Location is excellent for museums, cathedral, and walkable city culture. Costs align with Western Europe and fit the stated budget. Local Jewish community in Strasbourg is established and accessible. Campus-style atmosphere suits the user's desire for a unified campus.",
+      "requirements": {
+        "name": "Technical University of Denmark (DTU)",
+        "country": "denmark",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": false,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "erasmus_available": true
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Danish, English",
+          "grading_system_summary": "DTU uses the Danish 7-point grading scale for all levels; there is no official conversion to the US grading scale.",
+          "academic_summary_notes": "DTU follows the ECTS system (60 ECTS per academic year, 30 ECTS per semester). BSc programmes are mainly in Danish while MSc programmes are taught entirely in English; incoming exchange students should consult DTU's course catalogue and exchange course pages for course selection and requirements."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation information is provided via DTU-linked housing platform (bdtu.dk). Specific deadlines and guarantees are not detailed in the factsheet; students should consult the accommodation page for availability and application steps.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "DTU provides web resources for living in Denmark and accommodation; visa and insurance requirements are not specified in the factsheet and should be checked on DTU's incoming student pages."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "DTU runs an introduction week during which participants are assigned a buddy; a range of clubs and student associations are available to support integration."
+        }
+      }
+    },
+    {
+      "university_name": "CentraleSupélec",
+      "general_fit_reasoning": "Relatively small research footprint internationally. Campus in Nicosia is fairly unified so it's easy to make friends and has a relaxed pace. Social scene is island-style—friendly but not a big Erasmus party hub. Location offers Mediterranean weather and local museums/archaeology. Financially favorable against the student's max. Jewish/Israeli resources are limited compared with large European cities. Campus-oriented structure matches the user's preference for a unified campus.",
+      "requirements": {
+        "name": "CentraleSupélec",
+        "country": "france",
+        "min_gpa": null,
+        "non_english_languages": [
+          "French"
+        ],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": false,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": false,
+        "min_semesters_completed": 4,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": 1,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": 6,
+          "start_day": null,
+          "start_month": 2
+        },
+        "erasmus_available": true
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 20,
+          "max_credits_allowed": 30,
+          "instruction_languages": "French, English",
+          "grading_system_summary": "Scale 0–20; minimum passing grade is 10 for exchange students to transfer credits.",
+          "academic_summary_notes": "Course selection: double degree students select at start of each teaching period; exchange students select at time of application. Double degree and 3rd-year students must follow the entire curriculum; language recommendations are B1 for French and B2 for English."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Limited on‑campus housing; application opens after official admission. Residences on Paris‑Saclay, Rennes and Metz campuses with limited availability and campus-specific residence links provided.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Health care insurance is mandatory. EU students: EHIC accepted. Non‑EU students can take out French Social Security upon arrival (free of charge); comprehensive coverage (lodging, personal liability, belongings) mandatory; application link sent after registration.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Paris‑Saclay (Césal): €400–€750/month; Rennes (Residence Belle Fontaine): €350–€450/month; Metz (Residence Edouard Branly): €350–€450/month.",
+          "estimated_living_cost_per_month": "At least €700/month for a full‑year mobility (including accommodation, food, internet); cost of living may be lower in Rennes and Metz.",
+          "logistics_summary_notes": "Non‑EU students need to apply for a visa and obtain a residence permit; incoming students are responsible for securing and paying for their visa. A Welcome Desk/Université Paris‑Saclay provides information; health insurance is mandatory."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Intensive French classes available prior to semester at Cavilam (Alliance Française of Vichy). Admitted double degree students are invited to a pre‑programme summer school focused on French language (costs not specified).",
+          "integration_summary_notes": "Welcome Desk and orientation events are provided (orientation in late August for fall/full year and late January for spring). Double degree students are invited to a pre‑start summer school to support integration and language skills."
+        }
+      }
+    },
+    {
+      "university_name": "University of Erlangen-Nuremberg",
+      "general_fit_reasoning": "High ARWU-style research/engineering reputation. Very campus-centric (Lyngby) with legendary student bars and active student organizations—excellent for making friends and a unified campus experience. Strong social vibe per sentiment data. Close enough to Copenhagen museums and culture while also offering green spaces. Costs in Northern Europe trend higher but remain near the user's ceiling. Copenhagen has a small but accessible Jewish community.",
+      "requirements": {
+        "name": "University of Erlangen-Nuremberg",
+        "country": "germany",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [
+          "Medicine",
+          "Dentistry",
+          "Pharmacy",
+          "Law",
+          "Psychology"
+        ],
+        "msc_allowed": false,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": 10
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": 4
+        },
+        "erasmus_available": true
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "German (main); English in some fields (availability varies by faculty)",
+          "grading_system_summary": "German numeric scale where 1.0 is excellent and 4.0 is the minimum passing grade; exact grading keys set by individual instructors; ECTS conversion information provided by the university.",
+          "academic_summary_notes": "FAU does not stipulate a mandatory minimum or maximum ECTS but recommends ~30 ECTS per semester (20–30 ECTS mentioned as guidance). Most institute courses are 5 ECTS and ECTS for each course are listed in Univis; Learning Agreement requirements depend on the home university and must be signed by student, home coordinator and FAU departmental coordinator."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students receive information on accommodation and housing search after application; further housing resources are provided online.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German health insurance is obligatory; accident and liability insurance highly recommended; students with European Health Insurance Card (EHIC) may be exempt from obligatory German insurance; non-EU students should have travel health insurance valid until start of lectures; international travel insurances are generally not sufficient.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Orientation (mandatory) helps with registering residence, insurance recognition or taking out new health insurance, opening a bank account and applying for a residence permit; health insurance coverage for the whole stay is required and EHIC may exempt EU students."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "A preparatory German course is held before lectures (course fee and credits available online); during semester the FAU language centre offers courses in various languages and levels.",
+          "integration_summary_notes": "FAU runs welcome weeks for international students twice per semester, a mandatory orientation course at the start of semester to complete formalities, and an international buddy programme for integration."
+        }
+      }
+    },
+    {
+      "university_name": "Technical University of Munich",
+      "general_fit_reasoning": "Moderate academic standing among French engineering schools. Lifestyle is more urban than a single residential bubble—making a unified-campus feel less likely. Social life and international party traffic are moderate. Very good location for Mediterranean weather, museums (Mucem) and coastal hikes. Financially fits the user's cap. Marseille has Jewish resources but less concentrated than Paris.",
+      "requirements": {
+        "name": "Technical University of Munich",
+        "country": "germany",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "erasmus_available": true
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "German, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must demonstrate proficiency in the chosen language (German/English). Use the TUMonline course catalogue (filter for English-only if needed); study plan/Learning Agreement signatures possible earliest after admission. Exchange stays limited to a maximum of two semesters; internships external to TUM alone are not eligible."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "TUM Global Office offers a limited Service Package of dormitory places via Munich Student Union; applicants must tick the relevant box in the application and be enrolled by a deadline announced after admission. Allocation is limited and competitive (priority: TUMexchange → students with differing abilities → Erasmus+). Separate accommodation info provided for Freising, Straubing, and Heilbronn.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 35,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance coverage details and procedures are provided on the TUM website (link given); students should consult the page for accepted coverage and steps.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Visa requirements depend on citizenship (EU/EFTA and certain countries: no entry visa required). Non-EU students are strongly advised to apply for a student visa in the country of study due to long waiting times (quoted 7–9 months); TUM Global Office cannot provide legal advice and tourist visas are not accepted."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "German and other language courses offered by the TUM Language Center; availability and costs listed on the Language Center website.",
+          "integration_summary_notes": "TUM runs orientation weeks and integration/social activities in Munich and offers language courses to support integration. Specific buddy/mentor programs are not explicitly mentioned in the factsheet."
+        }
+      }
+    },
+    {
+      "university_name": "Politecnico di Milano",
+      "general_fit_reasoning": "Strong research profile and high prestige in engineering. Campus at Gif-sur-Yvette/Paris-Saclay is a relatively enclosed, unified campus which supports quick social integration; strong student organizations but somewhat elite/closed social circles. Outstanding access to Paris museums and culture (major plus for a museums lover). Costs are higher around Paris but still manageable relative to the user's limit. Paris area offers well-established Jewish infrastructure and communities.",
+      "requirements": {
+        "name": "Politecnico di Milano",
+        "country": "italy",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": 12,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": 6,
+          "start_day": null,
+          "start_month": 2
+        },
+        "erasmus_available": true
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 0,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian (most Bachelor courses), English (majority of Master courses)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Full-time study is 30 ECTS per semester (60 ECTS per academic year). No minimum number of credits is required; exchange students must choose the majority of credits from the programme they enrol in and may take courses at both Bachelor and Master levels if prerequisites and school approval are met."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": null
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Politecnico promotes a buddy system and welcome events to help incoming students integrate; students are also encouraged to consider Italian language courses to support studies in Italian-taught programmes."
+        }
+      }
+    }
+  ],
+  "request_count": 4,
+  "universities_fit_text": [
+    "Moderate academic footprint (small engineering school). Strong lifestyle: compact student body in Strasbourg makes it easy to meet people and a unified feel. Social life is decent but not an Erasmus megahub. Location is excellent for museums, cathedral, and walkable city culture. Costs align with Western Europe and fit the stated budget. Local Jewish community in Strasbourg is established and accessible. Campus-style atmosphere suits the user's desire for a unified campus.",
+    "Relatively small research footprint internationally. Campus in Nicosia is fairly unified so it's easy to make friends and has a relaxed pace. Social scene is island-style—friendly but not a big Erasmus party hub. Location offers Mediterranean weather and local museums/archaeology. Financially favorable against the student's max. Jewish/Israeli resources are limited compared with large European cities. Campus-oriented structure matches the user's preference for a unified campus.",
+    "High ARWU-style research/engineering reputation. Very campus-centric (Lyngby) with legendary student bars and active student organizations—excellent for making friends and a unified campus experience. Strong social vibe per sentiment data. Close enough to Copenhagen museums and culture while also offering green spaces. Costs in Northern Europe trend higher but remain near the user's ceiling. Copenhagen has a small but accessible Jewish community.",
+    "Moderate academic standing among French engineering schools. Lifestyle is more urban than a single residential bubble—making a unified-campus feel less likely. Social life and international party traffic are moderate. Very good location for Mediterranean weather, museums (Mucem) and coastal hikes. Financially fits the user's cap. Marseille has Jewish resources but less concentrated than Paris.",
+    "Strong research profile and high prestige in engineering. Campus at Gif-sur-Yvette/Paris-Saclay is a relatively enclosed, unified campus which supports quick social integration; strong student organizations but somewhat elite/closed social circles. Outstanding access to Paris museums and culture (major plus for a museums lover). Costs are higher around Paris but still manageable relative to the user's limit. Paris area offers well-established Jewish infrastructure and communities.",
+    "Low global research footprint (applied sciences focus). Small-town campuses tend to be tight-knit (good for making friends) but overall social scene is modest. Location offers regional culture (including Bauhaus heritage in Dessau area) and access to nature. Very affordable in the Eastern/central German cost bracket. Jewish/Israeli community resources are limited locally. Campus scale fits the student's desire for a unified environment.",
+    "Solid regional research university with a visible research footprint. Campus is city-integrated but still student-focused, making social integration reasonable. Social scene is moderate; Hannover offers museums and parks and decent cultural life. Financially favourable for the semester. Established Jewish community and synagogues exist in Hannover. Campus layout offers a workable, semi-unified student experience.",
+    "Strong research university with good ARWU-style standing. Campus life in Erlangen/Nürnberg region is cohesive and student-friendly—easy to make friends. Social life is lively though not an Erasmus megahub. Region offers good museums (Nuremberg), cultural sites, and accessible nature. Costs align well with the user's budget. Reasonable local Jewish community presence and resources for Israeli students.",
+    "Top-tier global research and STEM reputation. Campus is spread across Munich rather than a single unified bubble, so making friends by campus alone is harder, though student groups are active. Social life benefits from Munich's rich cultural scene; museums and museums-district are excellent. Costs in Munich are on the higher side of Western Europe but still potentially within the student's cap. Munich has an established Jewish community and institutional support.",
+    "Respectable research university but smaller international footprint. Jena is a classic university town with a unified, compact campus and strong peer social life—excellent for making friends. Cultural offerings and proximity to Weimar/Bauhaus heritage add museums and culture. Very affordable for the semester. Jewish community presence is limited compared to major cities.",
+    "Strong technical university with solid research standing. Milan is a massive Erasmus hub with intense international social life—excellent for meeting people quickly, though the institution is urban and not a single residential campus (so less of a traditional unified campus). Outstanding museums and cultural institutions. Costs in Milan are Western European but generally within the user's ceiling. Milan has an active Jewish community and resources.",
+    "Limited global research footprint but a flagship national university. Iasi is a strong student city with a unified, campus-town feel that makes social integration easy and lively (good nightlife and low cost). Cultural sites and regional museums are present though less dense than big Western capitals. Extremely cost-friendly for the semester. Jewish/Israeli infrastructure is small locally.",
+    "Modest international research profile. ORT provides a campus-style environment in Montevideo with friendly social opportunities but not a huge international Erasmus stream. Montevideo offers museums and cultural life with pleasant weather. Very affordable under the user's stated maximum. Uruguay has an active Jewish community centered in Montevideo.",
+    "Solid engineering school with good technical reputation. Turin has an active student scene and strong museums (e.g., Egyptian Museum), though the campus is urban and somewhat distributed rather than one enclosed residential bubble. Social life is strong and international-friendly. Costs are reasonable for Western Europe. Turin hosts an accessible Jewish community.",
+    "Very solid research profile and engineering strength. Campus life is decentralized across Berlin, so it lacks a single unified residential bubble, but the city's enormous cultural scene, museums, and nightlife make social integration straightforward. Location is outstanding for museums and art. Costs are Western European and generally compatible with the budget. Berlin has a large, visible Jewish and Israeli community with many resources."
+  ],
+  "steps": [
+    {
+      "module": "Filter",
+      "prompt": {
+        "action": "Query Supabase",
+        "criteria": {
+          "academic_profile": {
+            "gpa": 3.2,
+            "major": "Computer Science",
+            "study_level": "bsc",
+            "semesters_completed": 4
+          },
+          "language_profile": {
+            "non_english_languages": [
+              "Spanish"
+            ],
+            "english_test_type": [
+              "TOEFL",
+              "IELTS"
+            ],
+            "english_test_level": "B2"
+          },
+          "availability": {
+            "start_month": 8,
+            "start_day": 15,
+            "end_month": 12,
+            "end_day": 31
+          },
+          "preferences": {
+            "must_be_erasmus": true,
+            "free_language_preferences": "I want a traditional, unified campus where it's easy to make friends...\n\nI'd love a place with cool museums... My absolute max budget is $9,000 for the semester."
+          }
+        }
+      },
+      "response": {
+        "found_universities": 15,
+        "traced_steps": [
+          "Filtered by min_gpa <= 3.2 (or no GPA requirement)",
+          "Filtered by min_semesters <= 4 (or no semester requirement)",
+          "Filtered by Erasmus availability",
+          "Filtered by availability: 8/15 to 12/31",
+          "Filtered by English test: ['toefl', 'ielts'] CEFR >= B2",
+          "Excluded restricted major: Computer Science",
+          "Filtered by language match: ['Spanish']",
+          "Queried universities_requirements table"
+        ]
+      }
+    },
+    {
+      "module": "Ranker",
+      "prompt": {
+        "llm_prompt": {
+          "system_prompt": "You are an elite study-abroad placement API. Rank a list of eligible universities based on a student's preferences. Rely on your internal knowledge of global universities, cultures, and geography. Ret...",
+          "user_prompt": "\n    Eligible Universities:\n    [\n  {\n    \"university_name\": \"ECAM Strasbourg\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"University of Cyprus\",\n    \"country\": \"cyprus\"\n  },\n  {\n    \"university_name\": \"Technical University of Denmark (DTU)\",\n    \"country\": \"denmark\"\n  },\n  {\n    \"university_name\": \"Ecole Centrale Marseille\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"CentraleSupélec\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"Anhalt University of Applied Sciences\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Leibniz Universität Hannover\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"University of Erlangen-Nuremberg\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Technical University of Munich\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Friedrich Schiller University Jena\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Politecnico di Milano\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Alexandru Ioan Cuza University of Iasi\",\n    \"country\": \"romania\"\n  },\n  {\n    \"university_name\": \"Universidad ORT Uruguay\",\n    \"country\": \"uruguay\"\n  },\n  {\n    \"university_name\": \"Politecnico di Torino\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Technical University of Berlin\",\n    \"country\": \"germany\"\n  }\n]\n\n    Social Media Sentiment Table:\n    \n| University | Primary Social Vibe & Internet Sentiment | Overall Social Level |\n| :--- | :--- | :--- |\n| ITESM Monterrey | Massive Greek/Club life, wealthy international bubble, huge events. | High |\n| University of Oregon | Classic American state school, massive sports/tailgating, frat culture. | High |\n| Politecnico di Milano | Massive Erasmus hub, huge international club nights, high ESN traffic. | High |\n| Universidad de Palermo | Trendy, design-focused, huge international LatAm footprint, urban. | High |\n| McGill University | Work hard / party hard, deeply integrated into Montreal nightlife. | High |\n| Concordia University | Relaxed, urban, very social downtown campus, artsy vibe. | High |\n| CTU (Prague) | Erasmus goldmine, cheap nightlife, highly social international crowd. | High |\n| DTU | Legendary Friday campus bars, very active Scandinavian student life. | High |\n| HEC / Ecole Polytechnique | Elite enclosed campus bubbles, massive private galas and BDE parties. | High (Closed) |\n| UConn | Big sports culture, rural campus but highly active internal party scene. | High |\n| NTU / SKKU | Massive traditional campus festivals, huge club cultures, highly connected. | High |\n| Cornell University | Intense academics mixed with massive Greek life; \"Work hard, play hard.\" | Medium/High |\n| TUM / TU Berlin | Rigorous tech schools, but saved by world-class city nightlife and Erasmus. | Medium/High |\n| UBC / U of Toronto | Huge traffic, but criticized as \"commuter schools.\" Social life requires effort. | Medium |\n| RWTH Aachen / KIT | Male-dominated engineering, brutal exams, good local pubs but heavy stress. | Medium |\n| Carnegie Mellon (CMU) | Quirky/nerdy culture, high Reddit traffic about \"stress culture\", low partying. | Low/Medium |\n| Tsinghua / Peking | Elite, hyper-competitive (\"involution\"). Huge clubs, but intense pressure. | Low/Medium |\n| KAIST / POSTECH / USTC | Hardcore STEM pressure cookers. Very little party traffic, heavy lab focus. | Low |\n| EPFL | Famous for high failure rates; social life takes a deep backseat to studying. | Low |\n| Academia Sinica | Pure research institute, mostly post-grads, almost zero traditional campus life. | Lowest |\n\n    \n    Reference Data for `financial_fit` (Global Semester Pure Cost - $0 Tuition):\n    \n| Region | Characterization | Est. Semester Total (USD) |\n| :--- | :--- | :--- |\n| USA / Australia | High mandatory fees, forced meal plans, expensive insurance/visas. | $11,000 – $15,500 |\n| Canada / UK | High rent, but lower insurance/fees than USA. | $8,500 – $11,500 |\n| Northern Europe | High rent/groceries, but $0 admin fees and free/subsidized health. | $7,500 – $10,000 |\n| Western / Southern Europe | Subsidized transport, lower daily costs for social life. | $5,000 – $8,000 |\n| Mexico / Latin America | Campus-style amenities with very cheap local housing/food. | $3,500 – $6,000 |\n| East Asia (Japan / Korea) | Subsidized on-campus dorms, cheap \"quick-eat\" culture. | $4,500 – $7,500 |\n| China / Taiwan | Ultra-low dorm costs, massive local student subsidies. | $2,500 – $4,500 |\n| Eastern Europe | Modern EU infrastructure at the lowest Western prices. | $2,200 – $4,000 |\n\n\n    Student Preferences: \"I want a traditional, unified campus where it's easy to make friends...\n\nI'd love a place with cool museums... My absolute max budget is $9,000 for the semester.\"\n\n    Rules:\n    1. Evaluate and score EVERY university in the provided list based on how well it matches the user's input. \n    2. Grade each university (0-100) across these categories ONLY if the user's input relates to them. If a category is irrelevant to the prompt, output `null`\n    - `academic_fit`: Score based strictly on the university's standing in the Shanghai Ranking (ARWU). \n        Reward high research output, STEM focus, and global prestige. Penalize universities that lack a global research footprint.\n    - `lifestyle_fit`: Score the combined physical routine and social atmosphere. Evaluate the physical routine based on Campus Typology (enclosed residential bubble vs. \n        decentralized commuter school), City Scale (immersive college town vs. sprawling megacity), and Academic Pacing (hyper-competitive \"pressure-cooker\" vs. balanced workload). \n        Evaluate the social atmosphere based on the party vibe, ease of making friends, and international/Erasmus presence. Use your internal knowledge alongside the provided social media sentiment table as general assistance.\n    - `location_fit`: Nature/hikes, nightlife, art, culture, weather.\n    - `financial_fit`: Total cost of exchange (rent, food, travel). Base the score on the \"Reference Data\" table provided. \n        Use your internal knowledge to adjust the score/estimate slightly if the specific city or country is an outlier \n        (e.g., Zurich is more expensive than the \"Western Europe\" average). In the reasoning, provide a brief estimated total cost (e.g., ~$12k) for the semester.\n    - `jewish_israeli_community_fit`: Evaluate EXCLUSIVELY based on current antisemitism levels on and around campus, the accessibility of the local Jewish community (e.g., Chabad, synagogues, kosher food), and the presence of Israeli students or locals. \n        STRICTLY IGNORE general city crime rates, pickpocketing, or broad safety metrics.\n    - `other_preferences_fit`: Any specific user requests that do not fit into the above categories (e.g., specific sports, dietary needs, unique hobbies).\n    3. Provide a short `reasoning` explicitly referencing the evaluated traits. dont mention semeter cost estimation.\n\n    Return ONLY a JSON object with this exact structure:\n    {\n        \"scored_universities\": [\n            {\n                \"university_name\": \"string\",\n                \"country\": \"string\",\n                \"scores\": {\n                    \"academic_fit\": int or null,\n                    \"lifestyle_fit\": int or null,\n                    \"social_fit\": int or null,\n                    \"location_fit\": int or null,\n                    \"financial_fit\": int or null,\n                    \"jewish_israeli_community_fit\": int or null,\n                    \"other_preferences_fit\": int or null\n                },\n                \"reasoning\": \"string\"\n            }\n        ]\n    }\n    ",
+          "top_k": 5
+        }
+      },
+      "response": {
+        "scored_universities": [
+          {
+            "university_name": "Alexandru Ioan Cuza University of Iasi",
+            "country": "romania",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 90,
+              "social_fit": 80,
+              "location_fit": 80,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Iași is a prototypical compact university city with cohesive campuses and a lively student scene — excellent for quickly making friends; the city has a strong cultural and museum presence for its size; very low costs make it a strong financial fit for the user's maximum.",
+            "total_score": 86,
+            "rank": 1
+          },
+          {
+            "university_name": "Politecnico di Milano",
+            "country": "italy",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 70,
+              "social_fit": 95,
+              "location_fit": 95,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Politecnico di Milano sits in a major international city and is a huge Erasmus hub — while the campus is urban and somewhat spread, the international student scene makes making friends very easy and nightlife/social integration is excellent; Milan offers world-class museums and cultural life; costs are moderate for Western Europe and compatible with the stated budget.",
+            "total_score": 85,
+            "rank": 2
+          },
+          {
+            "university_name": "Friedrich Schiller University Jena",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 90,
+              "social_fit": 75,
+              "location_fit": 75,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Jena is a classic compact university town with a unified feel and active student life — very easy to make friends and integrate; local cultural institutions and museums are solid for the town size; costs are low and comfortably meet the user's budget.",
+            "total_score": 82,
+            "rank": 3
+          },
+          {
+            "university_name": "Politecnico di Torino",
+            "country": "italy",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 75,
+              "social_fit": 80,
+              "location_fit": 90,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Politecnico di Torino combines a strong student community with Turin’s rich museum scene (including major national museums) — campus-city integration supports social life though the setting is urban rather than a single enclosed campus; costs are within the user's budget.",
+            "total_score": 82,
+            "rank": 4
+          },
+          {
+            "university_name": "Technical University of Berlin",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 75,
+              "social_fit": 80,
+              "location_fit": 95,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "TU Berlin is embedded in a hugely vibrant international city with excellent museums and nightlife — campus life is city-integrated (less of a single residential bubble) but Berlin’s dense student networks and Erasmus presence make meeting people straightforward; overall costs are reasonable and fit the stated maximum.",
+            "total_score": 82,
+            "rank": 5
+          },
+          {
+            "university_name": "ECAM Strasbourg",
+            "country": "france",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 80,
+              "social_fit": 70,
+              "location_fit": 85,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Small engineering school inside the compact, walkable city of Strasbourg — campus and student cohorts are tightly knit which makes making friends straightforward; Strasbourg offers strong museum and cultural options (European institutions, historic core) and mild weather; costs align comfortably with the user's stated budget.",
+            "total_score": 81,
+            "rank": 6
+          },
+          {
+            "university_name": "Technical University of Denmark (DTU)",
+            "country": "denmark",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 90,
+              "social_fit": 85,
+              "location_fit": 80,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "DTU sits on a clearly defined suburban campus (Lyngby) with famed on-campus Friday bars and an active student community — very easy to integrate; Copenhagen region offers excellent museums and cultural life but living costs are high relative to Southern Europe, so it’s closer to the upper bound of the user's budget.",
+            "total_score": 81,
+            "rank": 7
+          },
+          {
+            "university_name": "University of Erlangen-Nuremberg",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 80,
+              "social_fit": 75,
+              "location_fit": 85,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "FAU offers a strong student-town feel in Erlangen with campus clusters that foster social connection and easier friend-making; nearby Nuremberg adds substantial museum and cultural options; living costs are comfortably within the user's stated maximum.",
+            "total_score": 81,
+            "rank": 8
+          },
+          {
+            "university_name": "CentraleSupélec",
+            "country": "france",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 75,
+              "social_fit": 65,
+              "location_fit": 95,
+              "financial_fit": 75,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Campus at Gif-sur-Yvette / Paris-Saclay provides a semi-enclosed campus environment that facilitates meeting peers, but the culture can feel more elite/structured; proximity to Paris gives exceptional museums and cultural access; living costs around Paris trend high, so it’s nearer the user's upper budget limit though still feasible.",
+            "total_score": 78,
+            "rank": 9
+          },
+          {
+            "university_name": "Universidad ORT Uruguay",
+            "country": "uruguay",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 75,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "ORT in Montevideo offers urban campuses and a friendly student body — easier to connect in campus cohorts though not a single enclosed bubble; Montevideo provides museums and a pleasant cultural scene; costs are comfortably below the user's stated cap.",
+            "total_score": 78,
+            "rank": 10
+          },
+          {
+            "university_name": "Technical University of Munich",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 70,
+              "social_fit": 75,
+              "location_fit": 95,
+              "financial_fit": 65,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "TUM students are embedded in a large, world-class city with scattered campuses — excellent museum and cultural access in Munich but a less single-bubble campus feel compared with small college towns; social scene is healthy but living costs in Munich push toward the top or slightly beyond the user's budget.",
+            "total_score": 76,
+            "rank": 11
+          },
+          {
+            "university_name": "University of Cyprus",
+            "country": "cyprus",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 80,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "University of Cyprus has a cohesive suburban campus feel making it easy to meet classmates; Nicosia provides museums and a pleasant Mediterranean climate; social life is solid but less of an Erasmus party hub than major Western European cities; overall costs fit the stated maximum.",
+            "total_score": 75,
+            "rank": 12
+          },
+          {
+            "university_name": "Anhalt University of Applied Sciences",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 85,
+              "social_fit": 60,
+              "location_fit": 60,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Anhalt UAS is located in smaller towns with compact campus footprints — those close-knit settings make it easy to form friendships quickly; cultural offerings and big museums are limited compared with large cities; local costs are low and well within the stated budget.",
+            "total_score": 74,
+            "rank": 13
+          },
+          {
+            "university_name": "Leibniz Universität Hannover",
+            "country": "germany",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 70,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Hannover’s university spread across a concentrated set of faculties gives a semi-cohesive student experience — reasonable ease of making friends but less of a single residential bubble; Hannover has decent museums and cultural venues; costs align well with the user's cap.",
+            "total_score": 72,
+            "rank": 14
+          },
+          {
+            "university_name": "Ecole Centrale Marseille",
+            "country": "france",
+            "scores": {
+              "academic_fit": null,
+              "lifestyle_fit": 60,
+              "social_fit": 60,
+              "location_fit": 80,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Centrale Marseille is embedded in an urban/port city setting — less of a single enclosed campus and more city-integration, so making quick, tight social bubbles is slightly harder than a small college town; Marseille offers strong museums and warm weather; costs are within the user's limit.",
+            "total_score": 71,
+            "rank": 15
+          }
+        ],
+        "top_universities": [
+          "Alexandru Ioan Cuza University of Iasi",
+          "Politecnico di Milano",
+          "Friedrich Schiller University Jena",
+          "Politecnico di Torino",
+          "Technical University of Berlin"
+        ]
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Alexandru Ioan Cuza University of Iasi",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Alexandru Ioan Cuza University of Iasi\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |<br> <br>**ExcepƟonal changes**<br> <br>(to be approved by e-mail or signature by the studen..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Romanian, English, French",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students should consult the full course catalogue online and fill in the Learning Agreement with guidance from the Erasmus academic coordinator. Many courses are taught in Romanian but are supplemented by English tutorials allowing assignments and exams in English; a Romanian language course is offered if at least 10 students enrol."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Campus accommodation exists (student residences such as C5). For immigration/residence permit you must present an accommodation contract for university campus residents or a landlord declaration/rental contract certified at Iasi authorities. Residence/registration documents must be submitted within 30–60 days upon arrival and to the General Inspectorate for Immigration.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": 4,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Proof of health insurance (European Health Insurance Card or private insurance) is required; foreign citizens aged 26+ need health insurance for residence permit extension (use the insurance used for the visa application plus authorized translation). A medical certificate stating 'clinic sanatos' is required (obtainable at Titu Maiorescu Campus, C8 Hostel, room 1).",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students need a letter of acceptance/certificate from the university for visa application and must apply for/submit residence permit documents within 30–60 days after arrival; residence-permit-related procedures typically take about 30 days and health insurance is required for those aged 26+."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "A Romanian language course is offered but only runs if at least 10 students sign up; students will be asked about participation during the orientation meeting. No costs are specified in the factsheet.",
+          "integration_summary_notes": "There is an orientation/initial meeting with the Erasmus academic coordinator on arrival and a tutorial system providing regular individual meetings and supervision in English to help international students integrate academically."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 0,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian; English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "No minimum number of credits is required; full-time workload is 30 ECTS per semester (60 ECTS per academic year). Students must choose the majority of credits from their enrolled programme; bachelor-level courses are mostly in Italian and master-level courses mostly in English; exchange students may take courses at both levels if prerequisites are met and the school approves. Design students: minimum 6 and maximum 30 ECTS per semester; Architecture and Engineering recommend 30 ECTS (no minimum)."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": null
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Exchange programmes: recommended B1 in Italian for Italian-taught courses and B2 in English for English-taught courses; no certificate required. The factsheet suggests considering Italian language courses but does not provide costs or explicit pre-semester course details.",
+          "integration_summary_notes": "Politecnico promotes integration through a buddy scheme and welcome events; numerous student associations and campus services support incoming students."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Friedrich Schiller University Jena",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Friedrich Schiller University Jena\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Credit System<br>Course/Programme<br>Catalogue<br>Learning Agreement<br>and Course Schedule<br>M..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": null,
+          "instruction_languages": "German; English",
+          "grading_system_summary": "FSU Jena uses the ECTS credit system (credits awarded according to course workload). Specific grade scale not detailed in the factsheet.",
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may also choose freely across most fields (except Medicine, Dentistry and Pharmacy). All guest students must take at least two courses in their field and/or earn at least 10 ECTS/semester (Erasmus+ students are expected to take 30 ECTS); students create final timetables after arrival and master thesis/research students must arrange a supervising academic."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Student housing is in high demand; apply online via the Studentenwerk accommodation service (www.stw-thueringen.de/english/housing/index.html). Deadlines: 15 July for winter semester (and full year) and 15 January for summer semester. Dormitory places recommended.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 6,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "All students must take out a German public health insurance; the International Office does not accept private or travel insurances from abroad. Students with public European health insurance may use EUHI card or recognised forms; estimated health insurance cost for non-EU students is ~500 EUR/semester.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dormitory: ~2,700 EUR per semester (~450 EUR/month).",
+          "estimated_living_cost_per_month": "Estimated ~3,840 EUR per semester (including dormitory, semester contribution, books, health insurance and other expenses) ≈640 EUR/month. Semester contribution 190 EUR; books ~150 EUR/semester; health insurance ~500 EUR/semester (non-EU); other expenses ~300 EUR/semester. Students are advised to bring at least 600 EUR cash for first month.",
+          "logistics_summary_notes": "Non-EU students must apply for a study visa via German diplomatic representation (apply ~4–6 weeks before departure) using the admission letter from Jena University; after arrival non-EU students must register locally and obtain a residence permit. German public health insurance is mandatory and foreign private/travel insurances are not accepted."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "FSU Language Centre offers optional German and other language courses (beginner to advanced) during studies at a fee of 20 EUR/semester. Preparation workshops (online Zoom) are provided for nominated students before arrival.",
+          "integration_summary_notes": "FSU Jena offers an Orientation Week before lectures and a Welcome Buddy programme to support incoming students; many international student groups, language tandems and social activities are available to foster integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Torino",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Torino\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        #### **PoliTO AT A GLANCE**\n\n**Name:** Politecnico di Torino\n**Erasmus Code:** I TORINO02\n**Web page:** [www.p..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 18,
+          "max_credits_allowed": 60,
+          "instruction_languages": "Italian; English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS per semester from a PoliTO degree programme included in the mobility agreement. A full-time workload is conventionally 60 ECTS per year; course catalogue and degree programmes (including those taught in English) are listed on the university site."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee or deadlines provided in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance is mentioned as part of practical support; a Campus Medical Centre is available for emergencies and multilingual psychological orientation is offered. No details on accepted coverage or costs provided.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "The university provides support for visa and residence permit procedures and lists health insurance as required support; nominations and applications are handled via the nomination@polito tool and the online apply@polito procedure."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming.",
+          "integration_summary_notes": "The Life Division organises welcome meetings, cultural and leisure events to encourage integration; international student associations act as mentor students and support welcome activities. Additional support includes orientation for students with disabilities and multilingual psychological services."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Berlin",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Berlin\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        CONTACT INFORMATION \nTECHNISCHE UNIVERSITÄT BERLIN \n \nHead of Section /  \nOverseas Program \nCoordinat..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Most courses in German; a number of courses in English (mainly at graduate level).",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) and typically study one or two semesters. Enrolment requires a student social fund contribution (~€80); a preparatory German intensive course (early Sept/early Mar) costs approx. €295 for 6 ECTS and semester German courses are also available."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students can apply for dorm rooms via studierendenWERK Berlin (rent €350-€400); dorm application particulars are communicated about two weeks after each exchange application deadline. Housing is not guaranteed and students advised to arrive ~2 weeks before German course orientation if seeking private accommodation. More info: TU Berlin housing page.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Health insurance listed at approx. €100/month if not waived; students with visas/residence permits must demonstrate sufficient funds (€934/month). Specific accepted coverage not detailed in the factsheet; see university Visa Matters page.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dorms: €350-€400/month; general housing estimate €350-€650/month (varies by type/location).",
+          "estimated_living_cost_per_month": "Housing €350-650 / Food €150 / Books & supplies €40 / Health insurance (if not waived) €100; Public Transport approx. €180 per semester. Visa applicants must demonstrate ~€934/month.",
+          "logistics_summary_notes": "Applicants for visa/residence permits must prove sufficient funds (~€934/month); health insurance is required unless waived (~€100/month). Dorm application info follows exchange application deadlines but housing is not guaranteed."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Preparatory German intensive course offered early September/early March costs approx. €295 and awards 6 ECTS; Erasmus students may be eligible only if they have completed A2. German courses are also available during the semester (ZEMS).",
+          "integration_summary_notes": "TU Berlin offers an orientation for exchange students each semester and a buddy program to support integration, plus links to sports and library services to aid student life."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Alexandru Ioan Cuza University of Iasi",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Alexandru Ioan Cuza University of Iasi\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |<br> <br>**ExcepƟonal changes**<br> <br>(to be approved by e-mail or signature by the studen..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Romanian, English, French",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Consult the online course catalogue for available courses. Many programmes/specialisations offer courses in English or French while other faculties teach in Romanian; international students receive tutorials and supervision in English and Romanian-language courses run only if at least 10 students sign up."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "University campus accommodation (student residences such as C5) is available and requires an accommodation contract plus a certificate from the student residence (e.g. C5). Private housing requires a renting contract certified at the Iasi General Directorate of Public Finances or a landlord's declaration and real estate contract (translated into Romanian). Documents related to accommodation and immigration should be submitted within 30–60 days of arrival.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": 4,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "European Health Insurance Card (EHIC) or private insurance is accepted for visa/residence formalities. Foreign citizens aged 26+ must have health insurance for residence permit extension (use the same policy used for the visa with an authorized translation); those younger than 26 do not need a medical insurance for extension. A medical certificate ('clinic sanatos') is also required for residence procedures.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students need the university acceptance/nomination and a certificate issued by the institution for visa and residence permit applications; submit documents to the General Inspectorate for Immigration in Iaşi within 30–60 days of arrival. Residence permit applications are typically processed within 30 days (may be extended by up to 15 days)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "A Romanian language course is offered only if at least 10 students enrol; participation is queried during the orientation meeting. No cost information provided. Tutorials and academic supervision for international students are provided in English and students may complete assignments and be examined in English.",
+          "integration_summary_notes": "An orientation meeting and an initial meeting with the Erasmus academic coordinator are provided; students receive regular tutorials and individual meetings with coordinators and professors to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 0,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Full-time study equals 30 ECTS per semester (60 ECTS per year); no minimum number of credits is required. Students should choose the majority of credits from their enrolled programme; courses at bachelor level are mostly in Italian while most master courses are taught in English, and students may take courses at both levels if prerequisites and school approval are met."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": null
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Italian language courses are recommended for exchange students (Level B1 recommended for courses in Italian); Level B2 in English recommended for courses in English. No certificate is required for exchange programme application.",
+          "integration_summary_notes": "Politecnico promotes integration through a buddy system and welcome events; students are encouraged to consider Italian language courses to support participation in Italian-taught classes."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Friedrich Schiller University Jena",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Friedrich Schiller University Jena\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Credit System<br>Course/Programme<br>Catalogue<br>Learning Agreement<br>and Course Schedule<br>M..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": null,
+          "instruction_languages": "German (main); a few courses in English. Minimum required level: B2 (CEFR).",
+          "grading_system_summary": "FSU Jena uses the ECTS credit system; credits awarded based on course workload (EU standard ~30 ECTS per semester). The International Office issues a Transcript of Records after each semester.",
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may take courses across most faculties (except Medicine, Dentistry, Pharmacy). Home university approval is required; students finalize timetables and attend guest study information sessions after arrival. Erasmus/E+ICM students are expected to take 30 ECTS/semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Student dormitories available via the Studentenwerk accommodation service (apply online). High demand; recommended to apply early. Deadlines: 15 July for winter semester/full year, 15 January for summer semester. Link: www.stw-thueringen.de/english/housing/index.html.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 6,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German public health insurance is mandatory; the International Office does not accept private or travel insurances from abroad. EU public insurance cards (EUHI/E111 or recognized bilateral forms) may be accepted if valid for the full stay but must be recognized by a German public insurer. Estimated health insurance cost: ~€500 per semester for non-EU students.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "€2,700 per semester for dormitory (~€450/month, assuming a 6-month semester).",
+          "estimated_living_cost_per_month": "Costs reported per semester: Semester contribution €190 (includes regional transport), Accommodation (dormitory) €2,700, Books/materials €150, Health insurance €500 (non-EU), Visa €110 (non-EU, one-off), Other expenses ~€300. It is recommended to bring at least €600 cash for first-month expenses.",
+          "logistics_summary_notes": "Non-EU students typically must apply for a study visa ~4–6 weeks before departure using the university admission letter; after arrival non-EU students must register with local immigration and obtain an electronic residence permit (fees up to €110). German public health insurance is required for enrollment."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "FSU Language Centre offers optional language courses (including German) during studies at €20/semester for many language classes, from beginner to advanced; these are optional and intended to improve language skills.",
+          "integration_summary_notes": "FSU Jena offers an Orientation Week before lectures and a Welcome Buddy/mentoring programme for incoming students. A wide range of international student groups and activities support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Torino",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Torino\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        #### **PoliTO AT A GLANCE**\n\n**Name:** Politecnico di Torino\n**Erasmus Code:** I TORINO02\n**Web page:** [www.p..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 18,
+          "max_credits_allowed": 60,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS/CFU per semester from a PoliTO degree programme included in the mobility agreement. Degree courses use CFU (ECTS) with a full-time workload conventionally fixed at 60 credits per year."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee or application deadlines are provided in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance is listed as part of practical support and there is a Campus Medical Centre for emergencies; no details on accepted coverage or costs are provided.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Politecnico provides practical support for visa and residence permit procedures and lists health insurance support, but the factsheet gives no processing timeframes or specific insurance requirements."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming.",
+          "integration_summary_notes": "The Life Division organizes welcome events and activities to foster integration, and international student associations provide mentor students to welcome newcomers. Free Italian language courses are available to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Berlin",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Berlin\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        CONTACT INFORMATION \nTECHNISCHE UNIVERSITÄT BERLIN \n \nHead of Section /  \nOverseas Program \nCoordinat..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Most courses are taught in German; a number of courses are offered in English (mainly at graduate level).",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) when applying. Exchange students pay tuition to their home institution but must pay a student social contribution (~€80) for enrolment; a preparatory German intensive course (early Sept/early Mar) costs approx. €295 and awards 6 ECTS (Erasmus students need completed A2 to join)."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students can apply for dorm rooms via studierendenWERK Berlin (rent €350-€400). Dorm application particulars are communicated about two weeks after the exchange application deadline; housing is not guaranteed. Students advised to arrive ~2 weeks before orientation to search for private accommodation. More info: https://www.tu.berlin/en/go41781/",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance (if not waived) approx. €100 per month. Students applying for a visa/residence permit must demonstrate sufficient financial resources (see €934/month requirement).",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dorms: €350-€400 per month; general housing estimate: €350-€650 per month (varies by accommodation type).",
+          "estimated_living_cost_per_month": "Housing €350-650 / Food €150 / Books & supplies €40 / Health insurance (if not waived) €100; Public transport approx. €180 per semester. Visa applicants must demonstrate ~€934 per month.",
+          "logistics_summary_notes": "Visa/residence permit applicants must prove sufficient funds (~€934/month). Housing via studierendenWERK is available but not guaranteed; dorm application details follow after the exchange application deadline. Insurance costs may apply if not waived."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Preparatory German intensive course offered before semester (early Sept/early Mar), costs approx. €295 and awards 6 ECTS. Erasmus students eligible only if they have completed A2. Additional German courses available during the semester via ZEMS.",
+          "integration_summary_notes": "TU Berlin runs orientation/info sessions each semester and offers a buddy program for incoming exchange students. A paid preparatory German course is available prior to the semester to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Alexandru Ioan Cuza University of Iasi",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Alexandru Ioan Cuza University of Iasi\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |<br> <br>**ExcepƟonal changes**<br> <br>(to be approved by e-mail or signature by the studen..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Romanian, English, French",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students should consult the online course catalogue. Some bachelor/master specializations are taught in English or French while many faculties teach in Romanian; however, Romanian courses are often offered as tutorials in English so international students can write assignments and be examined in English. A Romanian language course is available subject to a minimum enrollment."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation contracts are required for students staying in university campus; student residence C5 issues certificates (C5 room references provided). Private accommodation requires a certified renting contract or landlord declaration plus supporting documents for immigration/registration.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": 4,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "European Health Insurance Card or private insurance is accepted. Foreign citizens aged 26+ need health insurance for residence permit extension (use the policy from the visa application plus authorized translation). A medical certificate stating 'clinic sanatos' is required (can be obtained at Titu Maiorescu Campus, C8 Hostel, room 1).",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Register with the General Inspectorate for Immigration in Iaşi within ~30–60 days of arrival submitting passport, acceptance letter, proof of insurance and accommodation documents; residence permit applications are usually processed within 30 days (may be extended up to 15 days)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "Romanian language course available only if at least 10 students enroll; participation is discussed during orientation. No cost information provided.",
+          "integration_summary_notes": "An orientation meeting is provided and each faculty has an Erasmus academic coordinator; tutorials and regular individual meetings give international students guidance and allow assessments in English even when lectures are in Romanian."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "No minimum number of credits is required overall; full-time workload is 30 ECTS per semester (60 ECTS per year). Most bachelor courses are in Italian and most master courses are in English; students may mix levels if prerequisites and school approval are met. Design students: min 6 and max 30 ECTS/semester; Architecture recommends 30 ECTS/semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "The factsheet directs applicants to the university application webpage/QR for procedures; specific visa sponsorship, processing times, housing availability, and insurance requirements are not specified in the provided information. Language level recommendations are given for course eligibility."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Exchange programmes: recommended B1 Italian for Italian-taught courses and B2 English for English-taught courses; no certificate required for exchange applicants. Double degree applicants must submit an English language certificate. Italian language courses are suggested but costs and scheduling are not specified.",
+          "integration_summary_notes": "Politecnico offers buddy support and welcome events to integrate exchange students; many student associations and campus services are available. Further integration services are referenced on the university mobility webpages."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Friedrich Schiller University Jena",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Friedrich Schiller University Jena\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Credit System<br>Course/Programme<br>Catalogue<br>Learning Agreement<br>and Course Schedule<br>M..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": null,
+          "instruction_languages": "German, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may select courses across most faculties (except Medicine, Dentistry and Pharmacy); not all courses are offered every semester and home university approval is required. Erasmus+ students must take 30 ECTS/semester; all guest students must take at least two courses in their field and/or earn at least 10 ECTS; students doing individual research must secure a FSU supervisor and will receive a Transcript of Records after each semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Student accommodation via the Studentenwerk (apply online at www.stw-thueringen.de); high demand especially in winter semester. Application deadlines: 15 July (winter/full year) and 15 January (summer).",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 6,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German public health insurance is mandatory and private/travel insurances from abroad are not accepted; EU public insurance cards/forms may be accepted if recognized by a German insurer. Estimated health insurance cost: 500 EUR per semester for non-EU students.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "2,700 EUR per semester (dormitory) — approx. 450 EUR/month (assuming a 6-month semester).",
+          "estimated_living_cost_per_month": "Approx. 640 EUR/month (based on estimated 3,840 EUR per 6-month semester for non-EU students: semester contribution 190 EUR, accommodation 2,700 EUR, books 150 EUR, health insurance 500 EUR, other expenses 300 EUR; excludes one-time visa fee).",
+          "logistics_summary_notes": "Some nationalities enter visa-free; others must apply for a study visa about 4–6 weeks before departure using the admission letter. After arrival register at the city office and non-EU students must visit the local Immigration Office to obtain an electronic residence/visa card; German public health insurance is compulsory."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "FSU Language Centre offers optional German and other language courses (beginner to advanced) at 20 EUR/semester; courses are available during studies to improve language skills.",
+          "integration_summary_notes": "FSU Jena runs an Orientation Week before lectures and a Welcome Buddy programme to integrate new students. A wide range of international student groups, sports facilities and support services are available to assist exchange students."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Torino",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Torino\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        #### **PoliTO AT A GLANCE**\n\n**Name:** Politecnico di Torino\n**Erasmus Code:** I TORINO02\n**Web page:** [www.p..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 18,
+          "max_credits_allowed": null,
+          "instruction_languages": "Italian; English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS/CFU per semester (CFU = ECTS; 1 CFU = 25 hours). Full-time workload conventionally 60 credits per year. Course catalogue and degree programmes (including some taught in English) available on the university website."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee of placement or deadlines provided in the factsheet. Incoming office contact and online procedures are provided for nominated students.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance is listed as practical support and a Campus Medical Centre exists for emergencies; no details on accepted coverage or costs are provided in the factsheet.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Nomination and online application required via Polito tools (nomination@polito), with deadlines roughly April/May for fall and November/End of November for spring; required documents include passport/ID, transcript, language certificate. University provides visa/residence permit support and lists health insurance as required support."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming; no costs indicated.",
+          "integration_summary_notes": "The Life Division organizes welcome meetings, cultural and leisure events to encourage integration, and international student associations provide mentor students to support newcomers and welcome activities."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Berlin",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Berlin\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        CONTACT INFORMATION \nTECHNISCHE UNIVERSITÄT BERLIN \n \nHead of Section /  \nOverseas Program \nCoordinat..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Most courses are taught in German; a number of courses are offered in English (mainly at graduate level).",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) and pay a small student social fund contribution (~€80). A preparatory intensive German course is offered before semester start (6 ECTS) and exchange stays typically last one or two semesters."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dorm rooms via studierendenWERK Berlin (rent approx. €350-€400) are available but not guaranteed; applicants are informed about dorm application particulars about two weeks after the exchange application deadline. Students seeking private accommodation are advised to arrive ~two weeks before the German course orientation to find housing. More info: https://www.tu.berlin/en/go41781/.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Health insurance cost estimated at €100/month if not waived; visa/residence permit applicants must have valid coverage and prove sufficient financial resources. Some insurances may be waivable; further details available via university guidance.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dorm: €350-€400 per month; general housing estimate €350-€650 per month depending on accommodation type.",
+          "estimated_living_cost_per_month": "Housing €350-650; food and drink €150; books and supplies €40; health insurance (if not waived) €100; public transport approx. €180 per semester. Visa applicants must demonstrate ~€934 per month as proof of sufficient funds.",
+          "logistics_summary_notes": "Housing is available through the student services but not guaranteed; visa/residence permit applicants must demonstrate financial resources (~€934/month). Health insurance is required unless waived."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Preparatory German intensive course offered in early September/early March (approx. €295, earns 6 ECTS). Erasmus students may need to have completed A2 to be eligible; additional German courses available during the semester via ZEMS.",
+          "integration_summary_notes": "TU Berlin runs an orientation/info session and a buddy program for incoming exchange students, with a preparatory German course available before semesters to support integration."
+        }
+      }
+    },
+    {
+      "module": "Filter",
+      "prompt": {
+        "action": "Query Supabase",
+        "criteria": {
+          "academic_profile": {
+            "gpa": 3.2,
+            "major": "Computer Science",
+            "study_level": "bsc",
+            "semesters_completed": 4
+          },
+          "language_profile": {
+            "non_english_languages": [
+              "Spanish"
+            ],
+            "english_test_type": [
+              "TOEFL",
+              "IELTS"
+            ],
+            "english_test_level": "B2"
+          },
+          "availability": {
+            "start_month": 8,
+            "start_day": 15,
+            "end_month": 12,
+            "end_day": 31
+          },
+          "preferences": {
+            "must_be_erasmus": true,
+            "free_language_preferences": "I want a traditional, unified campus where it's easy to make friends...\n\nI'd love a place with cool museums... My absolute max budget is $9,000 for the semester."
+          }
+        }
+      },
+      "response": {
+        "found_universities": 15,
+        "traced_steps": [
+          "Filtered by min_gpa <= 3.2 (or no GPA requirement)",
+          "Filtered by min_semesters <= 4 (or no semester requirement)",
+          "Filtered by Erasmus availability",
+          "Filtered by availability: 8/15 to 12/31",
+          "Filtered by English test: ['toefl', 'ielts'] CEFR >= B2",
+          "Excluded restricted major: Computer Science",
+          "Filtered by language match: ['Spanish']",
+          "Queried universities_requirements table"
+        ]
+      }
+    },
+    {
+      "module": "Ranker",
+      "prompt": {
+        "llm_prompt": {
+          "system_prompt": "You are an elite study-abroad placement API. Rank a list of eligible universities based on a student's preferences. Rely on your internal knowledge of global universities, cultures, and geography. Ret...",
+          "user_prompt": "\n    Eligible Universities:\n    [\n  {\n    \"university_name\": \"ECAM Strasbourg\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"University of Cyprus\",\n    \"country\": \"cyprus\"\n  },\n  {\n    \"university_name\": \"Technical University of Denmark (DTU)\",\n    \"country\": \"denmark\"\n  },\n  {\n    \"university_name\": \"Ecole Centrale Marseille\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"CentraleSupélec\",\n    \"country\": \"france\"\n  },\n  {\n    \"university_name\": \"Anhalt University of Applied Sciences\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Leibniz Universität Hannover\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"University of Erlangen-Nuremberg\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Technical University of Munich\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Friedrich Schiller University Jena\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Politecnico di Milano\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Alexandru Ioan Cuza University of Iasi\",\n    \"country\": \"romania\"\n  },\n  {\n    \"university_name\": \"Universidad ORT Uruguay\",\n    \"country\": \"uruguay\"\n  },\n  {\n    \"university_name\": \"Politecnico di Torino\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"Technical University of Berlin\",\n    \"country\": \"germany\"\n  }\n]\n\n    Social Media Sentiment Table:\n    \n| University | Primary Social Vibe & Internet Sentiment | Overall Social Level |\n| :--- | :--- | :--- |\n| ITESM Monterrey | Massive Greek/Club life, wealthy international bubble, huge events. | High |\n| University of Oregon | Classic American state school, massive sports/tailgating, frat culture. | High |\n| Politecnico di Milano | Massive Erasmus hub, huge international club nights, high ESN traffic. | High |\n| Universidad de Palermo | Trendy, design-focused, huge international LatAm footprint, urban. | High |\n| McGill University | Work hard / party hard, deeply integrated into Montreal nightlife. | High |\n| Concordia University | Relaxed, urban, very social downtown campus, artsy vibe. | High |\n| CTU (Prague) | Erasmus goldmine, cheap nightlife, highly social international crowd. | High |\n| DTU | Legendary Friday campus bars, very active Scandinavian student life. | High |\n| HEC / Ecole Polytechnique | Elite enclosed campus bubbles, massive private galas and BDE parties. | High (Closed) |\n| UConn | Big sports culture, rural campus but highly active internal party scene. | High |\n| NTU / SKKU | Massive traditional campus festivals, huge club cultures, highly connected. | High |\n| Cornell University | Intense academics mixed with massive Greek life; \"Work hard, play hard.\" | Medium/High |\n| TUM / TU Berlin | Rigorous tech schools, but saved by world-class city nightlife and Erasmus. | Medium/High |\n| UBC / U of Toronto | Huge traffic, but criticized as \"commuter schools.\" Social life requires effort. | Medium |\n| RWTH Aachen / KIT | Male-dominated engineering, brutal exams, good local pubs but heavy stress. | Medium |\n| Carnegie Mellon (CMU) | Quirky/nerdy culture, high Reddit traffic about \"stress culture\", low partying. | Low/Medium |\n| Tsinghua / Peking | Elite, hyper-competitive (\"involution\"). Huge clubs, but intense pressure. | Low/Medium |\n| KAIST / POSTECH / USTC | Hardcore STEM pressure cookers. Very little party traffic, heavy lab focus. | Low |\n| EPFL | Famous for high failure rates; social life takes a deep backseat to studying. | Low |\n| Academia Sinica | Pure research institute, mostly post-grads, almost zero traditional campus life. | Lowest |\n\n    \n    Reference Data for `financial_fit` (Global Semester Pure Cost - $0 Tuition):\n    \n| Region | Characterization | Est. Semester Total (USD) |\n| :--- | :--- | :--- |\n| USA / Australia | High mandatory fees, forced meal plans, expensive insurance/visas. | $11,000 – $15,500 |\n| Canada / UK | High rent, but lower insurance/fees than USA. | $8,500 – $11,500 |\n| Northern Europe | High rent/groceries, but $0 admin fees and free/subsidized health. | $7,500 – $10,000 |\n| Western / Southern Europe | Subsidized transport, lower daily costs for social life. | $5,000 – $8,000 |\n| Mexico / Latin America | Campus-style amenities with very cheap local housing/food. | $3,500 – $6,000 |\n| East Asia (Japan / Korea) | Subsidized on-campus dorms, cheap \"quick-eat\" culture. | $4,500 – $7,500 |\n| China / Taiwan | Ultra-low dorm costs, massive local student subsidies. | $2,500 – $4,500 |\n| Eastern Europe | Modern EU infrastructure at the lowest Western prices. | $2,200 – $4,000 |\n\n\n    Student Preferences: \"I want a traditional, unified campus where it's easy to make friends...\n\nI'd love a place with cool museums... My absolute max budget is $9,000 for the semester.\"\n\n    Rules:\n    1. Evaluate and score EVERY university in the provided list based on how well it matches the user's input. \n    2. Grade each university (0-100) across these categories ONLY if the user's input relates to them. If a category is irrelevant to the prompt, output `null`\n    - `academic_fit`: Score based strictly on the university's standing in the Shanghai Ranking (ARWU). \n        Reward high research output, STEM focus, and global prestige. Penalize universities that lack a global research footprint.\n    - `lifestyle_fit`: Score the combined physical routine and social atmosphere. Evaluate the physical routine based on Campus Typology (enclosed residential bubble vs. \n        decentralized commuter school), City Scale (immersive college town vs. sprawling megacity), and Academic Pacing (hyper-competitive \"pressure-cooker\" vs. balanced workload). \n        Evaluate the social atmosphere based on the party vibe, ease of making friends, and international/Erasmus presence. Use your internal knowledge alongside the provided social media sentiment table as general assistance.\n    - `location_fit`: Nature/hikes, nightlife, art, culture, weather.\n    - `financial_fit`: Total cost of exchange (rent, food, travel). Base the score on the \"Reference Data\" table provided. \n        Use your internal knowledge to adjust the score/estimate slightly if the specific city or country is an outlier \n        (e.g., Zurich is more expensive than the \"Western Europe\" average). In the reasoning, provide a brief estimated total cost (e.g., ~$12k) for the semester.\n    - `jewish_israeli_community_fit`: Evaluate EXCLUSIVELY based on current antisemitism levels on and around campus, the accessibility of the local Jewish community (e.g., Chabad, synagogues, kosher food), and the presence of Israeli students or locals. \n        STRICTLY IGNORE general city crime rates, pickpocketing, or broad safety metrics.\n    - `other_preferences_fit`: Any specific user requests that do not fit into the above categories (e.g., specific sports, dietary needs, unique hobbies).\n    3. Provide a short `reasoning` explicitly referencing the evaluated traits. dont mention semeter cost estimation.\n\n    Return ONLY a JSON object with this exact structure:\n    {\n        \"scored_universities\": [\n            {\n                \"university_name\": \"string\",\n                \"country\": \"string\",\n                \"scores\": {\n                    \"academic_fit\": int or null,\n                    \"lifestyle_fit\": int or null,\n                    \"social_fit\": int or null,\n                    \"location_fit\": int or null,\n                    \"financial_fit\": int or null,\n                    \"jewish_israeli_community_fit\": int or null,\n                    \"other_preferences_fit\": int or null\n                },\n                \"reasoning\": \"string\"\n            }\n        ]\n    }\n    ",
+          "top_k": 5
+        }
+      },
+      "response": {
+        "scored_universities": [
+          {
+            "university_name": "Technical University of Denmark (DTU)",
+            "country": "denmark",
+            "scores": {
+              "academic_fit": 88,
+              "lifestyle_fit": 90,
+              "social_fit": 90,
+              "location_fit": 88,
+              "financial_fit": 72,
+              "jewish_israeli_community_fit": 65,
+              "other_preferences_fit": 95
+            },
+            "reasoning": "High ARWU-style research/engineering reputation. Very campus-centric (Lyngby) with legendary student bars and active student organizations—excellent for making friends and a unified campus experience. Strong social vibe per sentiment data. Close enough to Copenhagen museums and culture while also offering green spaces. Costs in Northern Europe trend higher but remain near the user's ceiling. Copenhagen has a small but accessible Jewish community.",
+            "total_score": 84,
+            "rank": 1
+          },
+          {
+            "university_name": "CentraleSupélec",
+            "country": "france",
+            "scores": {
+              "academic_fit": 85,
+              "lifestyle_fit": 85,
+              "social_fit": 80,
+              "location_fit": 98,
+              "financial_fit": 78,
+              "jewish_israeli_community_fit": 75,
+              "other_preferences_fit": 90
+            },
+            "reasoning": "Strong research profile and high prestige in engineering. Campus at Gif-sur-Yvette/Paris-Saclay is a relatively enclosed, unified campus which supports quick social integration; strong student organizations but somewhat elite/closed social circles. Outstanding access to Paris museums and culture (major plus for a museums lover). Costs are higher around Paris but still manageable relative to the user's limit. Paris area offers well-established Jewish infrastructure and communities.",
+            "total_score": 84,
+            "rank": 2
+          },
+          {
+            "university_name": "University of Erlangen-Nuremberg",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 82,
+              "lifestyle_fit": 80,
+              "social_fit": 70,
+              "location_fit": 80,
+              "financial_fit": 88,
+              "jewish_israeli_community_fit": 70,
+              "other_preferences_fit": 88
+            },
+            "reasoning": "Strong research university with good ARWU-style standing. Campus life in Erlangen/Nürnberg region is cohesive and student-friendly—easy to make friends. Social life is lively though not an Erasmus megahub. Region offers good museums (Nuremberg), cultural sites, and accessible nature. Costs align well with the user's budget. Reasonable local Jewish community presence and resources for Israeli students.",
+            "total_score": 80,
+            "rank": 3
+          },
+          {
+            "university_name": "Technical University of Munich",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 98,
+              "lifestyle_fit": 70,
+              "social_fit": 75,
+              "location_fit": 95,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": 85,
+              "other_preferences_fit": 60
+            },
+            "reasoning": "Top-tier global research and STEM reputation. Campus is spread across Munich rather than a single unified bubble, so making friends by campus alone is harder, though student groups are active. Social life benefits from Munich's rich cultural scene; museums and museums-district are excellent. Costs in Munich are on the higher side of Western Europe but still potentially within the student's cap. Munich has an established Jewish community and institutional support.",
+            "total_score": 80,
+            "rank": 4
+          },
+          {
+            "university_name": "Politecnico di Milano",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 78,
+              "lifestyle_fit": 75,
+              "social_fit": 95,
+              "location_fit": 95,
+              "financial_fit": 80,
+              "jewish_israeli_community_fit": 85,
+              "other_preferences_fit": 50
+            },
+            "reasoning": "Strong technical university with solid research standing. Milan is a massive Erasmus hub with intense international social life—excellent for meeting people quickly, though the institution is urban and not a single residential campus (so less of a traditional unified campus). Outstanding museums and cultural institutions. Costs in Milan are Western European but generally within the user's ceiling. Milan has an active Jewish community and resources.",
+            "total_score": 80,
+            "rank": 5
+          },
+          {
+            "university_name": "Technical University of Berlin",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 70,
+              "social_fit": 80,
+              "location_fit": 98,
+              "financial_fit": 88,
+              "jewish_israeli_community_fit": 88,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Very solid research profile and engineering strength. Campus life is decentralized across Berlin, so it lacks a single unified residential bubble, but the city's enormous cultural scene, museums, and nightlife make social integration straightforward. Location is outstanding for museums and art. Costs are Western European and generally compatible with the budget. Berlin has a large, visible Jewish and Israeli community with many resources.",
+            "total_score": 80,
+            "rank": 6
+          },
+          {
+            "university_name": "Politecnico di Torino",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 74,
+              "lifestyle_fit": 72,
+              "social_fit": 85,
+              "location_fit": 90,
+              "financial_fit": 85,
+              "jewish_israeli_community_fit": 80,
+              "other_preferences_fit": 55
+            },
+            "reasoning": "Solid engineering school with good technical reputation. Turin has an active student scene and strong museums (e.g., Egyptian Museum), though the campus is urban and somewhat distributed rather than one enclosed residential bubble. Social life is strong and international-friendly. Costs are reasonable for Western Europe. Turin hosts an accessible Jewish community.",
+            "total_score": 77,
+            "rank": 7
+          },
+          {
+            "university_name": "Friedrich Schiller University Jena",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 65,
+              "lifestyle_fit": 78,
+              "social_fit": 75,
+              "location_fit": 78,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": 55,
+              "other_preferences_fit": 90
+            },
+            "reasoning": "Respectable research university but smaller international footprint. Jena is a classic university town with a unified, compact campus and strong peer social life—excellent for making friends. Cultural offerings and proximity to Weimar/Bauhaus heritage add museums and culture. Very affordable for the semester. Jewish community presence is limited compared to major cities.",
+            "total_score": 76,
+            "rank": 8
+          },
+          {
+            "university_name": "ECAM Strasbourg",
+            "country": "france",
+            "scores": {
+              "academic_fit": 50,
+              "lifestyle_fit": 75,
+              "social_fit": 70,
+              "location_fit": 85,
+              "financial_fit": 86,
+              "jewish_israeli_community_fit": 75,
+              "other_preferences_fit": 80
+            },
+            "reasoning": "Moderate academic footprint (small engineering school). Strong lifestyle: compact student body in Strasbourg makes it easy to meet people and a unified feel. Social life is decent but not an Erasmus megahub. Location is excellent for museums, cathedral, and walkable city culture. Costs align with Western Europe and fit the stated budget. Local Jewish community in Strasbourg is established and accessible. Campus-style atmosphere suits the user's desire for a unified campus.",
+            "total_score": 74,
+            "rank": 9
+          },
+          {
+            "university_name": "Leibniz Universität Hannover",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 70,
+              "lifestyle_fit": 65,
+              "social_fit": 60,
+              "location_fit": 75,
+              "financial_fit": 88,
+              "jewish_israeli_community_fit": 70,
+              "other_preferences_fit": 75
+            },
+            "reasoning": "Solid regional research university with a visible research footprint. Campus is city-integrated but still student-focused, making social integration reasonable. Social scene is moderate; Hannover offers museums and parks and decent cultural life. Financially favourable for the semester. Established Jewish community and synagogues exist in Hannover. Campus layout offers a workable, semi-unified student experience.",
+            "total_score": 72,
+            "rank": 10
+          },
+          {
+            "university_name": "Alexandru Ioan Cuza University of Iasi",
+            "country": "romania",
+            "scores": {
+              "academic_fit": 35,
+              "lifestyle_fit": 80,
+              "social_fit": 85,
+              "location_fit": 75,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": 45,
+              "other_preferences_fit": 92
+            },
+            "reasoning": "Limited global research footprint but a flagship national university. Iasi is a strong student city with a unified, campus-town feel that makes social integration easy and lively (good nightlife and low cost). Cultural sites and regional museums are present though less dense than big Western capitals. Extremely cost-friendly for the semester. Jewish/Israeli infrastructure is small locally.",
+            "total_score": 72,
+            "rank": 11
+          },
+          {
+            "university_name": "Ecole Centrale Marseille",
+            "country": "france",
+            "scores": {
+              "academic_fit": 68,
+              "lifestyle_fit": 60,
+              "social_fit": 65,
+              "location_fit": 82,
+              "financial_fit": 88,
+              "jewish_israeli_community_fit": 70,
+              "other_preferences_fit": 60
+            },
+            "reasoning": "Moderate academic standing among French engineering schools. Lifestyle is more urban than a single residential bubble—making a unified-campus feel less likely. Social life and international party traffic are moderate. Very good location for Mediterranean weather, museums (Mucem) and coastal hikes. Financially fits the user's cap. Marseille has Jewish resources but less concentrated than Paris.",
+            "total_score": 70,
+            "rank": 12
+          },
+          {
+            "university_name": "University of Cyprus",
+            "country": "cyprus",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 68,
+              "social_fit": 65,
+              "location_fit": 70,
+              "financial_fit": 88,
+              "jewish_israeli_community_fit": 50,
+              "other_preferences_fit": 80
+            },
+            "reasoning": "Relatively small research footprint internationally. Campus in Nicosia is fairly unified so it's easy to make friends and has a relaxed pace. Social scene is island-style—friendly but not a big Erasmus party hub. Location offers Mediterranean weather and local museums/archaeology. Financially favorable against the student's max. Jewish/Israeli resources are limited compared with large European cities. Campus-oriented structure matches the user's preference for a unified campus.",
+            "total_score": 66,
+            "rank": 13
+          },
+          {
+            "university_name": "Universidad ORT Uruguay",
+            "country": "uruguay",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 70,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": 60,
+              "other_preferences_fit": 75
+            },
+            "reasoning": "Modest international research profile. ORT provides a campus-style environment in Montevideo with friendly social opportunities but not a huge international Erasmus stream. Montevideo offers museums and cultural life with pleasant weather. Very affordable under the user's stated maximum. Uruguay has an active Jewish community centered in Montevideo.",
+            "total_score": 65,
+            "rank": 14
+          },
+          {
+            "university_name": "Anhalt University of Applied Sciences",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 30,
+              "lifestyle_fit": 50,
+              "social_fit": 40,
+              "location_fit": 65,
+              "financial_fit": 90,
+              "jewish_israeli_community_fit": 45,
+              "other_preferences_fit": 85
+            },
+            "reasoning": "Low global research footprint (applied sciences focus). Small-town campuses tend to be tight-knit (good for making friends) but overall social scene is modest. Location offers regional culture (including Bauhaus heritage in Dessau area) and access to nature. Very affordable in the Eastern/central German cost bracket. Jewish/Israeli community resources are limited locally. Campus scale fits the student's desire for a unified environment.",
+            "total_score": 58,
+            "rank": 15
+          }
+        ],
+        "top_universities": [
+          "Technical University of Denmark (DTU)",
+          "CentraleSupélec",
+          "University of Erlangen-Nuremberg",
+          "Technical University of Munich",
+          "Politecnico di Milano"
+        ]
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Denmark (DTU)",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Denmark (DTU)\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        # Fact sheet for prospective exchange students\n\n\n# About Denmark\n\n## Denmark - home of the hap..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Danish, English",
+          "grading_system_summary": "DTU uses the Danish 7-point grading scale for all levels; there is no official conversion to the US grading scale.",
+          "academic_summary_notes": "DTU follows the ECTS system (60 ECTS per academic year, 30 ECTS per semester). BSc programmes are mainly in Danish while MSc programmes are taught entirely in English; incoming exchange students should consult DTU's course catalogue and exchange course pages for course selection and requirements."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation information is provided via DTU-linked housing platform (bdtu.dk). Specific deadlines and guarantees are not detailed in the factsheet; students should consult the accommodation page for availability and application steps.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "DTU provides web resources for living in Denmark and accommodation; visa and insurance requirements are not specified in the factsheet and should be checked on DTU's incoming student pages."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "DTU runs an introduction week during which participants are assigned a buddy; a range of clubs and student associations are available to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "CentraleSupélec",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: CentraleSupélec\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        Institution coordinates the Graduate School of Engineering and Systems Sciences of\nUniversité Paris-Saclay, which ra..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 20,
+          "max_credits_allowed": 30,
+          "instruction_languages": "French, English",
+          "grading_system_summary": "Scale 0–20; minimum passing grade is 10 for exchange students to transfer credits.",
+          "academic_summary_notes": "Course selection: double degree students select at start of each teaching period; exchange students select at time of application. Double degree and 3rd-year students must follow the entire curriculum; language recommendations are B1 for French and B2 for English."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Limited on‑campus housing; application opens after official admission. Residences on Paris‑Saclay, Rennes and Metz campuses with limited availability and campus-specific residence links provided.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Health care insurance is mandatory. EU students: EHIC accepted. Non‑EU students can take out French Social Security upon arrival (free of charge); comprehensive coverage (lodging, personal liability, belongings) mandatory; application link sent after registration.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Paris‑Saclay (Césal): €400–€750/month; Rennes (Residence Belle Fontaine): €350–€450/month; Metz (Residence Edouard Branly): €350–€450/month.",
+          "estimated_living_cost_per_month": "At least €700/month for a full‑year mobility (including accommodation, food, internet); cost of living may be lower in Rennes and Metz.",
+          "logistics_summary_notes": "Non‑EU students need to apply for a visa and obtain a residence permit; incoming students are responsible for securing and paying for their visa. A Welcome Desk/Université Paris‑Saclay provides information; health insurance is mandatory."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Intensive French classes available prior to semester at Cavilam (Alliance Française of Vichy). Admitted double degree students are invited to a pre‑programme summer school focused on French language (costs not specified).",
+          "integration_summary_notes": "Welcome Desk and orientation events are provided (orientation in late August for fall/full year and late January for spring). Double degree students are invited to a pre‑start summer school to support integration and language skills."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "University of Erlangen-Nuremberg",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: University of Erlangen-Nuremberg\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        ## **Do I need a Learning Agreement?**\n\n\nSome home universities agree upon a list of courses which ..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "German (main); English in some fields (availability varies by faculty)",
+          "grading_system_summary": "German numeric scale where 1.0 is excellent and 4.0 is the minimum passing grade; exact grading keys set by individual instructors; ECTS conversion information provided by the university.",
+          "academic_summary_notes": "FAU does not stipulate a mandatory minimum or maximum ECTS but recommends ~30 ECTS per semester (20–30 ECTS mentioned as guidance). Most institute courses are 5 ECTS and ECTS for each course are listed in Univis; Learning Agreement requirements depend on the home university and must be signed by student, home coordinator and FAU departmental coordinator."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students receive information on accommodation and housing search after application; further housing resources are provided online.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German health insurance is obligatory; accident and liability insurance highly recommended; students with European Health Insurance Card (EHIC) may be exempt from obligatory German insurance; non-EU students should have travel health insurance valid until start of lectures; international travel insurances are generally not sufficient.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Orientation (mandatory) helps with registering residence, insurance recognition or taking out new health insurance, opening a bank account and applying for a residence permit; health insurance coverage for the whole stay is required and EHIC may exempt EU students."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "A preparatory German course is held before lectures (course fee and credits available online); during semester the FAU language centre offers courses in various languages and levels.",
+          "integration_summary_notes": "FAU runs welcome weeks for international students twice per semester, a mandatory orientation course at the start of semester to complete formalities, and an international buddy programme for integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Munich",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Munich\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        TUM Global & Alumni Office\n\nTechnische Universität München\n\n--- NEXT CHUNK ---\n\n# **Information form*..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "German, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must demonstrate proficiency in the chosen language (German/English). Use the TUMonline course catalogue (filter for English-only if needed); study plan/Learning Agreement signatures possible earliest after admission. Exchange stays limited to a maximum of two semesters; internships external to TUM alone are not eligible."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "TUM Global Office offers a limited Service Package of dormitory places via Munich Student Union; applicants must tick the relevant box in the application and be enrolled by a deadline announced after admission. Allocation is limited and competitive (priority: TUMexchange → students with differing abilities → Erasmus+). Separate accommodation info provided for Freising, Straubing, and Heilbronn.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 35,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance coverage details and procedures are provided on the TUM website (link given); students should consult the page for accepted coverage and steps.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Visa requirements depend on citizenship (EU/EFTA and certain countries: no entry visa required). Non-EU students are strongly advised to apply for a student visa in the country of study due to long waiting times (quoted 7–9 months); TUM Global Office cannot provide legal advice and tourist visas are not accepted."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "German and other language courses offered by the TUM Language Center; availability and costs listed on the Language Center website.",
+          "integration_summary_notes": "TUM runs orientation weeks and integration/social activities in Munich and offers language courses to support integration. Specific buddy/mentor programs are not explicitly mentioned in the factsheet."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 0,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian (most Bachelor courses), English (majority of Master courses)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Full-time study is 30 ECTS per semester (60 ECTS per academic year). No minimum number of credits is required; exchange students must choose the majority of credits from the programme they enrol in and may take courses at both Bachelor and Master levels if prerequisites and school approval are met."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": null
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Politecnico promotes a buddy system and welcome events to help incoming students integrate; students are also encouraged to consider Italian language courses to support studies in Italian-taught programmes."
+        }
+      }
+    }
+  ]
+}

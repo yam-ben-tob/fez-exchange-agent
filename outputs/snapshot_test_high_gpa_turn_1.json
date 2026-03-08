@@ -1,0 +1,971 @@
+{
+  "valid_universities_list": [
+    {
+      "name": "Polytechnique Montréal",
+      "country": "canada"
+    },
+    {
+      "name": "University of British Columbia",
+      "country": "canada"
+    },
+    {
+      "name": "University of Science and Technology of China",
+      "country": "china"
+    },
+    {
+      "name": "University of Cyprus",
+      "country": "cyprus"
+    },
+    {
+      "name": "Anhalt University of Applied Sciences",
+      "country": "germany"
+    },
+    {
+      "name": "University of Connecticut",
+      "country": "usa"
+    },
+    {
+      "name": "Technical University of Munich",
+      "country": "germany"
+    },
+    {
+      "name": "Politecnico di Milano",
+      "country": "italy"
+    },
+    {
+      "name": "National Tsing Hua University",
+      "country": "taiwan"
+    },
+    {
+      "name": "National Yang Ming Chiao Tung University",
+      "country": "taiwan"
+    },
+    {
+      "name": "Alexandru Ioan Cuza University of Iasi",
+      "country": "romania"
+    },
+    {
+      "name": "Ajou University",
+      "country": "south korea"
+    },
+    {
+      "name": "POSTECH University",
+      "country": "south korea"
+    },
+    {
+      "name": "Sungkyunkwan University",
+      "country": "south korea"
+    },
+    {
+      "name": "University of Oregon",
+      "country": "usa"
+    },
+    {
+      "name": "Politecnico di Torino",
+      "country": "italy"
+    },
+    {
+      "name": "KAIST",
+      "country": "south korea"
+    }
+  ],
+  "user_iformation": {
+    "academic_profile": {
+      "gpa": 4.0,
+      "major": "Physics",
+      "study_level": "msc",
+      "semesters_completed": 6
+    },
+    "language_profile": {
+      "non_english_languages": [],
+      "english_test_type": [
+        "TOEFL"
+      ],
+      "english_test_level": "C1"
+    },
+    "availability": {
+      "start_month": 2,
+      "start_day": 1,
+      "end_month": 6,
+      "end_day": 30
+    },
+    "preferences": {
+      "must_be_erasmus": false,
+      "free_language_preferences": "quiet campus, research focus"
+    }
+  },
+  "user_requests": [],
+  "top_k": 5,
+  "top_universities": [
+    "University of Science and Technology of China",
+    "POSTECH University",
+    "KAIST",
+    "National Yang Ming Chiao Tung University",
+    "National Tsing Hua University"
+  ],
+  "analysis": [
+    {
+      "university_name": "University of Science and Technology of China",
+      "general_fit_reasoning": "Strong engineering research profile within Québec (solid ARWU presence for engineering at provincial level) but Montreal's integrated nightlife and commuter population reduce the 'quiet campus' match; campus is research-active yet socially busy and weather is cold with strong urban arts.",
+      "requirements": {
+        "name": "University of Science and Technology of China",
+        "country": "china",
+        "min_gpa": 2.5,
+        "non_english_languages": [],
+        "english_test_type": [
+          "TOEFL",
+          "IELTS"
+        ],
+        "english_test_level": "B2",
+        "english_only_possible": true,
+        "test_required": true,
+        "waiver_available": true,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": 1,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": 6,
+          "start_day": null,
+          "start_month": 3
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 15,
+          "max_credits_allowed": 20,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": "Numeric 0-100 marks; letter grades; and two-level scores (Pass/Fail) are used.",
+          "academic_summary_notes": "Usual workload is 15-20 credits/semester for undergraduates and 10 credits/semester for graduate students. Recommended language levels: HSK 5 for Chinese-taught courses or TOEFL iBT 80 / IELTS 6.0 for English-taught courses; recommended GPA 2.5/4.0. Exchange students do not pay tuition to USTC."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "On-campus housing is offered on a first-come, first-served basis; if full, nearby hotels or hostels may be used. Students are advised to bring approximately CNY 1000 in cash for taxi to campus and dormitory deposit.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students must purchase Chinese medical insurance. Insurance fee: 400 CNY for six months or 800 CNY for one year. Foreign-based insurance may have slower compensation; Chinese system often requires payment before treatment.",
+          "currency": "CNY",
+          "estimated_housing_cost_per_month": "Approximately 500-1500 CNY/month per person (on-campus, varies by room type).",
+          "estimated_living_cost_per_month": "Food: approximately 60 CNY/day (~1800 CNY/month). Housing: approximately 500-1500 CNY/month. (Costs vary by lifestyle and room type.)",
+          "logistics_summary_notes": "Visa types: X2 for one-semester (<=180 days) and X1 for one year or longer (X1 holders must apply for a residence permit within 30 days of entry). Chinese medical insurance is mandatory and costs 400 CNY (6 months) or 800 CNY (1 year)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "The factsheet does not specify buddy programs or mandatory orientation events. Students should follow the online application portal and the provided pre-arrival suggestions (bring cash, obtain Chinese medical insurance)."
+        }
+      }
+    },
+    {
+      "university_name": "POSTECH University",
+      "general_fit_reasoning": "Top-tier ARWU research university (high STEM output) with excellent nature access (Vancouver outdoors) which supports a quieter research lifestyle, but its sprawling/commuter aspects and active city nightlife mean it's not the most secluded campus.",
+      "requirements": {
+        "name": "POSTECH University",
+        "country": "south korea",
+        "min_gpa": 3,
+        "non_english_languages": [],
+        "english_test_type": [
+          "TOEFL iBT",
+          "IELTS Academic"
+        ],
+        "english_test_level": "B2",
+        "english_only_possible": true,
+        "test_required": true,
+        "waiver_available": true,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": 19,
+          "end_month": 12,
+          "start_day": 1,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": 5,
+          "end_month": 6,
+          "start_day": 16,
+          "start_month": 2
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": 22,
+          "instruction_languages": "English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students register for courses on POVIS on a first-come-first-serve basis. Undergraduate recommended/standard load is 15 credits (min 10, max 22); graduate students have separate limits (min 3, max 18); nomination, CGPA >3.0/4.3 and English proficiency required."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": true,
+          "housing_details": "All international students are guaranteed a room in POSTECH student dormitory unless they choose otherwise. Housing fee must be paid in full by cash deposit to POSTECH Housing Services within the first week of the semester; a negative tuberculosis check-up in English is required to check in.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "All international students are automatically registered to the National Health Insurance Service (NHIS) from the date of alien registration (approx. 70,000 KRW/month invoiced). Students must also purchase a separate insurance plan covering most illnesses and injuries valid for at least 1 month from arrival. A negative tuberculosis check-up report in English is required for dormitory check-in.",
+          "currency": "KRW, USD",
+          "estimated_housing_cost_per_month": "125 USD/month (on-campus housing estimate from ISSS)",
+          "estimated_living_cost_per_month": "Approx. 715 USD/month total (Housing $125, Dining $350, Health Insurance $55, Transportation $35, Personal $150); NHIS approx. 70,000 KRW/month invoiced.",
+          "logistics_summary_notes": "Students receive a Certificate of Admission (required for visa) and must have passport validity six months beyond program end. POSTECH is IEQAS-certified enabling a simplified visa process, ISSS assists with ARC during orientation; students must leave Korea within 30 days after program end or by ARC expiry."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Pre-arrival orientation is delivered by Zoom covering visa process, life at POSTECH, and course registration; on-campus Orientation for New International Students includes mandatory sessions and cultural activities, and ISSS provides guidance for alien registration and settling in."
+        }
+      }
+    },
+    {
+      "university_name": "KAIST",
+      "general_fit_reasoning": "Strong ARWU research university with intense STEM focus and a campus culture described as research-heavy/low-social — very compatible with 'quiet campus, research focus'; city location (Hefei) is functional rather than a major cultural hub.",
+      "requirements": {
+        "name": "KAIST",
+        "country": "south korea",
+        "min_gpa": 3,
+        "non_english_languages": [],
+        "english_test_type": [
+          "TOEFL iBT",
+          "IELTS",
+          "TOEIC"
+        ],
+        "english_test_level": "B2",
+        "english_only_possible": true,
+        "test_required": true,
+        "waiver_available": true,
+        "restricted_majors": [
+          "Medical Science",
+          "Engineering",
+          "Business"
+        ],
+        "msc_allowed": true,
+        "min_semesters_completed": 1,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "spring_semester": {
+          "end_day": 19,
+          "end_month": 6,
+          "start_day": 2,
+          "start_month": 3
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": 24,
+          "instruction_languages": "English (some courses may be offered in Korean)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students: minimum 4 courses (12 credits) and maximum 8 courses (24 credits). Graduate exchange students: minimum 3 courses (9 credits) and maximum 4 courses (12 credits). Course lists are uploaded ~2 months prior and course registration opens 1-2 months before the semester; students must register for courses at their appropriate degree level."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "KAIST will apply for on-campus accommodation for all exchange students based on their application form. Assigned dormitories are double or triple occupancy, furnished (bed, closet, desk, chair); shared restrooms, showers, washing machines, dryers and a lobby on each floor. KAIST provides one pillow and one blanket. Dormitory info available at KAIST Dormitory/KDS site.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "D-2 visa holders must subscribe to National Health Insurance (NHI); subscribing takes more than a month so students should prepare traveler's insurance to cover at least the first month in Korea.",
+          "currency": "USD",
+          "estimated_housing_cost_per_month": "Approximately USD 550 - 900 per semester",
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students need the KAIST Certificate of Admission to apply for a Korean student visa; KAIST ISSS provides further guidance on visa, alien registration and dormitory. D-2 visa holders must enroll in NHI and should have short-term travel insurance for the first month."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "KAIST sends welcome packages (including Certificate of Admission and information) and the ISSS team provides further details on arrival, housing and registration. Further orientation details are provided to accepted students once procedures are finalized."
+        }
+      }
+    },
+    {
+      "university_name": "National Yang Ming Chiao Tung University",
+      "general_fit_reasoning": "Limited global ARWU research footprint but a smaller, campus-centered environment on an island with relaxed lifestyle and strong natural amenities; quieter than big-city hubs though research intensity is modest.",
+      "requirements": {
+        "name": "National Yang Ming Chiao Tung University",
+        "country": "taiwan",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": null,
+          "end_month": null,
+          "start_day": null,
+          "start_month": null
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "English; Chinese (Mandarin)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduates must take at least 9 credits per semester; graduate inbound students must take at least 2 courses. Students may choose courses across colleges and campuses but instructors can refuse enrollment due to prerequisites or limited capacity; some colleges (e.g., College of Management) are limited to final-year undergraduates and graduate students."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "The Division of Overseas Student Affairs handles accommodation and host-family arrangements for international students; no explicit guarantee or deadlines stated in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "The Division of Overseas Student Affairs provides on-site services including accommodation, insurance, visa assistance and registration. Nomination from home institution and online application are required; admission letters are sent to home coordinators."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Free Chinese courses provided by the Chinese Language Division/Language Teaching and Research Center, including Chinese Cultural Salon (cultural experience), courses from introductory to advanced (4 levels), and elective situational conversation courses; offered at no cost.",
+          "integration_summary_notes": "The Division supports international student society activities and host-family arrangements and offers free Chinese language and cultural courses to facilitate cultural and academic integration."
+        }
+      }
+    },
+    {
+      "university_name": "National Tsing Hua University",
+      "general_fit_reasoning": "Applied-sciences focus with negligible ARWU presence (low global research footprint) but situated in a small-town/residential setting that is typically quiet and student-centered — good match for a tranquil research environment if heavy research prestige is not required.",
+      "requirements": {
+        "name": "National Tsing Hua University",
+        "country": "taiwan",
+        "min_gpa": null,
+        "non_english_languages": [],
+        "english_test_type": [],
+        "english_test_level": null,
+        "english_only_possible": true,
+        "test_required": false,
+        "waiver_available": false,
+        "restricted_majors": [],
+        "msc_allowed": true,
+        "min_semesters_completed": null,
+        "fall_semester": {
+          "end_day": 20,
+          "end_month": 12,
+          "start_day": 2,
+          "start_month": 9
+        },
+        "spring_semester": {
+          "end_day": 6,
+          "end_month": 6,
+          "start_day": 17,
+          "start_month": 2
+        },
+        "erasmus_available": false
+      },
+      "logistics": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students are required to take a minimum of 9 credits per semester; graduate exchange students must take at least one master-level course. Students are expected to take at least one course from their home department; additional Mandarin and English course options are available during the exchange."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dormitory fees administered by Division of Student Housing. Dormitory fee ranges (per semester) are listed for undergraduates and graduates; estimated living expenses for one semester (including dorm, visa, textbooks, food, transportation, etc.) are provided as USD 3,600.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students staying longer than 180 days are covered by/should enroll in Taiwan National Health Insurance (NHI); links to ARC and NHI information are provided. No specific cost details provided in factsheet.",
+          "currency": "TWD, USD",
+          "estimated_housing_cost_per_month": "Undergraduates: NT$6,300–16,660 per semester; Graduates: NT$10,170–27,500 per semester.",
+          "estimated_living_cost_per_month": "Estimated for one semester: USD 3,600 (includes dorm, visa, textbooks, food, transportation, etc.).",
+          "logistics_summary_notes": "Visa guidance and links are provided (Visitor/Resident Visa, ARC), but the university does not explicitly state visa sponsorship. National Health Insurance applies for exchange students staying over 180 days."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Mandarin courses are available to take during the exchange. English course information is published seasonally (English course info for fall released late May; for spring released mid-December); no costs specified.",
+          "integration_summary_notes": "Office of Global Affairs and the Division of Overseas Students Service handle incoming student support; language courses and student housing options are available but specific buddy/orientation programs are not detailed in the factsheet."
+        }
+      }
+    }
+  ],
+  "request_count": 1,
+  "universities_fit_text": [
+    "Strong engineering research profile within Québec (solid ARWU presence for engineering at provincial level) but Montreal's integrated nightlife and commuter population reduce the 'quiet campus' match; campus is research-active yet socially busy and weather is cold with strong urban arts.",
+    "Top-tier ARWU research university (high STEM output) with excellent nature access (Vancouver outdoors) which supports a quieter research lifestyle, but its sprawling/commuter aspects and active city nightlife mean it's not the most secluded campus.",
+    "Strong ARWU research university with intense STEM focus and a campus culture described as research-heavy/low-social — very compatible with 'quiet campus, research focus'; city location (Hefei) is functional rather than a major cultural hub.",
+    "Limited global ARWU research footprint but a smaller, campus-centered environment on an island with relaxed lifestyle and strong natural amenities; quieter than big-city hubs though research intensity is modest.",
+    "Applied-sciences focus with negligible ARWU presence (low global research footprint) but situated in a small-town/residential setting that is typically quiet and student-centered — good match for a tranquil research environment if heavy research prestige is not required.",
+    "Moderate ARWU research profile for a U.S. public R1, but classic American big-sports/fraternity culture and energetic campus life make it a poor fit for a quiet research-focused semester despite good nearby nature.",
+    "World-class ARWU research and STEM powerhouse (excellent academic fit) with proximity to Alps and rich culture, but being in Munich introduces strong city life and active student scenes that reduce the 'quiet campus' feel compared with isolated research institutes.",
+    "Solid ARWU-recognized technical university with strong engineering research, but it is an Erasmus/party hub in Milan with a highly social international student body — not well matched to a quiet, low-social preference.",
+    "Strong Taiwan research university with a solid ARWU presence and research culture; campus and local norms are more studious and dorm-oriented than large Western party scenes, giving a good quiet/research fit while offering accessible local culture.",
+    "Merged university with strong research output in engineering and life sciences; campus cultures are research-oriented and generally quieter than big Western party hubs, offering a good match for focused study.",
+    "Limited ARWU research footprint internationally but located in a classic university town with quieter campus rhythms and an affordable low-cost environment — decent for a tranquil semester if top-tier research prestige is not required.",
+    "Moderate research profile (limited top-tier ARWU presence) in a campus setting near Seoul; South Korean campus routines tend to be study-focused with less Western-style partying—reasonably compatible with a quiet, research-oriented preference.",
+    "High research intensity and strong ARWU presence for a small STEM-focused institution; campus culture is described as a 'pressure cooker' with minimal party traffic, making it an excellent match for quiet, research-focused students.",
+    "Strong research university with good ARWU recognition, but SKKU has active campus festivals and social scenes (especially in Seoul) which reduces the quiet-campus fit despite solid academics.",
+    "Moderate research profile but classic high-party, big-sports campus culture (poor fit for quiet), though the surrounding Oregon outdoors provide excellent nature options if that trade-off is acceptable.",
+    "Good technical research reputation in Italy (respectable ARWU-related profile) and proximity to the Alps provides strong nature/culture, but active student scenes mean it is not the quietest possible campus.",
+    "Top-tier Korean STEM research university with a strong ARWU profile and an intense, research-first campus culture described as low-social — excellent match for a quiet, research-focused preference though located in a mid-size tech city rather than a major cultural capital."
+  ],
+  "steps": [
+    {
+      "module": "Filter",
+      "prompt": {
+        "action": "Query Supabase",
+        "criteria": {
+          "academic_profile": {
+            "gpa": 4.0,
+            "major": "Physics",
+            "study_level": "msc",
+            "semesters_completed": 6
+          },
+          "language_profile": {
+            "non_english_languages": [],
+            "english_test_type": [
+              "TOEFL"
+            ],
+            "english_test_level": "C1"
+          },
+          "availability": {
+            "start_month": 2,
+            "start_day": 1,
+            "end_month": 6,
+            "end_day": 30
+          },
+          "preferences": {
+            "must_be_erasmus": false,
+            "free_language_preferences": "quiet campus, research focus"
+          }
+        }
+      },
+      "response": {
+        "found_universities": 17,
+        "traced_steps": [
+          "Filtered by min_gpa <= 4.0 (or no GPA requirement)",
+          "Filtered by MSc allowed",
+          "Filtered by min_semesters <= 6 (or no semester requirement)",
+          "Filtered for English-only universities",
+          "Filtered by availability: 2/1 to 6/30",
+          "Filtered by English test: ['toefl'] CEFR >= C1",
+          "Excluded restricted major: Physics",
+          "Queried universities_requirements table"
+        ]
+      }
+    },
+    {
+      "module": "Ranker",
+      "prompt": {
+        "llm_prompt": {
+          "system_prompt": "You are an elite study-abroad placement API. Rank a list of eligible universities based on a student's preferences. Rely on your internal knowledge of global universities, cultures, and geography. Ret...",
+          "user_prompt": "\n    Eligible Universities:\n    [\n  {\n    \"university_name\": \"Polytechnique Montréal\",\n    \"country\": \"canada\"\n  },\n  {\n    \"university_name\": \"University of British Columbia\",\n    \"country\": \"canada\"\n  },\n  {\n    \"university_name\": \"University of Science and Technology of China\",\n    \"country\": \"china\"\n  },\n  {\n    \"university_name\": \"University of Cyprus\",\n    \"country\": \"cyprus\"\n  },\n  {\n    \"university_name\": \"Anhalt University of Applied Sciences\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"University of Connecticut\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"Technical University of Munich\",\n    \"country\": \"germany\"\n  },\n  {\n    \"university_name\": \"Politecnico di Milano\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"National Tsing Hua University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"National Yang Ming Chiao Tung University\",\n    \"country\": \"taiwan\"\n  },\n  {\n    \"university_name\": \"Alexandru Ioan Cuza University of Iasi\",\n    \"country\": \"romania\"\n  },\n  {\n    \"university_name\": \"Ajou University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"POSTECH University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"Sungkyunkwan University\",\n    \"country\": \"south korea\"\n  },\n  {\n    \"university_name\": \"University of Oregon\",\n    \"country\": \"usa\"\n  },\n  {\n    \"university_name\": \"Politecnico di Torino\",\n    \"country\": \"italy\"\n  },\n  {\n    \"university_name\": \"KAIST\",\n    \"country\": \"south korea\"\n  }\n]\n\n    Social Media Sentiment Table:\n    \n| University | Primary Social Vibe & Internet Sentiment | Overall Social Level |\n| :--- | :--- | :--- |\n| ITESM Monterrey | Massive Greek/Club life, wealthy international bubble, huge events. | High |\n| University of Oregon | Classic American state school, massive sports/tailgating, frat culture. | High |\n| Politecnico di Milano | Massive Erasmus hub, huge international club nights, high ESN traffic. | High |\n| Universidad de Palermo | Trendy, design-focused, huge international LatAm footprint, urban. | High |\n| McGill University | Work hard / party hard, deeply integrated into Montreal nightlife. | High |\n| Concordia University | Relaxed, urban, very social downtown campus, artsy vibe. | High |\n| CTU (Prague) | Erasmus goldmine, cheap nightlife, highly social international crowd. | High |\n| DTU | Legendary Friday campus bars, very active Scandinavian student life. | High |\n| HEC / Ecole Polytechnique | Elite enclosed campus bubbles, massive private galas and BDE parties. | High (Closed) |\n| UConn | Big sports culture, rural campus but highly active internal party scene. | High |\n| NTU / SKKU | Massive traditional campus festivals, huge club cultures, highly connected. | High |\n| Cornell University | Intense academics mixed with massive Greek life; \"Work hard, play hard.\" | Medium/High |\n| TUM / TU Berlin | Rigorous tech schools, but saved by world-class city nightlife and Erasmus. | Medium/High |\n| UBC / U of Toronto | Huge traffic, but criticized as \"commuter schools.\" Social life requires effort. | Medium |\n| RWTH Aachen / KIT | Male-dominated engineering, brutal exams, good local pubs but heavy stress. | Medium |\n| Carnegie Mellon (CMU) | Quirky/nerdy culture, high Reddit traffic about \"stress culture\", low partying. | Low/Medium |\n| Tsinghua / Peking | Elite, hyper-competitive (\"involution\"). Huge clubs, but intense pressure. | Low/Medium |\n| KAIST / POSTECH / USTC | Hardcore STEM pressure cookers. Very little party traffic, heavy lab focus. | Low |\n| EPFL | Famous for high failure rates; social life takes a deep backseat to studying. | Low |\n| Academia Sinica | Pure research institute, mostly post-grads, almost zero traditional campus life. | Lowest |\n\n    \n    Reference Data for `financial_fit` (Global Semester Pure Cost - $0 Tuition):\n    \n| Region | Characterization | Est. Semester Total (USD) |\n| :--- | :--- | :--- |\n| USA / Australia | High mandatory fees, forced meal plans, expensive insurance/visas. | $11,000 – $15,500 |\n| Canada / UK | High rent, but lower insurance/fees than USA. | $8,500 – $11,500 |\n| Northern Europe | High rent/groceries, but $0 admin fees and free/subsidized health. | $7,500 – $10,000 |\n| Western / Southern Europe | Subsidized transport, lower daily costs for social life. | $5,000 – $8,000 |\n| Mexico / Latin America | Campus-style amenities with very cheap local housing/food. | $3,500 – $6,000 |\n| East Asia (Japan / Korea) | Subsidized on-campus dorms, cheap \"quick-eat\" culture. | $4,500 – $7,500 |\n| China / Taiwan | Ultra-low dorm costs, massive local student subsidies. | $2,500 – $4,500 |\n| Eastern Europe | Modern EU infrastructure at the lowest Western prices. | $2,200 – $4,000 |\n\n\n    Student Preferences: \"quiet campus, research focus\"\n\n    Rules:\n    1. Evaluate and score EVERY university in the provided list based on how well it matches the user's input. \n    2. Grade each university (0-100) across these categories ONLY if the user's input relates to them. If a category is irrelevant to the prompt, output `null`\n    - `academic_fit`: Score based strictly on the university's standing in the Shanghai Ranking (ARWU). \n        Reward high research output, STEM focus, and global prestige. Penalize universities that lack a global research footprint.\n    - `lifestyle_fit`: Score the combined physical routine and social atmosphere. Evaluate the physical routine based on Campus Typology (enclosed residential bubble vs. \n        decentralized commuter school), City Scale (immersive college town vs. sprawling megacity), and Academic Pacing (hyper-competitive \"pressure-cooker\" vs. balanced workload). \n        Evaluate the social atmosphere based on the party vibe, ease of making friends, and international/Erasmus presence. Use your internal knowledge alongside the provided social media sentiment table as general assistance.\n    - `location_fit`: Nature/hikes, nightlife, art, culture, weather.\n    - `financial_fit`: Total cost of exchange (rent, food, travel). Base the score on the \"Reference Data\" table provided. \n        Use your internal knowledge to adjust the score/estimate slightly if the specific city or country is an outlier \n        (e.g., Zurich is more expensive than the \"Western Europe\" average). In the reasoning, provide a brief estimated total cost (e.g., ~$12k) for the semester.\n    - `jewish_israeli_community_fit`: Evaluate EXCLUSIVELY based on current antisemitism levels on and around campus, the accessibility of the local Jewish community (e.g., Chabad, synagogues, kosher food), and the presence of Israeli students or locals. \n        STRICTLY IGNORE general city crime rates, pickpocketing, or broad safety metrics.\n    - `other_preferences_fit`: Any specific user requests that do not fit into the above categories (e.g., specific sports, dietary needs, unique hobbies).\n    3. Provide a short `reasoning` explicitly referencing the evaluated traits. dont mention semeter cost estimation.\n\n    Return ONLY a JSON object with this exact structure:\n    {\n        \"scored_universities\": [\n            {\n                \"university_name\": \"string\",\n                \"country\": \"string\",\n                \"scores\": {\n                    \"academic_fit\": int or null,\n                    \"lifestyle_fit\": int or null,\n                    \"social_fit\": int or null,\n                    \"location_fit\": int or null,\n                    \"financial_fit\": int or null,\n                    \"jewish_israeli_community_fit\": int or null,\n                    \"other_preferences_fit\": int or null\n                },\n                \"reasoning\": \"string\"\n            }\n        ]\n    }\n    ",
+          "top_k": 5
+        }
+      },
+      "response": {
+        "scored_universities": [
+          {
+            "university_name": "University of Science and Technology of China",
+            "country": "china",
+            "scores": {
+              "academic_fit": 85,
+              "lifestyle_fit": 85,
+              "social_fit": 85,
+              "location_fit": 55,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Strong ARWU research university with intense STEM focus and a campus culture described as research-heavy/low-social — very compatible with 'quiet campus, research focus'; city location (Hefei) is functional rather than a major cultural hub.",
+            "total_score": 81,
+            "rank": 1
+          },
+          {
+            "university_name": "POSTECH University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 88,
+              "lifestyle_fit": 90,
+              "social_fit": 90,
+              "location_fit": 65,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "High research intensity and strong ARWU presence for a small STEM-focused institution; campus culture is described as a 'pressure cooker' with minimal party traffic, making it an excellent match for quiet, research-focused students.",
+            "total_score": 81,
+            "rank": 2
+          },
+          {
+            "university_name": "KAIST",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 90,
+              "lifestyle_fit": 92,
+              "social_fit": 92,
+              "location_fit": 60,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Top-tier Korean STEM research university with a strong ARWU profile and an intense, research-first campus culture described as low-social — excellent match for a quiet, research-focused preference though located in a mid-size tech city rather than a major cultural capital.",
+            "total_score": 81,
+            "rank": 3
+          },
+          {
+            "university_name": "National Yang Ming Chiao Tung University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 80,
+              "social_fit": 70,
+              "location_fit": 75,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Merged university with strong research output in engineering and life sciences; campus cultures are research-oriented and generally quieter than big Western party hubs, offering a good match for focused study.",
+            "total_score": 80,
+            "rank": 4
+          },
+          {
+            "university_name": "National Tsing Hua University",
+            "country": "taiwan",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 80,
+              "social_fit": 70,
+              "location_fit": 70,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Strong Taiwan research university with a solid ARWU presence and research culture; campus and local norms are more studious and dorm-oriented than large Western party scenes, giving a good quiet/research fit while offering accessible local culture.",
+            "total_score": 79,
+            "rank": 5
+          },
+          {
+            "university_name": "Technical University of Munich",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 95,
+              "lifestyle_fit": 50,
+              "social_fit": 55,
+              "location_fit": 90,
+              "financial_fit": 50,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "World-class ARWU research and STEM powerhouse (excellent academic fit) with proximity to Alps and rich culture, but being in Munich introduces strong city life and active student scenes that reduce the 'quiet campus' feel compared with isolated research institutes.",
+            "total_score": 68,
+            "rank": 6
+          },
+          {
+            "university_name": "University of British Columbia",
+            "country": "canada",
+            "scores": {
+              "academic_fit": 90,
+              "lifestyle_fit": 60,
+              "social_fit": 50,
+              "location_fit": 90,
+              "financial_fit": 40,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Top-tier ARWU research university (high STEM output) with excellent nature access (Vancouver outdoors) which supports a quieter research lifestyle, but its sprawling/commuter aspects and active city nightlife mean it's not the most secluded campus.",
+            "total_score": 66,
+            "rank": 7
+          },
+          {
+            "university_name": "Alexandru Ioan Cuza University of Iasi",
+            "country": "romania",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 65,
+              "social_fit": 60,
+              "location_fit": 70,
+              "financial_fit": 95,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Limited ARWU research footprint internationally but located in a classic university town with quieter campus rhythms and an affordable low-cost environment — decent for a tranquil semester if top-tier research prestige is not required.",
+            "total_score": 63,
+            "rank": 8
+          },
+          {
+            "university_name": "Ajou University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 40,
+              "lifestyle_fit": 70,
+              "social_fit": 65,
+              "location_fit": 65,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Moderate research profile (limited top-tier ARWU presence) in a campus setting near Seoul; South Korean campus routines tend to be study-focused with less Western-style partying—reasonably compatible with a quiet, research-oriented preference.",
+            "total_score": 62,
+            "rank": 9
+          },
+          {
+            "university_name": "Anhalt University of Applied Sciences",
+            "country": "germany",
+            "scores": {
+              "academic_fit": 10,
+              "lifestyle_fit": 85,
+              "social_fit": 80,
+              "location_fit": 60,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Applied-sciences focus with negligible ARWU presence (low global research footprint) but situated in a small-town/residential setting that is typically quiet and student-centered — good match for a tranquil research environment if heavy research prestige is not required.",
+            "total_score": 61,
+            "rank": 10
+          },
+          {
+            "university_name": "Sungkyunkwan University",
+            "country": "south korea",
+            "scores": {
+              "academic_fit": 78,
+              "lifestyle_fit": 40,
+              "social_fit": 40,
+              "location_fit": 75,
+              "financial_fit": 70,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Strong research university with good ARWU recognition, but SKKU has active campus festivals and social scenes (especially in Seoul) which reduces the quiet-campus fit despite solid academics.",
+            "total_score": 61,
+            "rank": 11
+          },
+          {
+            "university_name": "Politecnico di Torino",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 75,
+              "lifestyle_fit": 40,
+              "social_fit": 45,
+              "location_fit": 85,
+              "financial_fit": 60,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Good technical research reputation in Italy (respectable ARWU-related profile) and proximity to the Alps provides strong nature/culture, but active student scenes mean it is not the quietest possible campus.",
+            "total_score": 61,
+            "rank": 12
+          },
+          {
+            "university_name": "University of Cyprus",
+            "country": "cyprus",
+            "scores": {
+              "academic_fit": 25,
+              "lifestyle_fit": 60,
+              "social_fit": 50,
+              "location_fit": 85,
+              "financial_fit": 60,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Limited global ARWU research footprint but a smaller, campus-centered environment on an island with relaxed lifestyle and strong natural amenities; quieter than big-city hubs though research intensity is modest.",
+            "total_score": 56,
+            "rank": 13
+          },
+          {
+            "university_name": "Politecnico di Milano",
+            "country": "italy",
+            "scores": {
+              "academic_fit": 80,
+              "lifestyle_fit": 25,
+              "social_fit": 25,
+              "location_fit": 70,
+              "financial_fit": 60,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Solid ARWU-recognized technical university with strong engineering research, but it is an Erasmus/party hub in Milan with a highly social international student body — not well matched to a quiet, low-social preference.",
+            "total_score": 52,
+            "rank": 14
+          },
+          {
+            "university_name": "Polytechnique Montréal",
+            "country": "canada",
+            "scores": {
+              "academic_fit": 70,
+              "lifestyle_fit": 35,
+              "social_fit": 30,
+              "location_fit": 65,
+              "financial_fit": 40,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Strong engineering research profile within Québec (solid ARWU presence for engineering at provincial level) but Montreal's integrated nightlife and commuter population reduce the 'quiet campus' match; campus is research-active yet socially busy and weather is cold with strong urban arts.",
+            "total_score": 48,
+            "rank": 15
+          },
+          {
+            "university_name": "University of Connecticut",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 60,
+              "lifestyle_fit": 30,
+              "social_fit": 30,
+              "location_fit": 70,
+              "financial_fit": 20,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Moderate ARWU research profile for a U.S. public R1, but classic American big-sports/fraternity culture and energetic campus life make it a poor fit for a quiet research-focused semester despite good nearby nature.",
+            "total_score": 42,
+            "rank": 16
+          },
+          {
+            "university_name": "University of Oregon",
+            "country": "usa",
+            "scores": {
+              "academic_fit": 50,
+              "lifestyle_fit": 20,
+              "social_fit": 20,
+              "location_fit": 90,
+              "financial_fit": 20,
+              "jewish_israeli_community_fit": null,
+              "other_preferences_fit": null
+            },
+            "reasoning": "Moderate research profile but classic high-party, big-sports campus culture (poor fit for quiet), though the surrounding Oregon outdoors provide excellent nature options if that trade-off is acceptable.",
+            "total_score": 40,
+            "rank": 17
+          }
+        ],
+        "top_universities": [
+          "University of Science and Technology of China",
+          "POSTECH University",
+          "KAIST",
+          "National Yang Ming Chiao Tung University",
+          "National Tsing Hua University"
+        ]
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "University of Science and Technology of China",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: University of Science and Technology of China\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        # **UNIVERSITY OF SCIENCE AND TECHNOLOGY OF CHINA**\n\n--- NEXT CHUNK ---\n\n## **Fact She..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 15,
+          "max_credits_allowed": 20,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": "Numeric 0-100 marks; letter grades; and two-level scores (Pass/Fail) are used.",
+          "academic_summary_notes": "Usual workload is 15-20 credits/semester for undergraduates and 10 credits/semester for graduate students. Recommended language levels: HSK 5 for Chinese-taught courses or TOEFL iBT 80 / IELTS 6.0 for English-taught courses; recommended GPA 2.5/4.0. Exchange students do not pay tuition to USTC."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "On-campus housing is offered on a first-come, first-served basis; if full, nearby hotels or hostels may be used. Students are advised to bring approximately CNY 1000 in cash for taxi to campus and dormitory deposit.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students must purchase Chinese medical insurance. Insurance fee: 400 CNY for six months or 800 CNY for one year. Foreign-based insurance may have slower compensation; Chinese system often requires payment before treatment.",
+          "currency": "CNY",
+          "estimated_housing_cost_per_month": "Approximately 500-1500 CNY/month per person (on-campus, varies by room type).",
+          "estimated_living_cost_per_month": "Food: approximately 60 CNY/day (~1800 CNY/month). Housing: approximately 500-1500 CNY/month. (Costs vary by lifestyle and room type.)",
+          "logistics_summary_notes": "Visa types: X2 for one-semester (<=180 days) and X1 for one year or longer (X1 holders must apply for a residence permit within 30 days of entry). Chinese medical insurance is mandatory and costs 400 CNY (6 months) or 800 CNY (1 year)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "The factsheet does not specify buddy programs or mandatory orientation events. Students should follow the online application portal and the provided pre-arrival suggestions (bring cash, obtain Chinese medical insurance)."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "POSTECH University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: POSTECH University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        ## **STUDENT EXCHANGE**\n\nOverview\n\n◦ Regular Course Tacking Exchange Program\n◦ Credit Transfer\n\n◦ Can also partic..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": 22,
+          "instruction_languages": "English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students register for courses on POVIS on a first-come-first-serve basis. Undergraduate recommended/standard load is 15 credits (min 10, max 22); graduate students have separate limits (min 3, max 18); nomination, CGPA >3.0/4.3 and English proficiency required."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": true,
+          "housing_details": "All international students are guaranteed a room in POSTECH student dormitory unless they choose otherwise. Housing fee must be paid in full by cash deposit to POSTECH Housing Services within the first week of the semester; a negative tuberculosis check-up in English is required to check in.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "All international students are automatically registered to the National Health Insurance Service (NHIS) from the date of alien registration (approx. 70,000 KRW/month invoiced). Students must also purchase a separate insurance plan covering most illnesses and injuries valid for at least 1 month from arrival. A negative tuberculosis check-up report in English is required for dormitory check-in.",
+          "currency": "KRW, USD",
+          "estimated_housing_cost_per_month": "125 USD/month (on-campus housing estimate from ISSS)",
+          "estimated_living_cost_per_month": "Approx. 715 USD/month total (Housing $125, Dining $350, Health Insurance $55, Transportation $35, Personal $150); NHIS approx. 70,000 KRW/month invoiced.",
+          "logistics_summary_notes": "Students receive a Certificate of Admission (required for visa) and must have passport validity six months beyond program end. POSTECH is IEQAS-certified enabling a simplified visa process, ISSS assists with ARC during orientation; students must leave Korea within 30 days after program end or by ARC expiry."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": true,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "Pre-arrival orientation is delivered by Zoom covering visa process, life at POSTECH, and course registration; on-campus Orientation for New International Students includes mandatory sessions and cultural activities, and ISSS provides guidance for alien registration and settling in."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "KAIST",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: KAIST\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        ##### **Who can apply?**\n\nAn Inbound Exchange student is someone from one of\n\n\nour partner institutions who meets the exchange..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": 24,
+          "instruction_languages": "English (some courses may be offered in Korean)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students: minimum 4 courses (12 credits) and maximum 8 courses (24 credits). Graduate exchange students: minimum 3 courses (9 credits) and maximum 4 courses (12 credits). Course lists are uploaded ~2 months prior and course registration opens 1-2 months before the semester; students must register for courses at their appropriate degree level."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "KAIST will apply for on-campus accommodation for all exchange students based on their application form. Assigned dormitories are double or triple occupancy, furnished (bed, closet, desk, chair); shared restrooms, showers, washing machines, dryers and a lobby on each floor. KAIST provides one pillow and one blanket. Dormitory info available at KAIST Dormitory/KDS site.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "D-2 visa holders must subscribe to National Health Insurance (NHI); subscribing takes more than a month so students should prepare traveler's insurance to cover at least the first month in Korea.",
+          "currency": "USD",
+          "estimated_housing_cost_per_month": "Approximately USD 550 - 900 per semester",
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students need the KAIST Certificate of Admission to apply for a Korean student visa; KAIST ISSS provides further guidance on visa, alien registration and dormitory. D-2 visa holders must enroll in NHI and should have short-term travel insurance for the first month."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": null,
+          "integration_summary_notes": "KAIST sends welcome packages (including Certificate of Admission and information) and the ISSS team provides further details on arrival, housing and registration. Further orientation details are provided to accepted students once procedures are finalized."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "National Yang Ming Chiao Tung University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: National Yang Ming Chiao Tung University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **Exchange Program Guideline**\n\n\nOffice of International Affairs\n\n\n# **Office of Internatio..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "English; Chinese (Mandarin)",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduates must take at least 9 credits per semester; graduate inbound students must take at least 2 courses. Students may choose courses across colleges and campuses but instructors can refuse enrollment due to prerequisites or limited capacity; some colleges (e.g., College of Management) are limited to final-year undergraduates and graduate students."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "The Division of Overseas Student Affairs handles accommodation and host-family arrangements for international students; no explicit guarantee or deadlines stated in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "The Division of Overseas Student Affairs provides on-site services including accommodation, insurance, visa assistance and registration. Nomination from home institution and online application are required; admission letters are sent to home coordinators."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Free Chinese courses provided by the Chinese Language Division/Language Teaching and Research Center, including Chinese Cultural Salon (cultural experience), courses from introductory to advanced (4 levels), and elective situational conversation courses; offered at no cost.",
+          "integration_summary_notes": "The Division supports international student society activities and host-family arrangements and offers free Chinese language and cultural courses to facilitate cultural and academic integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "National Tsing Hua University",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: National Tsing Hua University\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        14:42,4.2.2026 Incoming\n\n\n**[Home](https://oga.site.nthu.edu.tw/index.php)** / **[Exchange Program](ht..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 9,
+          "max_credits_allowed": null,
+          "instruction_languages": "Chinese, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Undergraduate exchange students are required to take a minimum of 9 credits per semester; graduate exchange students must take at least one master-level course. Students are expected to take at least one course from their home department; additional Mandarin and English course options are available during the exchange."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dormitory fees administered by Division of Student Housing. Dormitory fee ranges (per semester) are listed for undergraduates and graduates; estimated living expenses for one semester (including dorm, visa, textbooks, food, transportation, etc.) are provided as USD 3,600.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Exchange students staying longer than 180 days are covered by/should enroll in Taiwan National Health Insurance (NHI); links to ARC and NHI information are provided. No specific cost details provided in factsheet.",
+          "currency": "TWD, USD",
+          "estimated_housing_cost_per_month": "Undergraduates: NT$6,300–16,660 per semester; Graduates: NT$10,170–27,500 per semester.",
+          "estimated_living_cost_per_month": "Estimated for one semester: USD 3,600 (includes dorm, visa, textbooks, food, transportation, etc.).",
+          "logistics_summary_notes": "Visa guidance and links are provided (Visitor/Resident Visa, ARC), but the university does not explicitly state visa sponsorship. National Health Insurance applies for exchange students staying over 180 days."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": null,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Mandarin courses are available to take during the exchange. English course information is published seasonally (English course info for fall released late May; for spring released mid-December); no costs specified.",
+          "integration_summary_notes": "Office of Global Affairs and the Division of Overseas Students Service handle incoming student support; language courses and student housing options are available but specific buddy/orientation programs are not detailed in the factsheet."
+        }
+      }
+    }
+  ]
+}

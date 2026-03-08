@@ -1,29 +1,28 @@
-# Web Frameworks
+# --- Web Framework & Server ---
 fastapi
 uvicorn
 
-# Only for local development, not needed in production 
-# streamlit
-
-# Database & Vector DB
-pinecone
-supabase
-
-# Data Science & PDF Processing
-fitz
-pdf2image
-pytesseract
-pymupdf4llm
-
-# LLMs & Embeddings
+# --- Agent Orchestration & LLMs ---
 langgraph
 langchain-text-splitters
 tiktoken
 
-# API & Utilities
+# --- Database & Vector Search ---
+pinecone
+supabase
+
+# --- Data Science & PDF Processing ---
+fitz
+pdf2image
+pytesseract
+pymupdf4llm
+# crawl4ai
+# streamlit
+
+# --- Utilities & Validation ---
 requests
 python-dotenv
 pydantic
 
-# Testing
+# --- Testing ---
 pytest
