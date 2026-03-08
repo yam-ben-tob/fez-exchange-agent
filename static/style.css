@@ -1,0 +1,32 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; }
+textarea { width: 100%; height: 250px; margin-bottom: 10px; font-family: monospace; padding: 10px; border: 1px solid #ccc; border-radius: 4px;}
+button { padding: 10px 20px; background-color: #ff4b4b; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+button:disabled { background-color: #ffb3b3; }
+
+/* Streamlit-like UI Elements */
+.success-banner { background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; font-weight: bold;}
+.info-banner { background-color: #e2eef9; color: #004085; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+
+/* Tabs */
+.tabs { display: flex; border-bottom: 2px solid #ddd; margin-bottom: 20px; }
+.tab-btn { background: none; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; color: #666; }
+.tab-btn.active { border-bottom: 3px solid #ff4b4b; color: #333; font-weight: bold; margin-bottom: -2px; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Layout */
+.row { display: flex; gap: 20px; margin-bottom: 20px; }
+.col { flex: 1; }
+.col-2 { flex: 2; }
+hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+
+/* Expanders */
+details { background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px; }
+summary { padding: 10px; font-weight: bold; cursor: pointer; }
+.details-content { padding: 15px; border-top: 1px solid #ddd; background: white;}
+pre { white-space: pre-wrap; background: #272822; color: #f8f8f2; padding: 10px; border-radius: 4px; font-size: 12px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
