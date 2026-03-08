@@ -77,6 +77,7 @@
             <textarea id="jsonOutput" readonly style="background-color: #f8f9fa; color: #333; height: 300px; border: 1px dashed #ccc;"></textarea>
             
             <button id="runBtn" onclick="runAgent()" style="width: 100%; padding: 15px; font-size: 1.2em; margin-top: 10px;">🚀 Run Analysis</button>
+            <button onclick="showArchPage()" style="width: 100%; padding: 15px; font-size: 1.1em; margin-top: 10px; background-color: #6366f1; color: white; border: none; border-radius: 4px; cursor: pointer;">🏗️ View System Architecture</button>
         </div>
 
         <div id="uiContainer"></div>
@@ -90,6 +91,29 @@
         </p>
         
         <div id="traceContainer"></div>
+    </div>
+    </div> <div id="archView" style="display: none; padding: 20px; max-width: 900px; margin: 0 auto;">
+        <button onclick="showMainPage()" style="background-color: #4b5563; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin-bottom: 20px;">🔙 Back to Dashboard</button>
+        
+        <h1 style="color: #4f46e5;">🏗️ System Architecture & Logic</h1>
+        
+        <div style="background: white; border: 1px solid #e5e7eb; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #1f2937; margin-top: 0;">System Purpose</h3>
+            <p style="color: #4b5563; line-height: 1.6;">Filters universities by academic/language/availability criteria, ranks by preferences, and analyzes top matches for logistics and fit using a multi-agent approach.</p>
+            
+            <h3 style="color: #1f2937;">Agentic Workflow</h3>
+            
+            <ul style="color: #4b5563; line-height: 1.8;">
+                <li><strong>Filter Agent (SQL):</strong> Deterministic filtering via Supabase to ensure hard requirements are met.</li>
+                <li><strong>Ranker Agent (LLM):</strong> Heuristic scoring based on free-text user "vibes" and preferences.</li>
+                <li><strong>Analyzer Agent (RAG):</strong> Retrieval-Augmented Generation using Pinecone to extract logistical facts from PDF factsheets.</li>
+            </ul>
+            
+            <hr style="border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0;">
+            
+            <h3 style="color: #1f2937;">Technical Architecture Diagram</h3>
+            <img src="system_architechture.png" alt="Architecture Diagram" style="width: 100%; border-radius: 8px; border: 1px solid #ddd; margin-top: 10px;">
+        </div>
     </div>
 
     <script src="profiles.js"></script>

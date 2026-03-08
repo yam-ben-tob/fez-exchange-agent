@@ -105,9 +105,18 @@ function showTracePage() {
     window.scrollTo(0, 0); // Scroll to top of the new page
 }
 
+function showArchPage() {
+    document.getElementById('mainView').style.display = 'none';
+    document.getElementById('traceView').style.display = 'none'; // Ensure trace is hidden
+    document.getElementById('archView').style.display = 'block'; // Show arch
+    window.scrollTo(0, 0);
+}
+
 function showMainPage() {
     document.getElementById('traceView').style.display = 'none';
+    document.getElementById('archView').style.display = 'none';
     document.getElementById('mainView').style.display = 'block';
+    window.scrollTo(0, 0);
 }
 
 // Main Execution
