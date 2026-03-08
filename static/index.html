@@ -6,30 +6,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>🎓 University Selection Dashboard</h1>
-    
-    <div style="background: #f0f2f6; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-        <p>👈 Select a test profile or edit the JSON below, then click 'Run Analysis'!</p>
+    <div id="mainView">
         
-        <label for="profileSelect"><strong>Load a Pre-set Profile: </strong></label>
-        <select id="profileSelect" onchange="loadProfile()" style="margin-bottom: 10px; padding: 5px;">
-            <option value="default">Default Profile (CS, 3.2 GPA)</option>
-            <option value="high_gpa">High GPA (Physics, 4.0)</option>
-            <option value="low_gpa">Low GPA (Business, 2.0)</option>
-            <option value="european_master">European Master (Medicine, 3.8)</option>
-            <option value="english_only_freshman">English Only Freshman (Business, 2.5)</option>
-        </select>
-
-        <textarea id="promptInput"></textarea>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-top: 20px; margin-bottom: 40px; padding: 0 20px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            
+            <img src="Fez_picture.jpg" alt="Fez Mascot" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
+            
+            <div style="text-align: left;">
+                    <h1 style="color: #4f46e5; font-size: 2.8em; margin-bottom: 10px; margin-top: 0;">🌍 Fez Exchange Agent</h1>                <p style="font-size: 1.2em; color: #555; line-height: 1.6; margin: 0;">
+                    Choose your student exchange program easily—the one that fits you <strong>exactly</strong>.<br>
+                    Exchange should be fun, so let's make it that way!<br>
+                    Fill in your details below and Fez will match it for you.
+                </p>
+            </div>
+            
+        </div>
         
-        <button id="runBtn" onclick="runAgent()">🚀 Run Analysis</button>
+        <div style="background: #f0f2f6; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <label for="profileSelect" style="font-size: 1.1em;"><strong>Load a Pre-set Profile: </strong></label>
+            <select id="profileSelect" onchange="loadProfile()" style="margin-bottom: 20px; padding: 8px; font-size: 1em;">
+                <option value="default">Default Profile (CS, 3.2 GPA)</option>
+                <option value="high_gpa">High GPA (Physics, 4.0)</option>
+                <option value="low_gpa">Low GPA (Business, 2.0)</option>
+                <option value="european_master">European Master (Medicine, 3.8)</option>
+                <option value="english_only_freshman">English Only Freshman (Business, 2.5)</option>
+            </select>
+
+            <hr>
+            <h3 style="margin-top: 0; color: #4f46e5;">Select or edit if needed:</h3>            
+            <div class="row" style="flex-wrap: wrap;">
+                <div class="col">
+                    <strong>Academic Profile</strong><br>
+                    GPA: <input type="number" step="0.1" id="f_gpa" oninput="updateJson()"><br>
+                    Major: <input type="text" id="f_major" oninput="updateJson()"><br>
+                    Level: <select id="f_level" onchange="updateJson()">
+                        <option value="bsc">BSc</option>
+                        <option value="msc">MSc</option>
+                    </select><br>
+                    Semesters: <input type="number" id="f_semesters" oninput="updateJson()">
+                </div>
+                
+                <div class="col">
+                    <strong>Language Profile</strong><br>
+                    Other Langs <i>(comma separated)</i>: <input type="text" id="f_noneng" oninput="updateJson()"><br>
+                    Eng Test <i>(comma separated)</i>: <input type="text" id="f_engtype" oninput="updateJson()"><br>
+                    Eng Level: <input type="text" id="f_englvl" oninput="updateJson()">
+                </div>
+
+                <div class="col">
+                    <strong>Availability</strong><br>
+                    Start (MM/DD): 
+                    <input type="number" id="f_smonth" placeholder="M" oninput="updateJson()" style="width: 70px;"> / 
+                    <input type="number" id="f_sday" placeholder="D" oninput="updateJson()" style="width: 70px;"><br>
+                    End (MM/DD): 
+                    <input type="number" id="f_emonth" placeholder="M" oninput="updateJson()" style="width: 70px; margin-top: 5px;"> / 
+                    <input type="number" id="f_eday" placeholder="D" oninput="updateJson()" style="width: 70px; margin-top: 5px;"><br><br>
+                    
+                    <strong>Preferences</strong><br>
+                    <label><input type="checkbox" id="f_erasmus" onchange="updateJson()"> Must be Erasmus?</label>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <strong>Free Language Preferences (Vibe / Budget / Logistics):</strong>
+                <textarea id="f_vibe" oninput="updateJson()" style="height: 80px;"></textarea>
+            </div>
+
+            <hr>
+            <p style="font-weight: bold; color: #555;">This is the JSON structure that will be sent as input to the system:</p>
+            <textarea id="jsonOutput" readonly style="background-color: #f8f9fa; color: #333; height: 300px; border: 1px dashed #ccc;"></textarea>
+            
+            <button id="runBtn" onclick="runAgent()" style="width: 100%; padding: 15px; font-size: 1.2em; margin-top: 10px;">🚀 Run Analysis</button>
+        </div>
+
+        <div id="uiContainer"></div>
     </div>
 
-    <div id="uiContainer"></div>
+    <div id="traceView" style="display: none; padding-top: 20px;">
+        <button onclick="showMainPage()" style="background-color: #6c757d; margin-bottom: 20px;">🔙 Back to Results</button>
+        <h1>🛠 Execution Trace: Steps</h1>
+        <p style="color: #666; font-size: 0.95em; margin-bottom: 20px;">
+            <em>This page reveals the internal reasoning of the AI Agent. Click on any step below to see the exact data sent to the LLM (Prompt) and the raw data returned (Response).</em>
+        </p>
+        
+        <div id="traceContainer"></div>
+    </div>
 
     <script src="profiles.js"></script>
     <script src="app.js"></script>
-
 </body>
 </html>

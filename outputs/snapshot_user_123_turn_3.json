@@ -135,28 +135,28 @@
           "max_credits_allowed": null,
           "instruction_languages": "Romanian, English, French",
           "grading_system_summary": null,
-          "academic_summary_notes": "Students should consult the full course catalogue online and fill in the Learning Agreement with guidance from the Erasmus academic coordinator. Many courses are taught in Romanian but are supplemented by English tutorials allowing assignments and exams in English; a Romanian language course is offered if at least 10 students enrol."
+          "academic_summary_notes": "Students should consult the online course catalogue. Some bachelor/master specializations are taught in English or French while many faculties teach in Romanian; however, Romanian courses are often offered as tutorials in English so international students can write assignments and be examined in English. A Romanian language course is available subject to a minimum enrollment."
         },
         "housing_and_logistics": {
           "campus_housing_available": true,
           "campus_housing_guaranteed": false,
-          "housing_details": "Campus accommodation exists (student residences such as C5). For immigration/residence permit you must present an accommodation contract for university campus residents or a landlord declaration/rental contract certified at Iasi authorities. Residence/registration documents must be submitted within 30–60 days upon arrival and to the General Inspectorate for Immigration.",
+          "housing_details": "Accommodation contracts are required for students staying in university campus; student residence C5 issues certificates (C5 room references provided). Private accommodation requires a certified renting contract or landlord declaration plus supporting documents for immigration/registration.",
           "university_sponsors_visa": true,
           "estimated_visa_processing_weeks": 4,
           "mandatory_insurance_required": true,
-          "medical_and_insurance_details": "Proof of health insurance (European Health Insurance Card or private insurance) is required; foreign citizens aged 26+ need health insurance for residence permit extension (use the insurance used for the visa application plus authorized translation). A medical certificate stating 'clinic sanatos' is required (obtainable at Titu Maiorescu Campus, C8 Hostel, room 1).",
+          "medical_and_insurance_details": "European Health Insurance Card or private insurance is accepted. Foreign citizens aged 26+ need health insurance for residence permit extension (use the policy from the visa application plus authorized translation). A medical certificate stating 'clinic sanatos' is required (can be obtained at Titu Maiorescu Campus, C8 Hostel, room 1).",
           "currency": null,
           "estimated_housing_cost_per_month": null,
           "estimated_living_cost_per_month": null,
-          "logistics_summary_notes": "Students need a letter of acceptance/certificate from the university for visa application and must apply for/submit residence permit documents within 30–60 days after arrival; residence-permit-related procedures typically take about 30 days and health insurance is required for those aged 26+."
+          "logistics_summary_notes": "Register with the General Inspectorate for Immigration in Iaşi within ~30–60 days of arrival submitting passport, acceptance letter, proof of insurance and accommodation documents; residence permit applications are usually processed within 30 days (may be extended up to 15 days)."
         },
         "student_integration": {
           "buddy_program_available": null,
           "orientation_program_provided": true,
-          "orientation_is_mandatory": null,
-          "pre_semester_language_course_available": true,
-          "language_course_details": "A Romanian language course is offered but only runs if at least 10 students sign up; students will be asked about participation during the orientation meeting. No costs are specified in the factsheet.",
-          "integration_summary_notes": "There is an orientation/initial meeting with the Erasmus academic coordinator on arrival and a tutorial system providing regular individual meetings and supervision in English to help international students integrate academically."
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "Romanian language course available only if at least 10 students enroll; participation is discussed during orientation. No cost information provided.",
+          "integration_summary_notes": "An orientation meeting is provided and each faculty has an Erasmus academic coordinator; tutorials and regular individual meetings give international students guidance and allow assessments in English even when lectures are in Romanian."
         }
       }
     },
@@ -192,11 +192,11 @@
       },
       "logistics": {
         "academic": {
-          "min_credits_required": 0,
+          "min_credits_required": 30,
           "max_credits_allowed": 30,
-          "instruction_languages": "Italian; English",
+          "instruction_languages": "Italian, English",
           "grading_system_summary": null,
-          "academic_summary_notes": "No minimum number of credits is required; full-time workload is 30 ECTS per semester (60 ECTS per academic year). Students must choose the majority of credits from their enrolled programme; bachelor-level courses are mostly in Italian and master-level courses mostly in English; exchange students may take courses at both levels if prerequisites are met and the school approves. Design students: minimum 6 and maximum 30 ECTS per semester; Architecture and Engineering recommend 30 ECTS (no minimum)."
+          "academic_summary_notes": "No minimum number of credits is required overall; full-time workload is 30 ECTS per semester (60 ECTS per year). Most bachelor courses are in Italian and most master courses are in English; students may mix levels if prerequisites and school approval are met. Design students: min 6 and max 30 ECTS/semester; Architecture recommends 30 ECTS/semester."
         },
         "housing_and_logistics": {
           "campus_housing_available": null,
@@ -209,15 +209,15 @@
           "currency": null,
           "estimated_housing_cost_per_month": null,
           "estimated_living_cost_per_month": null,
-          "logistics_summary_notes": null
+          "logistics_summary_notes": "The factsheet directs applicants to the university application webpage/QR for procedures; specific visa sponsorship, processing times, housing availability, and insurance requirements are not specified in the provided information. Language level recommendations are given for course eligibility."
         },
         "student_integration": {
           "buddy_program_available": true,
           "orientation_program_provided": true,
           "orientation_is_mandatory": null,
           "pre_semester_language_course_available": null,
-          "language_course_details": "Exchange programmes: recommended B1 in Italian for Italian-taught courses and B2 in English for English-taught courses; no certificate required. The factsheet suggests considering Italian language courses but does not provide costs or explicit pre-semester course details.",
-          "integration_summary_notes": "Politecnico promotes integration through a buddy scheme and welcome events; numerous student associations and campus services support incoming students."
+          "language_course_details": "Exchange programmes: recommended B1 Italian for Italian-taught courses and B2 English for English-taught courses; no certificate required for exchange applicants. Double degree applicants must submit an English language certificate. Italian language courses are suggested but costs and scheduling are not specified.",
+          "integration_summary_notes": "Politecnico offers buddy support and welcome events to integrate exchange students; many student associations and campus services are available. Further integration services are referenced on the university mobility webpages."
         }
       }
     },
@@ -261,30 +261,30 @@
         "academic": {
           "min_credits_required": 10,
           "max_credits_allowed": null,
-          "instruction_languages": "German; English",
-          "grading_system_summary": "FSU Jena uses the ECTS credit system (credits awarded according to course workload). Specific grade scale not detailed in the factsheet.",
-          "academic_summary_notes": "Guest students should choose courses from their academic field but may also choose freely across most fields (except Medicine, Dentistry and Pharmacy). All guest students must take at least two courses in their field and/or earn at least 10 ECTS/semester (Erasmus+ students are expected to take 30 ECTS); students create final timetables after arrival and master thesis/research students must arrange a supervising academic."
+          "instruction_languages": "German, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may select courses across most faculties (except Medicine, Dentistry and Pharmacy); not all courses are offered every semester and home university approval is required. Erasmus+ students must take 30 ECTS/semester; all guest students must take at least two courses in their field and/or earn at least 10 ECTS; students doing individual research must secure a FSU supervisor and will receive a Transcript of Records after each semester."
         },
         "housing_and_logistics": {
           "campus_housing_available": true,
           "campus_housing_guaranteed": false,
-          "housing_details": "Student housing is in high demand; apply online via the Studentenwerk accommodation service (www.stw-thueringen.de/english/housing/index.html). Deadlines: 15 July for winter semester (and full year) and 15 January for summer semester. Dormitory places recommended.",
+          "housing_details": "Student accommodation via the Studentenwerk (apply online at www.stw-thueringen.de); high demand especially in winter semester. Application deadlines: 15 July (winter/full year) and 15 January (summer).",
           "university_sponsors_visa": false,
           "estimated_visa_processing_weeks": 6,
           "mandatory_insurance_required": true,
-          "medical_and_insurance_details": "All students must take out a German public health insurance; the International Office does not accept private or travel insurances from abroad. Students with public European health insurance may use EUHI card or recognised forms; estimated health insurance cost for non-EU students is ~500 EUR/semester.",
+          "medical_and_insurance_details": "German public health insurance is mandatory and private/travel insurances from abroad are not accepted; EU public insurance cards/forms may be accepted if recognized by a German insurer. Estimated health insurance cost: 500 EUR per semester for non-EU students.",
           "currency": "EUR",
-          "estimated_housing_cost_per_month": "Dormitory: ~2,700 EUR per semester (~450 EUR/month).",
-          "estimated_living_cost_per_month": "Estimated ~3,840 EUR per semester (including dormitory, semester contribution, books, health insurance and other expenses) ≈640 EUR/month. Semester contribution 190 EUR; books ~150 EUR/semester; health insurance ~500 EUR/semester (non-EU); other expenses ~300 EUR/semester. Students are advised to bring at least 600 EUR cash for first month.",
-          "logistics_summary_notes": "Non-EU students must apply for a study visa via German diplomatic representation (apply ~4–6 weeks before departure) using the admission letter from Jena University; after arrival non-EU students must register locally and obtain a residence permit. German public health insurance is mandatory and foreign private/travel insurances are not accepted."
+          "estimated_housing_cost_per_month": "2,700 EUR per semester (dormitory) — approx. 450 EUR/month (assuming a 6-month semester).",
+          "estimated_living_cost_per_month": "Approx. 640 EUR/month (based on estimated 3,840 EUR per 6-month semester for non-EU students: semester contribution 190 EUR, accommodation 2,700 EUR, books 150 EUR, health insurance 500 EUR, other expenses 300 EUR; excludes one-time visa fee).",
+          "logistics_summary_notes": "Some nationalities enter visa-free; others must apply for a study visa about 4–6 weeks before departure using the admission letter. After arrival register at the city office and non-EU students must visit the local Immigration Office to obtain an electronic residence/visa card; German public health insurance is compulsory."
         },
         "student_integration": {
           "buddy_program_available": true,
           "orientation_program_provided": true,
           "orientation_is_mandatory": false,
           "pre_semester_language_course_available": false,
-          "language_course_details": "FSU Language Centre offers optional German and other language courses (beginner to advanced) during studies at a fee of 20 EUR/semester. Preparation workshops (online Zoom) are provided for nominated students before arrival.",
-          "integration_summary_notes": "FSU Jena offers an Orientation Week before lectures and a Welcome Buddy programme to support incoming students; many international student groups, language tandems and social activities are available to foster integration."
+          "language_course_details": "FSU Language Centre offers optional German and other language courses (beginner to advanced) at 20 EUR/semester; courses are available during studies to improve language skills.",
+          "integration_summary_notes": "FSU Jena runs an Orientation Week before lectures and a Welcome Buddy programme to integrate new students. A wide range of international student groups, sports facilities and support services are available to assist exchange students."
         }
       }
     },
@@ -321,31 +321,31 @@
       "logistics": {
         "academic": {
           "min_credits_required": 18,
-          "max_credits_allowed": 60,
+          "max_credits_allowed": null,
           "instruction_languages": "Italian; English",
           "grading_system_summary": null,
-          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS per semester from a PoliTO degree programme included in the mobility agreement. A full-time workload is conventionally 60 ECTS per year; course catalogue and degree programmes (including those taught in English) are listed on the university site."
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS/CFU per semester (CFU = ECTS; 1 CFU = 25 hours). Full-time workload conventionally 60 credits per year. Course catalogue and degree programmes (including some taught in English) available on the university website."
         },
         "housing_and_logistics": {
           "campus_housing_available": true,
           "campus_housing_guaranteed": false,
-          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee or deadlines provided in the factsheet.",
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee of placement or deadlines provided in the factsheet. Incoming office contact and online procedures are provided for nominated students.",
           "university_sponsors_visa": true,
           "estimated_visa_processing_weeks": null,
           "mandatory_insurance_required": null,
-          "medical_and_insurance_details": "Health insurance is mentioned as part of practical support; a Campus Medical Centre is available for emergencies and multilingual psychological orientation is offered. No details on accepted coverage or costs provided.",
+          "medical_and_insurance_details": "Health insurance is listed as practical support and a Campus Medical Centre exists for emergencies; no details on accepted coverage or costs are provided in the factsheet.",
           "currency": null,
           "estimated_housing_cost_per_month": null,
           "estimated_living_cost_per_month": null,
-          "logistics_summary_notes": "The university provides support for visa and residence permit procedures and lists health insurance as required support; nominations and applications are handled via the nomination@polito tool and the online apply@polito procedure."
+          "logistics_summary_notes": "Nomination and online application required via Polito tools (nomination@polito), with deadlines roughly April/May for fall and November/End of November for spring; required documents include passport/ID, transcript, language certificate. University provides visa/residence permit support and lists health insurance as required support."
         },
         "student_integration": {
           "buddy_program_available": true,
           "orientation_program_provided": true,
           "orientation_is_mandatory": null,
           "pre_semester_language_course_available": null,
-          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming.",
-          "integration_summary_notes": "The Life Division organises welcome meetings, cultural and leisure events to encourage integration; international student associations act as mentor students and support welcome activities. Additional support includes orientation for students with disabilities and multilingual psychological services."
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming; no costs indicated.",
+          "integration_summary_notes": "The Life Division organizes welcome meetings, cultural and leisure events to encourage integration, and international student associations provide mentor students to support newcomers and welcome activities."
         }
       }
     },
@@ -385,35 +385,35 @@
         "academic": {
           "min_credits_required": 30,
           "max_credits_allowed": null,
-          "instruction_languages": "Most courses in German; a number of courses in English (mainly at graduate level).",
+          "instruction_languages": "Most courses are taught in German; a number of courses are offered in English (mainly at graduate level).",
           "grading_system_summary": null,
-          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) and typically study one or two semesters. Enrolment requires a student social fund contribution (~€80); a preparatory German intensive course (early Sept/early Mar) costs approx. €295 for 6 ECTS and semester German courses are also available."
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) and pay a small student social fund contribution (~€80). A preparatory intensive German course is offered before semester start (6 ECTS) and exchange stays typically last one or two semesters."
         },
         "housing_and_logistics": {
           "campus_housing_available": true,
           "campus_housing_guaranteed": false,
-          "housing_details": "Exchange students can apply for dorm rooms via studierendenWERK Berlin (rent €350-€400); dorm application particulars are communicated about two weeks after each exchange application deadline. Housing is not guaranteed and students advised to arrive ~2 weeks before German course orientation if seeking private accommodation. More info: TU Berlin housing page.",
-          "university_sponsors_visa": true,
+          "housing_details": "Dorm rooms via studierendenWERK Berlin (rent approx. €350-€400) are available but not guaranteed; applicants are informed about dorm application particulars about two weeks after the exchange application deadline. Students seeking private accommodation are advised to arrive ~two weeks before the German course orientation to find housing. More info: https://www.tu.berlin/en/go41781/.",
+          "university_sponsors_visa": null,
           "estimated_visa_processing_weeks": null,
           "mandatory_insurance_required": true,
-          "medical_and_insurance_details": "Health insurance listed at approx. €100/month if not waived; students with visas/residence permits must demonstrate sufficient funds (€934/month). Specific accepted coverage not detailed in the factsheet; see university Visa Matters page.",
+          "medical_and_insurance_details": "Health insurance cost estimated at €100/month if not waived; visa/residence permit applicants must have valid coverage and prove sufficient financial resources. Some insurances may be waivable; further details available via university guidance.",
           "currency": "EUR",
-          "estimated_housing_cost_per_month": "Dorms: €350-€400/month; general housing estimate €350-€650/month (varies by type/location).",
-          "estimated_living_cost_per_month": "Housing €350-650 / Food €150 / Books & supplies €40 / Health insurance (if not waived) €100; Public Transport approx. €180 per semester. Visa applicants must demonstrate ~€934/month.",
-          "logistics_summary_notes": "Applicants for visa/residence permits must prove sufficient funds (~€934/month); health insurance is required unless waived (~€100/month). Dorm application info follows exchange application deadlines but housing is not guaranteed."
+          "estimated_housing_cost_per_month": "Dorm: €350-€400 per month; general housing estimate €350-€650 per month depending on accommodation type.",
+          "estimated_living_cost_per_month": "Housing €350-650; food and drink €150; books and supplies €40; health insurance (if not waived) €100; public transport approx. €180 per semester. Visa applicants must demonstrate ~€934 per month as proof of sufficient funds.",
+          "logistics_summary_notes": "Housing is available through the student services but not guaranteed; visa/residence permit applicants must demonstrate financial resources (~€934/month). Health insurance is required unless waived."
         },
         "student_integration": {
           "buddy_program_available": true,
           "orientation_program_provided": true,
           "orientation_is_mandatory": null,
           "pre_semester_language_course_available": true,
-          "language_course_details": "Preparatory German intensive course offered early September/early March costs approx. €295 and awards 6 ECTS; Erasmus students may be eligible only if they have completed A2. German courses are also available during the semester (ZEMS).",
-          "integration_summary_notes": "TU Berlin offers an orientation for exchange students each semester and a buddy program to support integration, plus links to sports and library services to aid student life."
+          "language_course_details": "Preparatory German intensive course offered in early September/early March (approx. €295, earns 6 ECTS). Erasmus students may need to have completed A2 to be eligible; additional German courses available during the semester via ZEMS.",
+          "integration_summary_notes": "TU Berlin runs an orientation/info session and a buddy program for incoming exchange students, with a preparatory German course available before semesters to support integration."
         }
       }
     }
   ],
-  "request_count": 1,
+  "request_count": 3,
   "universities_fit_text": [
     "Small engineering school inside the compact, walkable city of Strasbourg — campus and student cohorts are tightly knit which makes making friends straightforward; Strasbourg offers strong museum and cultural options (European institutions, historic core) and mild weather; costs align comfortably with the user's stated budget.",
     "University of Cyprus has a cohesive suburban campus feel making it easy to meet classmates; Nicosia provides museums and a pleasant Mediterranean climate; social life is solid but less of an Erasmus party hub than major Western European cities; overall costs fit the stated maximum.",
@@ -922,6 +922,376 @@
           "pre_semester_language_course_available": true,
           "language_course_details": "Preparatory German intensive course offered early September/early March costs approx. €295 and awards 6 ECTS; Erasmus students may be eligible only if they have completed A2. German courses are also available during the semester (ZEMS).",
           "integration_summary_notes": "TU Berlin offers an orientation for exchange students each semester and a buddy program to support integration, plus links to sports and library services to aid student life."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Alexandru Ioan Cuza University of Iasi",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Alexandru Ioan Cuza University of Iasi\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |<br> <br>**ExcepƟonal changes**<br> <br>(to be approved by e-mail or signature by the studen..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Romanian, English, French",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Consult the online course catalogue for available courses. Many programmes/specialisations offer courses in English or French while other faculties teach in Romanian; international students receive tutorials and supervision in English and Romanian-language courses run only if at least 10 students sign up."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "University campus accommodation (student residences such as C5) is available and requires an accommodation contract plus a certificate from the student residence (e.g. C5). Private housing requires a renting contract certified at the Iasi General Directorate of Public Finances or a landlord's declaration and real estate contract (translated into Romanian). Documents related to accommodation and immigration should be submitted within 30–60 days of arrival.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": 4,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "European Health Insurance Card (EHIC) or private insurance is accepted for visa/residence formalities. Foreign citizens aged 26+ must have health insurance for residence permit extension (use the same policy used for the visa with an authorized translation); those younger than 26 do not need a medical insurance for extension. A medical certificate ('clinic sanatos') is also required for residence procedures.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Students need the university acceptance/nomination and a certificate issued by the institution for visa and residence permit applications; submit documents to the General Inspectorate for Immigration in Iaşi within 30–60 days of arrival. Residence permit applications are typically processed within 30 days (may be extended by up to 15 days)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "A Romanian language course is offered only if at least 10 students enrol; participation is queried during the orientation meeting. No cost information provided. Tutorials and academic supervision for international students are provided in English and students may complete assignments and be examined in English.",
+          "integration_summary_notes": "An orientation meeting and an initial meeting with the Erasmus academic coordinator are provided; students receive regular tutorials and individual meetings with coordinators and professors to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 0,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Full-time study equals 30 ECTS per semester (60 ECTS per year); no minimum number of credits is required. Students should choose the majority of credits from their enrolled programme; courses at bachelor level are mostly in Italian while most master courses are taught in English, and students may take courses at both levels if prerequisites and school approval are met."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": null
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Italian language courses are recommended for exchange students (Level B1 recommended for courses in Italian); Level B2 in English recommended for courses in English. No certificate is required for exchange programme application.",
+          "integration_summary_notes": "Politecnico promotes integration through a buddy system and welcome events; students are encouraged to consider Italian language courses to support participation in Italian-taught classes."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Friedrich Schiller University Jena",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Friedrich Schiller University Jena\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Credit System<br>Course/Programme<br>Catalogue<br>Learning Agreement<br>and Course Schedule<br>M..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": null,
+          "instruction_languages": "German (main); a few courses in English. Minimum required level: B2 (CEFR).",
+          "grading_system_summary": "FSU Jena uses the ECTS credit system; credits awarded based on course workload (EU standard ~30 ECTS per semester). The International Office issues a Transcript of Records after each semester.",
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may take courses across most faculties (except Medicine, Dentistry, Pharmacy). Home university approval is required; students finalize timetables and attend guest study information sessions after arrival. Erasmus/E+ICM students are expected to take 30 ECTS/semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Student dormitories available via the Studentenwerk accommodation service (apply online). High demand; recommended to apply early. Deadlines: 15 July for winter semester/full year, 15 January for summer semester. Link: www.stw-thueringen.de/english/housing/index.html.",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 6,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German public health insurance is mandatory; the International Office does not accept private or travel insurances from abroad. EU public insurance cards (EUHI/E111 or recognized bilateral forms) may be accepted if valid for the full stay but must be recognized by a German public insurer. Estimated health insurance cost: ~€500 per semester for non-EU students.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "€2,700 per semester for dormitory (~€450/month, assuming a 6-month semester).",
+          "estimated_living_cost_per_month": "Costs reported per semester: Semester contribution €190 (includes regional transport), Accommodation (dormitory) €2,700, Books/materials €150, Health insurance €500 (non-EU), Visa €110 (non-EU, one-off), Other expenses ~€300. It is recommended to bring at least €600 cash for first-month expenses.",
+          "logistics_summary_notes": "Non-EU students typically must apply for a study visa ~4–6 weeks before departure using the university admission letter; after arrival non-EU students must register with local immigration and obtain an electronic residence permit (fees up to €110). German public health insurance is required for enrollment."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "FSU Language Centre offers optional language courses (including German) during studies at €20/semester for many language classes, from beginner to advanced; these are optional and intended to improve language skills.",
+          "integration_summary_notes": "FSU Jena offers an Orientation Week before lectures and a Welcome Buddy/mentoring programme for incoming students. A wide range of international student groups and activities support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Torino",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Torino\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        #### **PoliTO AT A GLANCE**\n\n**Name:** Politecnico di Torino\n**Erasmus Code:** I TORINO02\n**Web page:** [www.p..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 18,
+          "max_credits_allowed": 60,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS/CFU per semester from a PoliTO degree programme included in the mobility agreement. Degree courses use CFU (ECTS) with a full-time workload conventionally fixed at 60 credits per year."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee or application deadlines are provided in the factsheet.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance is listed as part of practical support and there is a Campus Medical Centre for emergencies; no details on accepted coverage or costs are provided.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Politecnico provides practical support for visa and residence permit procedures and lists health insurance support, but the factsheet gives no processing timeframes or specific insurance requirements."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming.",
+          "integration_summary_notes": "The Life Division organizes welcome events and activities to foster integration, and international student associations provide mentor students to welcome newcomers. Free Italian language courses are available to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Berlin",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Berlin\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        CONTACT INFORMATION \nTECHNISCHE UNIVERSITÄT BERLIN \n \nHead of Section /  \nOverseas Program \nCoordinat..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Most courses are taught in German; a number of courses are offered in English (mainly at graduate level).",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) when applying. Exchange students pay tuition to their home institution but must pay a student social contribution (~€80) for enrolment; a preparatory German intensive course (early Sept/early Mar) costs approx. €295 and awards 6 ECTS (Erasmus students need completed A2 to join)."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Exchange students can apply for dorm rooms via studierendenWERK Berlin (rent €350-€400). Dorm application particulars are communicated about two weeks after the exchange application deadline; housing is not guaranteed. Students advised to arrive ~2 weeks before orientation to search for private accommodation. More info: https://www.tu.berlin/en/go41781/",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance (if not waived) approx. €100 per month. Students applying for a visa/residence permit must demonstrate sufficient financial resources (see €934/month requirement).",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dorms: €350-€400 per month; general housing estimate: €350-€650 per month (varies by accommodation type).",
+          "estimated_living_cost_per_month": "Housing €350-650 / Food €150 / Books & supplies €40 / Health insurance (if not waived) €100; Public transport approx. €180 per semester. Visa applicants must demonstrate ~€934 per month.",
+          "logistics_summary_notes": "Visa/residence permit applicants must prove sufficient funds (~€934/month). Housing via studierendenWERK is available but not guaranteed; dorm application details follow after the exchange application deadline. Insurance costs may apply if not waived."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Preparatory German intensive course offered before semester (early Sept/early Mar), costs approx. €295 and awards 6 ECTS. Erasmus students eligible only if they have completed A2. Additional German courses available during the semester via ZEMS.",
+          "integration_summary_notes": "TU Berlin runs orientation/info sessions each semester and offers a buddy program for incoming exchange students. A paid preparatory German course is available prior to the semester to support integration."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Alexandru Ioan Cuza University of Iasi",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Alexandru Ioan Cuza University of Iasi\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |<br> <br>**ExcepƟonal changes**<br> <br>(to be approved by e-mail or signature by the studen..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Romanian, English, French",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students should consult the online course catalogue. Some bachelor/master specializations are taught in English or French while many faculties teach in Romanian; however, Romanian courses are often offered as tutorials in English so international students can write assignments and be examined in English. A Romanian language course is available subject to a minimum enrollment."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation contracts are required for students staying in university campus; student residence C5 issues certificates (C5 room references provided). Private accommodation requires a certified renting contract or landlord declaration plus supporting documents for immigration/registration.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": 4,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "European Health Insurance Card or private insurance is accepted. Foreign citizens aged 26+ need health insurance for residence permit extension (use the policy from the visa application plus authorized translation). A medical certificate stating 'clinic sanatos' is required (can be obtained at Titu Maiorescu Campus, C8 Hostel, room 1).",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Register with the General Inspectorate for Immigration in Iaşi within ~30–60 days of arrival submitting passport, acceptance letter, proof of insurance and accommodation documents; residence permit applications are usually processed within 30 days (may be extended up to 15 days)."
+        },
+        "student_integration": {
+          "buddy_program_available": null,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "Romanian language course available only if at least 10 students enroll; participation is discussed during orientation. No cost information provided.",
+          "integration_summary_notes": "An orientation meeting is provided and each faculty has an Erasmus academic coordinator; tutorials and regular individual meetings give international students guidance and allow assessments in English even when lectures are in Romanian."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Milano",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Milano\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        **POLITECNICO DI MILANO**\n\nERASMUS Code: **I MILANO02**\n\n**ECHE** 29169, **PIC** 999879881, **OID** E10208971,..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": 30,
+          "instruction_languages": "Italian, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "No minimum number of credits is required overall; full-time workload is 30 ECTS per semester (60 ECTS per year). Most bachelor courses are in Italian and most master courses are in English; students may mix levels if prerequisites and school approval are met. Design students: min 6 and max 30 ECTS/semester; Architecture recommends 30 ECTS/semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": null,
+          "campus_housing_guaranteed": null,
+          "housing_details": null,
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": null,
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "The factsheet directs applicants to the university application webpage/QR for procedures; specific visa sponsorship, processing times, housing availability, and insurance requirements are not specified in the provided information. Language level recommendations are given for course eligibility."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "Exchange programmes: recommended B1 Italian for Italian-taught courses and B2 English for English-taught courses; no certificate required for exchange applicants. Double degree applicants must submit an English language certificate. Italian language courses are suggested but costs and scheduling are not specified.",
+          "integration_summary_notes": "Politecnico offers buddy support and welcome events to integrate exchange students; many student associations and campus services are available. Further integration services are referenced on the university mobility webpages."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Friedrich Schiller University Jena",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Friedrich Schiller University Jena\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        |Credit System<br>Course/Programme<br>Catalogue<br>Learning Agreement<br>and Course Schedule<br>M..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 10,
+          "max_credits_allowed": null,
+          "instruction_languages": "German, English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Guest students should choose courses from their academic field but may select courses across most faculties (except Medicine, Dentistry and Pharmacy); not all courses are offered every semester and home university approval is required. Erasmus+ students must take 30 ECTS/semester; all guest students must take at least two courses in their field and/or earn at least 10 ECTS; students doing individual research must secure a FSU supervisor and will receive a Transcript of Records after each semester."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Student accommodation via the Studentenwerk (apply online at www.stw-thueringen.de); high demand especially in winter semester. Application deadlines: 15 July (winter/full year) and 15 January (summer).",
+          "university_sponsors_visa": false,
+          "estimated_visa_processing_weeks": 6,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "German public health insurance is mandatory and private/travel insurances from abroad are not accepted; EU public insurance cards/forms may be accepted if recognized by a German insurer. Estimated health insurance cost: 500 EUR per semester for non-EU students.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "2,700 EUR per semester (dormitory) — approx. 450 EUR/month (assuming a 6-month semester).",
+          "estimated_living_cost_per_month": "Approx. 640 EUR/month (based on estimated 3,840 EUR per 6-month semester for non-EU students: semester contribution 190 EUR, accommodation 2,700 EUR, books 150 EUR, health insurance 500 EUR, other expenses 300 EUR; excludes one-time visa fee).",
+          "logistics_summary_notes": "Some nationalities enter visa-free; others must apply for a study visa about 4–6 weeks before departure using the admission letter. After arrival register at the city office and non-EU students must visit the local Immigration Office to obtain an electronic residence/visa card; German public health insurance is compulsory."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": false,
+          "pre_semester_language_course_available": false,
+          "language_course_details": "FSU Language Centre offers optional German and other language courses (beginner to advanced) at 20 EUR/semester; courses are available during studies to improve language skills.",
+          "integration_summary_notes": "FSU Jena runs an Orientation Week before lectures and a Welcome Buddy programme to integrate new students. A wide range of international student groups, sports facilities and support services are available to assist exchange students."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Politecnico di Torino",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Politecnico di Torino\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        #### **PoliTO AT A GLANCE**\n\n**Name:** Politecnico di Torino\n**Erasmus Code:** I TORINO02\n**Web page:** [www.p..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 18,
+          "max_credits_allowed": null,
+          "instruction_languages": "Italian; English",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Students must define a Learning Agreement including at least 18 ECTS/CFU per semester (CFU = ECTS; 1 CFU = 25 hours). Full-time workload conventionally 60 credits per year. Course catalogue and degree programmes (including some taught in English) available on the university website."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Accommodation options include private flats or halls of residence; no explicit guarantee of placement or deadlines provided in the factsheet. Incoming office contact and online procedures are provided for nominated students.",
+          "university_sponsors_visa": true,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": null,
+          "medical_and_insurance_details": "Health insurance is listed as practical support and a Campus Medical Centre exists for emergencies; no details on accepted coverage or costs are provided in the factsheet.",
+          "currency": null,
+          "estimated_housing_cost_per_month": null,
+          "estimated_living_cost_per_month": null,
+          "logistics_summary_notes": "Nomination and online application required via Polito tools (nomination@polito), with deadlines roughly April/May for fall and November/End of November for spring; required documents include passport/ID, transcript, language certificate. University provides visa/residence permit support and lists health insurance as required support."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": null,
+          "language_course_details": "The Teaching and Language Center (CLA) offers free Italian language courses from zero to fourth level; zero, first and second levels are also provided in streaming; no costs indicated.",
+          "integration_summary_notes": "The Life Division organizes welcome meetings, cultural and leisure events to encourage integration, and international student associations provide mentor students to support newcomers and welcome activities."
+        }
+      }
+    },
+    {
+      "module": "Analyzer",
+      "prompt": {
+        "target_university": "Technical University of Berlin",
+        "user_prompt_preview": "Extract the exchange data for the following university based on the provided context.\n\n        TARGET UNIVERSITY: Technical University of Berlin\n\n        CONTEXT FROM FACTSHEETS:\n        ---\n        CONTACT INFORMATION \nTECHNISCHE UNIVERSITÄT BERLIN \n \nHead of Section /  \nOverseas Program \nCoordinat..."
+      },
+      "response": {
+        "academic": {
+          "min_credits_required": 30,
+          "max_credits_allowed": null,
+          "instruction_languages": "Most courses are taught in German; a number of courses are offered in English (mainly at graduate level).",
+          "grading_system_summary": null,
+          "academic_summary_notes": "Exchange students must meet TU Berlin language requirements (German or English) and pay a small student social fund contribution (~€80). A preparatory intensive German course is offered before semester start (6 ECTS) and exchange stays typically last one or two semesters."
+        },
+        "housing_and_logistics": {
+          "campus_housing_available": true,
+          "campus_housing_guaranteed": false,
+          "housing_details": "Dorm rooms via studierendenWERK Berlin (rent approx. €350-€400) are available but not guaranteed; applicants are informed about dorm application particulars about two weeks after the exchange application deadline. Students seeking private accommodation are advised to arrive ~two weeks before the German course orientation to find housing. More info: https://www.tu.berlin/en/go41781/.",
+          "university_sponsors_visa": null,
+          "estimated_visa_processing_weeks": null,
+          "mandatory_insurance_required": true,
+          "medical_and_insurance_details": "Health insurance cost estimated at €100/month if not waived; visa/residence permit applicants must have valid coverage and prove sufficient financial resources. Some insurances may be waivable; further details available via university guidance.",
+          "currency": "EUR",
+          "estimated_housing_cost_per_month": "Dorm: €350-€400 per month; general housing estimate €350-€650 per month depending on accommodation type.",
+          "estimated_living_cost_per_month": "Housing €350-650; food and drink €150; books and supplies €40; health insurance (if not waived) €100; public transport approx. €180 per semester. Visa applicants must demonstrate ~€934 per month as proof of sufficient funds.",
+          "logistics_summary_notes": "Housing is available through the student services but not guaranteed; visa/residence permit applicants must demonstrate financial resources (~€934/month). Health insurance is required unless waived."
+        },
+        "student_integration": {
+          "buddy_program_available": true,
+          "orientation_program_provided": true,
+          "orientation_is_mandatory": null,
+          "pre_semester_language_course_available": true,
+          "language_course_details": "Preparatory German intensive course offered in early September/early March (approx. €295, earns 6 ECTS). Erasmus students may need to have completed A2 to be eligible; additional German courses available during the semester via ZEMS.",
+          "integration_summary_notes": "TU Berlin runs an orientation/info session and a buddy program for incoming exchange students, with a preparatory German course available before semesters to support integration."
         }
       }
     }

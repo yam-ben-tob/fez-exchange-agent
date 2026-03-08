@@ -1,7 +1,42 @@
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; color: #333; }
-textarea { width: 100%; height: 250px; margin-bottom: 10px; font-family: monospace; padding: 10px; border: 1px solid #ccc; border-radius: 4px;}
-button { padding: 10px 20px; background-color: #ff4b4b; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
-button:disabled { background-color: #ffb3b3; }
+/* Modern Inputs, Selects, and Textareas */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px; /* Adds comfortable breathing room inside the box */
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db; /* A softer, modern gray border */
+    border-radius: 8px; /* THIS makes the corners round and friendly! */
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #374151; /* Dark gray text is easier on the eyes than pure black */
+    font-family: inherit;
+    box-sizing: border-box; /* Keeps everything perfectly aligned */
+    transition: all 0.2s ease-in-out; /* Makes the focus effect smooth */
+}
+
+/* The "Glow" Effect when you click inside a box */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4f46e5; 
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15); 
+}
+
+/* Make checkboxes look slightly better too */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: #4f46e5; 
+}
+button { padding: 10px 20px; background-color: #4f46e5; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+button:disabled { background-color: #c7d2fe; }
 
 /* Streamlit-like UI Elements */
 .success-banner { background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; font-weight: bold;}
@@ -10,8 +45,7 @@ button:disabled { background-color: #ffb3b3; }
 /* Tabs */
 .tabs { display: flex; border-bottom: 2px solid #ddd; margin-bottom: 20px; }
 .tab-btn { background: none; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; color: #666; }
-.tab-btn.active { border-bottom: 3px solid #ff4b4b; color: #333; font-weight: bold; margin-bottom: -2px; }
-.tab-content { display: none; }
+.tab-btn.active { border-bottom: 3px solid #4f46e5; color: #333; font-weight: bold; margin-bottom: -2px; }.tab-content { display: none; }
 .tab-content.active { display: block; }
 
 /* Layout */
