@@ -1,7 +1,9 @@
 # Web Frameworks
 fastapi
 uvicorn
-streamlit
+
+# Only for local development, not needed in production 
+# streamlit
 
 # Database & Vector DB
 pinecone

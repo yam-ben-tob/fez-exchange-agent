@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 import os
 import json
@@ -96,6 +97,9 @@ def execute_agent(request: ExecuteRequest):
             "response": None, 
             "steps": []
         }
+
+# This tells FastAPI: "If the route isn't an /api/ route, look in the 'static' folder for an index.html file"
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
