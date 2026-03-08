@@ -49,7 +49,7 @@ def get_agent_info():
         "description": "Multi-agent orchestration system for global university exchange placement. Uses Filter (Supabase), Ranker (LLM), and Analyzer (Pinecone RAG + LLM) to recommend universities.",
         "purpose": "Filters universities by academic/language/availability criteria, ranks by preferences, and analyzes top matches for logistics and fit.",
         "prompt_template": {
-            "template": """{
+            "template": {
                 "academic_profile": {
                     "gpa": "float (grade in GPA format: e.g., 3.2, 4.0)",
                     "major": "string (e.g., 'Computer Science', 'Physics')",
@@ -71,7 +71,7 @@ def get_agent_info():
                     "must_be_erasmus": "boolean (scholarship program flag: e.g., true, false)",
                     "free_language_preferences": "string (vibe, budget, and location)"
                 }
-            }"""
+            },
         },
         "prompt_examples": [
             load_formatted_snapshot("snapshot_test_default_turn_1.json"),
@@ -82,8 +82,11 @@ def get_agent_info():
 
 @app.get("/api/model_architecture")
 def get_architecture():
-    base_dir = Path(__file__).resolve().parent.parent 
-    file_path = base_dir / "system_architechture"
+    # os.getcwd() points to /opt/render/project/src/ on Render
+    base_dir = Path(os.getcwd()) 
+    
+    # Point directly to the file in the root
+    file_path = base_dir / "system_architechture.png"
     
     if file_path.exists():
         return FileResponse(file_path, media_type="image/png")

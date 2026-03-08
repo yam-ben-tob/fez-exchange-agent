@@ -28,5 +28,11 @@ const studentProfiles = {
         "language_profile": { "non_english_languages": [], "english_test_type": ["Duolingo"], "english_test_level": "B1" },
         "availability": { "start_month": null, "start_day": null, "end_month": null, "end_day": null },
         "preferences": { "must_be_erasmus": false, "free_language_preferences": "" }
+    },
+    "asia_tech_specialist": {
+        "academic_profile": { "gpa": 3.75, "major": "Computer Engineering", "study_level": "bsc", "semesters_completed": 4 },
+        "language_profile": { "non_english_languages": ["Mandarin"], "english_test_type": ["IELTS"], "english_test_level": "C1" },
+        "availability": { "start_month": 9, "start_day": 1, "end_month": 1, "end_day": 20 },
+        "preferences": { "must_be_erasmus": false, "free_language_preferences": "I am specifically looking for an exchange in East Asia (Taiwan, Hong Kong, or Singapore). I want a top-tier technical university with a massive campus and high-tech labs. Environment: Ultra-modern, safe, and efficient cities. Focus: Semiconductor industry or Hardware/Software integration. Budget: $11,000 for the semester." }
     }
 };
