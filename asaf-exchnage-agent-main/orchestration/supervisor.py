@@ -1,0 +1,395 @@
+"""
+Supervisor agent for orchestrating calls to other agents in the orchestration layer.
+"""
+from typing import TypedDict, Any, List, Dict
+from langgraph.graph import StateGraph, START, END
+from langgraph.checkpoint.memory import MemorySaver
+from pathlib import Path
+import json
+import logging
+
+from orchestration.specialists.ranker import score_universities_with_llm, process_llm_scores
+from orchestration.specialists.analyzer import analyze_universities
+from orchestration.specialists.filter import filter_universities
+from utils import config 
+
+logger = logging.getLogger(__name__)
+
+# 1. Define the State Schema
+class AgentState(TypedDict, total=False):
+    valid_universities_list: list       # List of universities after filtering
+    user_information: dict              # Student profile input data
+    user_requests: List[str]            # History of user requests/messages
+    top_k: int                          # Number of top universities to select
+    top_universities: list              # Final ranked university names
+    analysis: List[dict]                # Final recommendation/analysis string
+    request_count: int                  # Number of requests in session
+    universities_fit_text: List[str]    # Reasoning for university fit
+    steps: List[Dict[str,Any]]                   # Execution trace of agent steps
+    courses: List[dict]                          # Matched courses per university (from CourseFinder)
+    llm_call_count: int                          # Number of LLM calls made
+    estimated_tokens: int                        # Estimated token usage
+
+# 2. Define the Nodes
+def filter_node(state: AgentState):
+    try:
+        filtered_result = filter_universities(state["user_information"])
+        step = {
+            "module": "Filter",
+            "prompt": {"action": "Query Supabase", "criteria": state["user_information"]},
+            "response": {"found_universities": len(filtered_result["universities"]), "traced_steps": filtered_result.get("traced_steps", [])}
+        }
+        logger.debug("[filter_node] Found %d universities", len(filtered_result["universities"]))
+        if not filtered_result["universities"]:
+            logger.warning("[filter_node] No universities matched the student profile – check GPA, language, availability, and Erasmus filters")
+        return {
+            "valid_universities_list": filtered_result["universities"],
+            "steps": (state.get("steps") or []) + [step]
+        }
+    except Exception as e:
+        logger.error("[filter_node] Error: %s", e, exc_info=True)
+        step = {
+            "module": "Filter",
+            "prompt": {"action": "Query Supabase", "criteria": state.get("user_information", {})},
+            "response": {"error": str(e), "found_universities": 0}
+        }
+        return {
+            "valid_universities_list": [],
+            "steps": (state.get("steps") or []) + [step]
+        }
+
+def rank_node(state: AgentState):
+    universities = state.get("valid_universities_list", []) or []
+
+    # Cost-aware optimization: skip expensive LLM ranking when the candidate set is already very small
+    # to reduce token usage and latency.
+    if len(universities) <= 3:
+        top_universities = [
+            u.get("name")
+            for u in universities
+            if isinstance(u, dict) and u.get("name")
+        ]
+        step = {
+            "module": "Ranker",
+            "prompt": {
+                "action": "skip_llm_ranking",
+                "reason": "few_candidates",
+                "candidate_count": len(universities),
+            },
+            "response": {
+                "scored_universities": [],
+                "top_universities": top_universities,
+            },
+        }
+        logger.debug("[rank_node] Skipped LLM ranking (%d candidates), top_universities=%s", len(universities), top_universities)
+        return {
+            "universities_fit_text": [],
+            "top_universities": top_universities,
+            "steps": (state.get("steps") or []) + [step],
+            "llm_call_count": state.get("llm_call_count", 0),
+            "estimated_tokens": state.get("estimated_tokens", 0),
+        }
+
+    try:
+        preferences = state["user_information"].get("preferences", {})
+        free_language_preferences = preferences.get("free_language_preferences", "")
+        llm_json_response, rank_prompt = score_universities_with_llm(
+            state["valid_universities_list"],
+            free_language_preferences,
+            state["top_k"],
+            return_prompt=True,
+        )
+        reasonings = [uni.get("reasoning", "") for uni in llm_json_response.get("scored_universities", [])]
+        top_universities = process_llm_scores(llm_json_response, top_k=state["top_k"])
+        step = {
+            "module": "Ranker",
+            "prompt": {"llm_prompt": rank_prompt},
+            "response": {
+                "scored_universities": llm_json_response.get("scored_universities", []),
+                "top_universities": top_universities,
+            },
+        }
+        logger.debug("[rank_node] top_universities=%s", top_universities)
+        return {
+            "universities_fit_text": reasonings,
+            "top_universities": top_universities,
+            "steps": (state.get("steps") or []) + [step],
+            "llm_call_count": state.get("llm_call_count", 0) + 1,
+            "estimated_tokens": state.get("estimated_tokens", 0) + 500,
+        }
+    except Exception as e:
+        logger.error("[rank_node] Error: %s", e, exc_info=True)
+        top_universities = [u.get("name") for u in universities if isinstance(u, dict) and u.get("name")][:state.get("top_k", 5)]
+        step = {
+            "module": "Ranker",
+            "prompt": {"action": "LLM scoring", "candidate_count": len(universities)},
+            "response": {"error": str(e), "top_universities": top_universities},
+        }
+        return {
+            "universities_fit_text": [],
+            "top_universities": top_universities,
+            "steps": (state.get("steps") or []) + [step],
+        }
+
+def course_finder_node(state: AgentState):
+    try:
+        from orchestration.specialists.course_finder import find_courses_react
+        courses, react_steps = find_courses_react(
+            state.get("top_universities", []),
+            state.get("user_information", {})
+        )
+        base_step = {
+            "module": "CourseFinder",
+            "prompt": {
+                "universities": state.get("top_universities", []),
+                "major": state.get("user_information", {}).get("academic_profile", {}).get("major"),
+                "languages": state.get("user_information", {}).get("language_profile", {}).get("non_english_languages", [])
+            },
+            "response": {"courses_found": len(courses), "courses": courses}
+        }
+        all_steps = [base_step] + react_steps
+        logger.debug("[course_finder_node] Found %d course entries, %d react steps", len(courses), len(react_steps))
+        return {"courses": courses, "steps": (state.get("steps") or []) + all_steps}
+    except Exception as e:
+        logger.error("[course_finder_node] Error: %s", e, exc_info=True)
+        step = {
+            "module": "CourseFinder",
+            "prompt": {
+                "universities": state.get("top_universities", []),
+                "major": state.get("user_information", {}).get("academic_profile", {}).get("major")
+            },
+            "response": {"error": str(e), "courses_found": 0}
+        }
+        return {"courses": [], "steps": (state.get("steps") or []) + [step]}
+
+def synthesize_analysis_from_courses(courses: List[dict], top_universities: List[str]) -> List[dict]:
+    """
+    If analysis is empty but courses exist, create minimal analysis entries.
+    This prevents confusing "no matches" when courses actually matched universities.
+    """
+    if not courses:
+        return []
+
+    synthesis = []
+    for course_entry in courses:
+        uni_name = course_entry.get("university_name")
+        matched_courses = course_entry.get("matched_courses", [])
+
+        if matched_courses:
+            synthesis.append({
+                "university_name": uni_name,
+                "general_fit_reasoning": "University has matching courses available.",
+                "requirements": {},
+                "logistics": {},
+                "matched_courses": matched_courses,
+            })
+
+    if synthesis:
+        logger.info("[Supervisor] Synthesized minimal analysis from %d course entries", len(synthesis))
+    return synthesis
+
+
+def analyze_node(state: AgentState):
+    try:
+        analysis_results, analyze_steps = analyze_universities(
+            state.get("top_universities", []),
+            state.get("universities_fit_text", None),
+            courses=state.get("courses", []),
+            return_steps=True
+        )
+        logger.debug("[analyze_node] Analyzed %d universities, %d steps", len(analysis_results), len(analyze_steps))
+
+        # If analysis is empty but courses exist, synthesize minimal analysis
+        if not analysis_results and state.get("courses"):
+            logger.info("[analyze_node] Synthesizing analysis from courses (RAG/requirements unavailable)")
+            analysis_results = synthesize_analysis_from_courses(
+                state.get("courses", []),
+                state.get("top_universities", [])
+            )
+
+        return {
+            "analysis": analysis_results,
+            "steps": (state.get("steps") or []) + analyze_steps
+        }
+    except Exception as e:
+        logger.error("[analyze_node] Error: %s", e, exc_info=True)
+
+        # If error occurred but courses exist, synthesize from courses
+        courses = state.get("courses", [])
+        if courses:
+            logger.warning("[analyze_node] Using courses-only fallback due to error")
+            analysis_results = synthesize_analysis_from_courses(courses, state.get("top_universities", []))
+        else:
+            analysis_results = []
+
+        step = {
+            "module": "Analyzer",
+            "prompt": {"targets": state.get("top_universities", [])},
+            "response": {"error": "Analysis failed", "universities_analyzed": len(analysis_results), "fallback": "courses_only"}
+        }
+        return {
+            "analysis": analysis_results,
+            "steps": (state.get("steps") or []) + [step]
+        }
+
+def _format_analysis_as_string(analysis_results: list) -> str:
+    """Format analysis list into a human-readable string for API response."""
+    if not analysis_results:
+        return (
+            "No universities matched your criteria. "
+            "Try relaxing your filters – for example, lower the minimum GPA, "
+            "broaden your language preferences, or adjust your availability dates."
+        )
+    parts = []
+    for i, uni in enumerate(analysis_results, 1):
+        name = uni.get("university_name", uni.get("name", "Unknown"))
+        reasoning = uni.get("general_fit_reasoning", "")
+        logistics = uni.get("logistics_and_experience", {})
+        parts.append(f"**{i}. {name}**")
+        if reasoning:
+            parts.append(f"   Fit: {reasoning}")
+        if logistics:
+            ac = logistics.get("academic", {})
+            housing = logistics.get("housing_and_logistics", {})
+            if ac.get("academic_summary_notes"):
+                parts.append(f"   Academic: {ac['academic_summary_notes']}")
+            if housing.get("logistics_summary_notes"):
+                parts.append(f"   Logistics: {housing['logistics_summary_notes']}")
+        parts.append("")
+    return "\n".join(parts).strip()
+
+# 3. Define the Routing Logic
+VALID_ROUTES = {"filter", "rank", "courses", "analyze"}
+DEFAULT_ROUTE = "filter"
+
+def choose_entry_point(state: AgentState) -> str:
+    """
+    Conversation-aware router. First turn always runs full pipeline.
+    Follow-ups: LLM decides filter | rank | courses | analyze.
+    """
+    if state.get("request_count", 1) == 1:
+        return "filter"
+    requests = state.get("user_requests", [])
+    user_text = str(requests[-1]) if requests else state.get("user_information", {}).get("free_text", "")
+    try:
+        from utils.llmod_client import llmod_chat
+        system_prompt = """You are an expert workflow router for a university exchange agent.
+Given a user's free-form input, decide which task fits best:
+- filter: New criteria, first message, or major preference change
+- rank: Change preferences like budget, nightlife, "show me more universities"
+- courses: Find courses, computer science, language of instruction
+- analyze: Re-analyze logistics only
+
+Respond ONLY with a valid JSON object:
+{"route": "filter|rank|courses|analyze", "reason": "brief explanation"}"""
+        user_prompt = f"User input: {user_text}"
+        response = llmod_chat(system_prompt, user_prompt, use_json=True)
+        try:
+            data = json.loads(response)
+            route = data.get("route", DEFAULT_ROUTE).strip().lower()
+        except json.JSONDecodeError:
+            logger.warning("[Router] Failed to parse response as JSON: %.100s", response)
+            route = DEFAULT_ROUTE
+        if route not in VALID_ROUTES:
+            logger.warning("[Router] Invalid route '%s', using default '%s'", route, DEFAULT_ROUTE)
+            route = DEFAULT_ROUTE
+        logger.info("[Router] Selected route: %s for input: %.50s", route, user_text)
+        return route
+    except Exception as e:
+        logger.error("[Router] Error: %s, using default route", e, exc_info=True)
+    return DEFAULT_ROUTE
+
+# 4. Build the Supervisor Graph
+# Pipeline order: filter -> rank -> course_finder -> analyze (Analyzer runs last as reasoning layer)
+class Supervisor:
+    def __init__(self):
+        workflow = StateGraph(AgentState)
+
+        workflow.add_node("filter", filter_node)
+        workflow.add_node("rank", rank_node)
+        workflow.add_node("course_finder", course_finder_node)
+        workflow.add_node("analyze", analyze_node)
+
+        workflow.add_conditional_edges(
+            START,
+            choose_entry_point,
+            {
+                "filter": "filter",
+                "rank": "rank",
+                "courses": "course_finder",
+                "analyze": "analyze",
+            },
+        )
+
+        workflow.add_edge("filter", "rank")
+        workflow.add_edge("rank", "course_finder")
+        workflow.add_edge("course_finder", "analyze")
+        workflow.add_edge("analyze", END)
+        
+        # Compile the graph into an executable app
+        memory = MemorySaver()        
+        self.app = workflow.compile(checkpointer=memory)
+    
+    def _save_snapshot(self, state_values: dict, count: int, thread_id: str):
+        """Saves state to root/outputs/ using Thread ID and Request Index"""
+        try:
+            # 1. Path Setup (Root/outputs/)
+            root_dir = Path(__file__).resolve().parent.parent
+            output_dir = root_dir / "outputs"
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            # 2. Unique Filename: Includes both Thread ID and Turn Count
+            # Example: snapshot_user_123_turn_1.json
+            file_name = f"snapshot_{thread_id}_turn_{count}.json"
+            file_path = output_dir / file_name
+
+            clean_state = dict(state_values)
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(clean_state, f, ensure_ascii=False, indent=2, default=str)
+                
+        except Exception as e:
+            print(f"⚠️ Warning: Snapshot failed for {thread_id}: {e}")
+
+    def run(self, new_chat_message: str = "", user_profile_dict: dict = None, thread_id="user_123"):        
+        config = {"configurable": {"thread_id": thread_id}}
+        current_memory = self.app.get_state(config).values        
+        current_count = current_memory.get("request_count", 0)
+        current_requests = current_memory.get("user_requests", [])
+        
+        new_count = current_count + 1  
+        updated_requests = list(current_requests)
+        if new_chat_message.strip():
+            updated_requests.append(new_chat_message.strip())      
+        
+        if new_count == 1:
+            if not user_profile_dict:
+                raise ValueError("user_profile_dict is required for the first request!")
+            payload = {
+                "user_information": user_profile_dict,  # Set the JSON profile once
+                "user_requests": updated_requests,      # Will be [] if no message was passed
+                "request_count": new_count,
+                "valid_universities_list": [],
+                "top_k": 5,
+                "top_universities": [],
+                "analysis": [],
+                "universities_fit_text": [],
+                "steps": [],
+                "courses": [],
+                "llm_call_count": 0,
+                "estimated_tokens": 0,
+            }
+        else:
+            payload = {
+                "user_requests": updated_requests,
+                "request_count": new_count
+            }
+
+        result = self.app.invoke(payload, config=config)
+        final_state = self.app.get_state(config).values
+        self._save_snapshot(final_state, new_count, thread_id)
+
+        return {
+            "analysis": result.get("analysis", []),
+            "courses": result.get("courses", []),
+            "steps": result.get("steps", [])
+        }
