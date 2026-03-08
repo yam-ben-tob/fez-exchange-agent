@@ -38,7 +38,7 @@ def get_team_info():
         "team_name": "Fez Exchange Agent",
         "students": [
             { "name": "Yam Ben Tov", "email": "yam.b@campus.technion.ac.il" },
-            { "name": "Asaf Greenstein", "email": "asaf.g@campus.technion.ac.il" },
+            { "name": "Asaf Greenstein", "email": "gasaf@campus.technion.ac.il" },
             { "name": "Anna Sakoun", "email": "anna.sakoun@campus.technion.ac.il"}
         ]
     }
